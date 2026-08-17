@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/ability_bg_coin_pack_day"
+    android:paddingLeft="@dimen/_6sdp"
+    android:paddingTop="@dimen/_6sdp"
+    android:paddingRight="@dimen/_6sdp"
+    android:paddingBottom="@dimen/_6sdp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/_33sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:paddingHorizontal="@dimen/_6sdp"
+    android:paddingVertical="@dimen/_6sdp">
+    <TextView
+        android:textSize="@dimen/_8sdp"
+        android:textColor="@color/theme_text13"
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"/>
+    <TextView
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textColor="@color/theme_text13"
+        android:id="@+id/tv_day_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"/>
+</LinearLayout>

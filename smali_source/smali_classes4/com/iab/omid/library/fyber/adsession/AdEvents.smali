@@ -1,0 +1,212 @@
+.class public final Lcom/iab/omid/library/fyber/adsession/AdEvents;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field private final adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+
+# direct methods
+.method private constructor <init>(Lcom/iab/omid/library/fyber/adsession/a;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 6
+    return-void
+.end method
+
+.method public static createAdEvents(Lcom/iab/omid/library/fyber/adsession/AdSession;)Lcom/iab/omid/library/fyber/adsession/AdEvents;
+    .locals 2
+
+    .line 1
+    move-object v0, p0
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 4
+    .line 5
+    const-string v1, "AdSession is null"
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {p0, v1}, Lcom/iab/omid/library/fyber/utils/g;->a(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->g(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->b(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    .line 15
+    .line 16
+    new-instance p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-direct {p0, v0}, Lcom/iab/omid/library/fyber/adsession/AdEvents;-><init>(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Lcom/iab/omid/library/fyber/adsession/a;->getAdSessionStatePublisher()Lcom/iab/omid/library/fyber/publisher/AdSessionStatePublisher;
+
+    .line 23
+    move-result-object v0
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {v0, p0}, Lcom/iab/omid/library/fyber/publisher/AdSessionStatePublisher;->a(Lcom/iab/omid/library/fyber/adsession/AdEvents;)V
+
+    .line 27
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public impressionOccurred()V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->b(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->e(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Lcom/iab/omid/library/fyber/adsession/a;->f()Z
+
+    .line 16
+    move-result v0
+
+    .line 17
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    :try_start_0
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v0}, Lcom/iab/omid/library/fyber/adsession/a;->start()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 24
+    .line 25
+    :catch_0
+    :cond_0
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Lcom/iab/omid/library/fyber/adsession/a;->f()Z
+
+    .line 29
+    move-result v0
+
+    .line 30
+    .line 31
+    if-eqz v0, :cond_1
+
+    .line 32
+    .line 33
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {v0}, Lcom/iab/omid/library/fyber/adsession/a;->k()V
+
+    .line 37
+    :cond_1
+    return-void
+.end method
+
+.method public loaded()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->a(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->e(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    invoke-virtual {v0}, Lcom/iab/omid/library/fyber/adsession/a;->l()V
+
+    return-void
+.end method
+
+.method public loaded(Lcom/iab/omid/library/fyber/adsession/media/VastProperties;)V
+    .locals 1
+    .param p1    # Lcom/iab/omid/library/fyber/adsession/media/VastProperties;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 2
+    const-string v0, "VastProperties is null"
+
+    invoke-static {p1, v0}, Lcom/iab/omid/library/fyber/utils/g;->a(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->a(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    invoke-static {v0}, Lcom/iab/omid/library/fyber/utils/g;->e(Lcom/iab/omid/library/fyber/adsession/a;)V
+
+    iget-object v0, p0, Lcom/iab/omid/library/fyber/adsession/AdEvents;->adSession:Lcom/iab/omid/library/fyber/adsession/a;
+
+    invoke-virtual {p1}, Lcom/iab/omid/library/fyber/adsession/media/VastProperties;->a()Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Lcom/iab/omid/library/fyber/adsession/a;->a(Lorg/json/JSONObject;)V
+
+    return-void
+.end method

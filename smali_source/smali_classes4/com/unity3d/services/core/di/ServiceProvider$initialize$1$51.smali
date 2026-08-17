@@ -1,0 +1,148 @@
+.class final Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$51;
+.super Lkotlin/jvm/internal/Lambda;
+.source "ServiceProvider.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/unity3d/services/core/di/ServiceProvider$initialize$1;->invoke(Lcom/unity3d/services/core/di/ServicesRegistry;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Lcom/unity3d/ads/core/data/datasource/LegacyUserConsentDataSource;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "Lcom/unity3d/ads/core/data/datasource/LegacyUserConsentDataSource;",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nServiceProvider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$51\n+ 2 ServicesRegistry.kt\ncom/unity3d/services/core/di/ServicesRegistry\n*L\n1#1,1100:1\n58#2,2:1101\n58#2,2:1103\n*S KotlinDebug\n*F\n+ 1 ServiceProvider.kt\ncom/unity3d/services/core/di/ServiceProvider$initialize$1$51\n*L\n458#1:1101,2\n459#1:1103,2\n*E\n"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+
+# direct methods
+.method public constructor <init>(Lcom/unity3d/services/core/di/ServicesRegistry;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$51;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Lcom/unity3d/ads/core/data/datasource/LegacyUserConsentDataSource;
+    .locals 6
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 2
+    new-instance v0, Lcom/unity3d/ads/core/data/datasource/AndroidLegacyUserConsentDataSource;
+
+    .line 3
+    iget-object v1, p0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$51;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    .line 4
+    new-instance v2, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v3, Lcom/unity3d/ads/core/domain/privacy/FlattenerRulesUseCase;
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinClass(Ljava/lang/Class;)LR9/d;
+
+    move-result-object v3
+
+    const-string v4, "legacy_privacy_rules"
+
+    invoke-direct {v2, v4, v3}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;LR9/d;)V
+
+    .line 5
+    invoke-virtual {v1, v2}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/unity3d/ads/core/domain/privacy/FlattenerRulesUseCase;
+
+    .line 6
+    iget-object v2, p0, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$51;->$this_registry:Lcom/unity3d/services/core/di/ServicesRegistry;
+
+    .line 7
+    new-instance v3, Lcom/unity3d/services/core/di/ServiceKey;
+
+    const-class v4, Lcom/unity3d/services/core/misc/JsonStorage;
+
+    invoke-static {v4}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinClass(Ljava/lang/Class;)LR9/d;
+
+    move-result-object v4
+
+    const-string v5, "PRIVATE"
+
+    invoke-direct {v3, v5, v4}, Lcom/unity3d/services/core/di/ServiceKey;-><init>(Ljava/lang/String;LR9/d;)V
+
+    .line 8
+    invoke-virtual {v2, v3}, Lcom/unity3d/services/core/di/ServicesRegistry;->resolveService(Lcom/unity3d/services/core/di/ServiceKey;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/unity3d/services/core/misc/JsonStorage;
+
+    .line 9
+    invoke-direct {v0, v1, v2}, Lcom/unity3d/ads/core/data/datasource/AndroidLegacyUserConsentDataSource;-><init>(Lcom/unity3d/ads/core/domain/privacy/FlattenerRulesUseCase;Lcom/unity3d/services/core/misc/JsonStorage;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/unity3d/services/core/di/ServiceProvider$initialize$1$51;->invoke()Lcom/unity3d/ads/core/data/datasource/LegacyUserConsentDataSource;
+
+    move-result-object v0
+
+    return-object v0
+.end method

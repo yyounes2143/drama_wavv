@@ -1,0 +1,19 @@
+package androidx.appcompat.view.menu;
+
+import androidx.annotation.RestrictTo;
+
+@RestrictTo
+/* loaded from: classes6.dex */
+public interface MenuView {
+
+    /* loaded from: classes6.dex */
+    public interface ItemView {
+        MenuItemImpl getItemData();
+
+        void initialize(MenuItemImpl menuItemImpl, int i10);
+
+        boolean prefersCondensedTitle();
+    }
+
+    void initialize(MenuBuilder menuBuilder);
+}

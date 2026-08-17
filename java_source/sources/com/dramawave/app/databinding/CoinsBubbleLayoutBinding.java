@@ -1,0 +1,66 @@
+package com.dramawave.app.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.dramawave.app.R;
+
+/* loaded from: classes8.dex */
+public final class CoinsBubbleLayoutBinding implements ViewBinding {
+
+    @NonNull
+    public final ImageView ivIcon;
+
+    @NonNull
+    private final LinearLayout rootView;
+
+    @NonNull
+    public final TextView tvCoins;
+
+    @NonNull
+    public static CoinsBubbleLayoutBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @NonNull
+    public static CoinsBubbleLayoutBinding bind(@NonNull View view) {
+        int i10 = R.id.f41616j;
+        ImageView imageView = (ImageView) ViewBindings.m12628a(i10, view);
+        if (imageView != null) {
+            i10 = R.id.f41631y;
+            TextView textView = (TextView) ViewBindings.m12628a(i10, view);
+            if (textView != null) {
+                return new CoinsBubbleLayoutBinding((LinearLayout) view, imageView, textView);
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+
+    @NonNull
+    public static CoinsBubbleLayoutBinding inflate(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(R.layout.f41644d, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    public LinearLayout getRoot() {
+        return this.rootView;
+    }
+
+    private CoinsBubbleLayoutBinding(@NonNull LinearLayout linearLayout, @NonNull ImageView imageView, @NonNull TextView textView) {
+        this.rootView = linearLayout;
+        this.ivIcon = imageView;
+        this.tvCoins = textView;
+    }
+}

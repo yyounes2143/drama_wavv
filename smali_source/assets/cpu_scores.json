@@ -1,0 +1,2525 @@
+{
+  "_metadata": {
+    "version": "1.4",
+    "lastUpdated": "2026-05-25",
+    "totalCpus": 260,
+    "_comment": "补充cpu"
+  },
+  "cpus": [
+    {
+      "consumerName": "Exynos 2600",
+      "systemName": "Samsung Exynos 2600",
+      "brand": "SAMSUNG",
+      "score": 255,
+      "keywords": [
+        "s5e9965",
+        "Exynos 2600",
+        "Samsung Exynos 2600"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 9500",
+      "systemName": "Mediatek MT6993",
+      "brand": "MEDIATEK",
+      "score": 250,
+      "keywords": [
+        "MT6993"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8 Elite",
+      "systemName": "Qualcomm SM8850",
+      "brand": "高通（Qualcomm）",
+      "score": 249.6,
+      "keywords": [
+        "SM8850"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8 Elite",
+      "systemName": "Qualcomm SM8750",
+      "brand": "高通（Qualcomm）",
+      "score": 249.4,
+      "keywords": [
+        "SM8750"
+      ]
+    },
+    {
+      "consumerName": "Tensor G5",
+      "systemName": "Google Tensor G5",
+      "brand": "Google",
+      "score": 249,
+      "keywords": [
+        "Tensor G5"
+      ]
+    },
+    {
+      "consumerName": "玄戒 O1",
+      "systemName": "Xiaomi Xuanjie O1",
+      "brand": "小米（Xiaomi）",
+      "score": 236.9,
+      "keywords": [
+        "Xuanjie O1",
+        "Xuanjie"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 9400",
+      "systemName": "Mediatek MT6991",
+      "brand": "MEDIATEK",
+      "score": 228.2,
+      "keywords": [
+        "MT6991"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8s Gen4",
+      "systemName": "Qualcomm SM8735",
+      "brand": "高通（Qualcomm）",
+      "score": 220,
+      "keywords": [
+        "SM8735",
+        "8s Gen4"
+      ]
+    },
+    {
+      "consumerName": "Exynos 2500",
+      "systemName": "Samsung Exynos 2500",
+      "brand": "SAMSUNG",
+      "score": 210,
+      "keywords": [
+        "s5e9955",
+        "Exynos 2500",
+        "Samsung Exynos 2500"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 9300",
+      "systemName": "Mediatek MT6990",
+      "brand": "MEDIATEK",
+      "score": 204.5,
+      "keywords": [
+        "MT6990",
+        "MT6989"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8 Gen3",
+      "systemName": "Qualcomm SM8650",
+      "brand": "高通（Qualcomm）",
+      "score": 196.1,
+      "keywords": [
+        "SM8650",
+        "8 Gen3"
+      ]
+    },
+    {
+      "consumerName": "Exynos 2400",
+      "systemName": "Samsung Exynos 2400",
+      "brand": "SAMSUNG",
+      "score": 186.6,
+      "keywords": [
+        "s5e9945",
+        "Exynos 2400",
+        "Samsung Exynos 2400"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9030",
+      "systemName": "HUAWEI Kirin 9030",
+      "brand": "华为（HUAWEI）",
+      "score": 185,
+      "keywords": [
+        "Kirin 9030"
+      ]
+    },
+    {
+      "consumerName": "MT8798",
+      "systemName": "Mediatek MT8798",
+      "brand": "MEDIATEK",
+      "score": 175,
+      "keywords": [
+        "MT8798"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 8400",
+      "systemName": "Mediatek MT6898",
+      "brand": "MEDIATEK",
+      "score": 172.8,
+      "keywords": [
+        "MT6898",
+        "mt6899"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8 Gen2",
+      "systemName": "Qualcomm SM8550",
+      "brand": "高通（Qualcomm）",
+      "score": 158.7,
+      "keywords": [
+        "SM8550",
+        "8 Gen2"
+      ]
+    },
+    {
+      "consumerName": "Exynos 1680",
+      "systemName": "Samsung Exynos 1680",
+      "brand": "SAMSUNG",
+      "score": 154,
+      "keywords": [
+        "s5e8865",
+        "Exynos 1680",
+        "Samsung Exynos 1680"
+      ]
+    },
+    {
+      "consumerName": "Tensor G4",
+      "systemName": "Google Tensor G4",
+      "brand": "Google",
+      "score": 149,
+      "keywords": [
+        "Tensor G4"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8s Gen3",
+      "systemName": "Qualcomm SM8635",
+      "brand": "高通（Qualcomm）",
+      "score": 148.4,
+      "keywords": [
+        "SM8635",
+        "8s Gen3"
+      ]
+    },
+    {
+      "consumerName": "Tensor G3",
+      "systemName": "Google Tensor G3",
+      "brand": "Google",
+      "score": 148,
+      "keywords": [
+        "Tensor G3"
+      ]
+    },
+    {
+      "consumerName": "Tensor G2",
+      "systemName": "Google Tensor G2",
+      "brand": "Google",
+      "score": 147,
+      "keywords": [
+        "GS201",
+        "Tensor G2"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 9200+",
+      "systemName": "Mediatek MT6985 Plus",
+      "brand": "MEDIATEK",
+      "score": 146.8,
+      "keywords": [
+        "MT6985"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 7+ Gen3",
+      "systemName": "Qualcomm SM7675",
+      "brand": "高通（Qualcomm）",
+      "score": 146.2,
+      "keywords": [
+        "SM7675",
+        "7+ Gen3"
+      ]
+    },
+    {
+      "consumerName": "Kirin T92",
+      "systemName": "HUAWEI Kirin T92",
+      "brand": "华为（HUAWEI）",
+      "score": 145.1,
+      "keywords": [
+        "Kirin T92"
+      ]
+    },
+    {
+      "consumerName": "MT8792",
+      "systemName": "Mediatek MT8792",
+      "brand": "MEDIATEK",
+      "score": 145,
+      "keywords": [
+        "MT8792"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9020",
+      "systemName": "HUAWEI Kirin 9020",
+      "brand": "华为（HUAWEI）",
+      "score": 142,
+      "keywords": [
+        "Kirin 9020"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 9200",
+      "systemName": "Mediatek MT6985",
+      "brand": "MEDIATEK",
+      "score": 139.9,
+      "keywords": [
+        "MT6985"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 9000",
+      "systemName": "Mediatek MT6983",
+      "brand": "MEDIATEK",
+      "score": 138.1,
+      "keywords": [
+        "MT6983"
+      ]
+    },
+    {
+      "consumerName": "Exynos 1580",
+      "systemName": "Samsung Exynos 1580",
+      "brand": "SAMSUNG",
+      "score": 138,
+      "keywords": [
+        "s5e8855",
+        "Exynos 1580",
+        "Samsung Exynos 1580"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 8300Ultra",
+      "systemName": "Mediatek MT6896 Ultra",
+      "brand": "MEDIATEK",
+      "score": 137.4,
+      "keywords": [
+        "MT6897",
+        "MT6896"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8+ Gen1",
+      "systemName": "Qualcomm SM8350-AB",
+      "brand": "高通（Qualcomm）",
+      "score": 131.4,
+      "keywords": [
+        "SM8350",
+        "8+ Gen1"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 7 Gen4",
+      "systemName": "Qualcomm SM7750",
+      "brand": "高通（Qualcomm）",
+      "score": 131,
+      "keywords": [
+        "SM7750",
+        "7 Gen4"
+      ]
+    },
+    {
+      "consumerName": "联发科 MT8797",
+      "systemName": "Mediatek MT8797",
+      "brand": "MEDIATEK",
+      "score": 127,
+      "keywords": [
+        "MT8797"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9010",
+      "systemName": "HUAWEI Kirin 9010",
+      "brand": "华为（HUAWEI）",
+      "score": 126.5,
+      "keywords": [
+        "Kirin 9010"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 7+ Gen2",
+      "systemName": "Qualcomm SM7475",
+      "brand": "高通（Qualcomm）",
+      "score": 125.1,
+      "keywords": [
+        "SM7475",
+        "7+ Gen2"
+      ]
+    },
+    {
+      "consumerName": "Google Tensor",
+      "systemName": "Google Tensor",
+      "brand": "Google",
+      "score": 122,
+      "keywords": [
+        "Google Tensor"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 8 Gen1",
+      "systemName": "Qualcomm SM8450",
+      "brand": "高通（Qualcomm）",
+      "score": 120.7,
+      "keywords": [
+        "SM8475",
+        "SM8450",
+        "8 Gen1"
+      ]
+    },
+    {
+      "consumerName": "Exynos 2200",
+      "systemName": "Samsung Exynos 2200",
+      "brand": "SAMSUNG",
+      "score": 117.8,
+      "keywords": [
+        "s5e9925",
+        "Exynos 2200",
+        "Samsung Exynos 2200"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 7 Gen3",
+      "systemName": "Qualcomm SM7550",
+      "brand": "高通（Qualcomm）",
+      "score": 117.5,
+      "keywords": [
+        "SM7530",
+        "SM7550",
+        "7 Gen3"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 7s Gen3",
+      "systemName": "Qualcomm SM7635",
+      "brand": "高通（Qualcomm）",
+      "score": 117,
+      "keywords": [
+        "SM7635",
+        "7s Gen3"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9000S",
+      "systemName": "HUAWEI Kirin 9000S",
+      "brand": "华为（HUAWEI）",
+      "score": 116.4,
+      "keywords": [
+        "Kirin 9000S"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 8200",
+      "systemName": "Mediatek MT6892",
+      "brand": "MEDIATEK",
+      "score": 116.4,
+      "keywords": [
+        "MT6892"
+      ]
+    },
+    {
+      "consumerName": "MT8789",
+      "systemName": "Mediatek MT8789",
+      "brand": "MEDIATEK",
+      "score": 115,
+      "keywords": [
+        "MT8789"
+      ]
+    },
+    {
+      "consumerName": "Exynos 1480",
+      "systemName": "Samsung Exynos 1480",
+      "brand": "SAMSUNG",
+      "score": 115,
+      "keywords": [
+        "s5e8845",
+        "Exynos 1480",
+        "Samsung Exynos 1480"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 888+",
+      "systemName": "Qualcomm SM8350+",
+      "brand": "高通（Qualcomm）",
+      "score": 114.5,
+      "keywords": [
+        "SM8350+",
+        "888+"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 888",
+      "systemName": "Qualcomm SM8350",
+      "brand": "高通（Qualcomm）",
+      "score": 114.4,
+      "keywords": [
+        "SM8350",
+        "SM8325"
+      ]
+    },
+    {
+      "consumerName": "Exynos 2100",
+      "systemName": "Samsung Exynos 2100",
+      "brand": "SAMSUNG",
+      "score": 113.5,
+      "keywords": [
+        "Exynos 2100",
+        "Samsung Exynos 2100"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc. Yupik",
+      "systemName": "Qualcomm Yupik",
+      "brand": "高通（Qualcomm）",
+      "score": 113,
+      "keywords": [
+        "PM7250B",
+        "Yupik"
+      ]
+    },
+    {
+      "consumerName": "Kirin 8020",
+      "systemName": "HUAWEI Kirin 8020",
+      "brand": "华为（HUAWEI）",
+      "score": 112,
+      "keywords": [
+        "Kirin 8020"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9000",
+      "systemName": "HUAWEI Kirin 9000",
+      "brand": "华为（HUAWEI）",
+      "score": 110.4,
+      "keywords": [
+        "Kirin 9000"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 7100",
+      "systemName": "Mediatek MT6858",
+      "brand": "MEDIATEK",
+      "score": 110,
+      "keywords": [
+        "MT6858"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9000WL",
+      "systemName": "HUAWEI Kirin 9000WL",
+      "brand": "华为（HUAWEI）",
+      "score": 109.8,
+      "keywords": [
+        "Kirin 9000WL"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 7300",
+      "systemName": "Mediatek MT6878",
+      "brand": "MEDIATEK",
+      "score": 109,
+      "keywords": [
+        "MT6878"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 8100",
+      "systemName": "Mediatek MT6891",
+      "brand": "MEDIATEK",
+      "score": 108.9,
+      "keywords": [
+        "MT6891"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9000E",
+      "systemName": "HUAWEI Kirin 9000E",
+      "brand": "华为（HUAWEI）",
+      "score": 107.9,
+      "keywords": [
+        "Kirin 9000E"
+      ]
+    },
+    {
+      "consumerName": "Exynos 1380",
+      "systemName": "Samsung Exynos 1380",
+      "brand": "SAMSUNG",
+      "score": 106,
+      "keywords": [
+        "s5e8835",
+        "Exynos 1380",
+        "Samsung Exynos 1380"
+      ]
+    },
+    {
+      "consumerName": "Exynos 1330",
+      "systemName": "Samsung Exynos 1330",
+      "brand": "SAMSUNG",
+      "score": 105.8,
+      "keywords": [
+        "s5e8535",
+        "Exynos 1330",
+        "Samsung Exynos 1330"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 865+",
+      "systemName": "Qualcomm SM8250-AB",
+      "brand": "高通（Qualcomm）",
+      "score": 103.6,
+      "keywords": [
+        "SM8250-AB",
+        "865+"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 870",
+      "systemName": "Qualcomm SM8250-AC",
+      "brand": "高通（Qualcomm）",
+      "score": 103.6,
+      "keywords": [
+        "SM8250-AC"
+      ]
+    },
+    {
+      "consumerName": "Exynos 1200",
+      "systemName": "Samsung Exynos 1200",
+      "brand": "SAMSUNG",
+      "score": 102.8,
+      "keywords": [
+        "s5e8825",
+        "Exynos 1200",
+        "Samsung Exynos 1200"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 865",
+      "systemName": "Qualcomm SM8250",
+      "brand": "高通（Qualcomm）",
+      "score": 100,
+      "keywords": [
+        "SM8250",
+        "KONA"
+      ]
+    },
+    {
+      "consumerName": "Exynos 1080",
+      "systemName": "Samsung Exynos 1080",
+      "brand": "SAMSUNG",
+      "score": 97.8,
+      "keywords": [
+        "Exynos 1080",
+        "Samsung Exynos 1080"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 1200(8050)",
+      "systemName": "Mediatek MT6895",
+      "brand": "MEDIATEK",
+      "score": 96.3,
+      "keywords": [
+        "MT6895"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9000SL",
+      "systemName": "HUAWEI Kirin 9000SL",
+      "brand": "华为（HUAWEI）",
+      "score": 90.6,
+      "keywords": [
+        "Kirin 9000SL"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 6 gen4",
+      "systemName": "Qualcomm SM6650",
+      "brand": "高通（Qualcomm）",
+      "score": 90,
+      "keywords": [
+        "SM6650"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDM782G",
+      "systemName": "Qualcomm SDM782G",
+      "brand": "高通（Qualcomm）",
+      "score": 89.1,
+      "keywords": [
+        "SDM782G",
+        "SDM778G"
+      ]
+    },
+    {
+      "consumerName": "Exynos 990",
+      "systemName": "Samsung Exynos 990",
+      "brand": "SAMSUNG",
+      "score": 89,
+      "keywords": [
+        "Exynos 990",
+        "Samsung Exynos 990"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 7s Gen2",
+      "systemName": "Qualcomm SM7425",
+      "brand": "高通（Qualcomm）",
+      "score": 88.7,
+      "keywords": [
+        "SM7425",
+        "SM7435",
+        "7s Gen2"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 1100",
+      "systemName": "Mediatek MT6893",
+      "brand": "MEDIATEK",
+      "score": 88.7,
+      "keywords": [
+        "MT6893"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 6s gen4",
+      "systemName": "Qualcomm SM6435",
+      "brand": "高通（Qualcomm）",
+      "score": 88,
+      "keywords": [
+        "SM6435"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 778G",
+      "systemName": "Qualcomm SM7325",
+      "brand": "高通（Qualcomm）",
+      "score": 87.5,
+      "keywords": [
+        "SM7325",
+        "778G"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 780G",
+      "systemName": "Qualcomm SM7350",
+      "brand": "高通（Qualcomm）",
+      "score": 87.5,
+      "keywords": [
+        "SM7350",
+        "780G"
+      ]
+    },
+    {
+      "consumerName": "微软SQ1",
+      "systemName": "Microsoft SQ1",
+      "brand": "Microsoft",
+      "score": 87.4,
+      "keywords": [
+        "SQ1",
+        "Microsoft SQ1"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 782G",
+      "systemName": "Qualcomm SM7325-AC",
+      "brand": "高通（Qualcomm）",
+      "score": 87.2,
+      "keywords": [
+        "SM7325"
+      ]
+    },
+    {
+      "consumerName": "迅鲲 1300T",
+      "systemName": "Mediatek Kompanio 1300T",
+      "brand": "MEDIATEK",
+      "score": 87.2,
+      "keywords": [
+        "Kompanio 1300T",
+        "1300T"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 1000+",
+      "systemName": "Mediatek MT6889 Plus",
+      "brand": "MEDIATEK",
+      "score": 86.8,
+      "keywords": [
+        "MT6889"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 855+",
+      "systemName": "Qualcomm SM8150+",
+      "brand": "高通（Qualcomm）",
+      "score": 85.6,
+      "keywords": [
+        "SM8150+",
+        "855+"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 860",
+      "systemName": "Qualcomm SM8150-AC",
+      "brand": "高通（Qualcomm）",
+      "score": 85.6,
+      "keywords": [
+        "SM8150-AC"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 855",
+      "systemName": "Qualcomm SM8150",
+      "brand": "高通（Qualcomm）",
+      "score": 85.4,
+      "keywords": [
+        "SM8150"
+      ]
+    },
+    {
+      "consumerName": "Kirin 9000WM",
+      "systemName": "HUAWEI Kirin 9000WM",
+      "brand": "华为（HUAWEI）",
+      "score": 83.5,
+      "keywords": [
+        "Kirin 9000WM"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 7 Gen1",
+      "systemName": "Qualcomm SM7450",
+      "brand": "高通（Qualcomm）",
+      "score": 82.4,
+      "keywords": [
+        "SM7450",
+        "7 Gen1"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 7200",
+      "systemName": "Mediatek MT6886",
+      "brand": "MEDIATEK",
+      "score": 81.8,
+      "keywords": [
+        "MT6886"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 6 Gen1",
+      "systemName": "Qualcomm SM6450",
+      "brand": "高通（Qualcomm）",
+      "score": 81.2,
+      "keywords": [
+        "SM6475",
+        "SM6450",
+        "6 Gen1"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T820",
+      "systemName": "Unisoc T820",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 81,
+      "keywords": [
+        "Unisoc T820"
+      ]
+    },
+    {
+      "consumerName": "Kirin 990",
+      "systemName": "HUAWEI Kirin 990",
+      "brand": "华为（HUAWEI）",
+      "score": 80,
+      "keywords": [
+        "Kirin 990"
+      ]
+    },
+    {
+      "consumerName": "Kirin 8000",
+      "systemName": "HUAWEI Kirin 8000",
+      "brand": "华为（HUAWEI）",
+      "score": 80,
+      "keywords": [
+        "Kirin 8000"
+      ]
+    },
+    {
+      "consumerName": "Kirin 980",
+      "systemName": "HUAWEI Kirin 980",
+      "brand": "华为（HUAWEI）",
+      "score": 77.3,
+      "keywords": [
+        "Kirin 980"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 1050",
+      "systemName": "Mediatek MT6879",
+      "brand": "MEDIATEK",
+      "score": 77.2,
+      "keywords": [
+        "MT6879"
+      ]
+    },
+    {
+      "consumerName": "Kirin 985",
+      "systemName": "HUAWEI Kirin 985",
+      "brand": "华为（HUAWEI）",
+      "score": 76.5,
+      "keywords": [
+        "Kirin 985"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 820",
+      "systemName": "Mediatek MT6875",
+      "brand": "MEDIATEK",
+      "score": 75.8,
+      "keywords": [
+        "MT6875"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 1000L",
+      "systemName": "Mediatek MT6889L",
+      "brand": "MEDIATEK",
+      "score": 74.4,
+      "keywords": [
+        "MT6889L"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T770",
+      "systemName": "Unisoc T770",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 74.3,
+      "keywords": [
+        "Unisoc T770"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T760",
+      "systemName": "Unisoc T760",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 73.3,
+      "keywords": [
+        "T760",
+        "Unisoc T760"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 1000",
+      "systemName": "Mediatek MT6885",
+      "brand": "MEDIATEK",
+      "score": 73.3,
+      "keywords": [
+        "MT6885"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 1000C",
+      "systemName": "Mediatek MT6883",
+      "brand": "MEDIATEK",
+      "score": 73,
+      "keywords": [
+        "MT6883"
+      ]
+    },
+    {
+      "consumerName": "联发科 MT8791",
+      "systemName": "Mediatek MT8791",
+      "brand": "MEDIATEK",
+      "score": 72.7,
+      "keywords": [
+        "MT8791"
+      ]
+    },
+    {
+      "consumerName": "Kirin 820",
+      "systemName": "HUAWEI Kirin 820",
+      "brand": "华为（HUAWEI）",
+      "score": 72.6,
+      "keywords": [
+        "Kirin 820"
+      ]
+    },
+    {
+      "consumerName": "Mediatek MT8755",
+      "systemName": "Mediatek MT8755",
+      "brand": "MEDIATEK",
+      "score": 72.4,
+      "keywords": [
+        "MT8755"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 920",
+      "systemName": "Mediatek MT6877T",
+      "brand": "MEDIATEK",
+      "score": 71.4,
+      "keywords": [
+        "MT6877T"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 900",
+      "systemName": "Mediatek MT6877",
+      "brand": "MEDIATEK",
+      "score": 71.2,
+      "keywords": [
+        "MT6877"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 4 Gen2",
+      "systemName": "Qualcomm SM4450",
+      "brand": "高通（Qualcomm）",
+      "score": 69.4,
+      "keywords": [
+        "SM4450",
+        "4 Gen2"
+      ]
+    },
+    {
+      "consumerName": "Exynos 9810",
+      "systemName": "Samsung Exynos 9810",
+      "brand": "SAMSUNG",
+      "score": 69,
+      "keywords": [
+        "Exynos 9810",
+        "Samsung Exynos 9810"
+      ]
+    },
+    {
+      "consumerName": "联发科 MT8788",
+      "systemName": "Mediatek MT8788",
+      "brand": "MEDIATEK",
+      "score": 67.5,
+      "keywords": [
+        "MT8788"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 845",
+      "systemName": "Qualcomm SDM845",
+      "brand": "高通（Qualcomm）",
+      "score": 66.7,
+      "keywords": [
+        "SDM845"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 695",
+      "systemName": "Qualcomm SM6375",
+      "brand": "高通（Qualcomm）",
+      "score": 66.4,
+      "keywords": [
+        "SM6350",
+        "SM6375"
+      ]
+    },
+    {
+      "consumerName": "Mediatek MT8771",
+      "systemName": "Mediatek MT8771",
+      "brand": "MEDIATEK",
+      "score": 65.5,
+      "keywords": [
+        "MT8771"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 7025",
+      "systemName": "Mediatek MT6855",
+      "brand": "MEDIATEK",
+      "score": 65,
+      "keywords": [
+        "MT6855"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDM750G",
+      "systemName": "Qualcomm SDM750G",
+      "brand": "高通（Qualcomm）",
+      "score": 64.5,
+      "keywords": [
+        "SDM750G"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum UMS9621",
+      "systemName": "UNISOC UMS9621",
+      "brand": "紫光展锐（UNISOC）",
+      "score": 64,
+      "keywords": [
+        "ums9621"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum UMS9632",
+      "systemName": "UNISOC UMS9632",
+      "brand": "紫光展锐（UNISOC）",
+      "score": 63.5,
+      "keywords": [
+        "ums9632"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 4 Gen1",
+      "systemName": "Qualcomm SM4350",
+      "brand": "高通（Qualcomm）",
+      "score": 63.7,
+      "keywords": [
+        "SM4350",
+        "SM4375",
+        "4 Gen1"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc LAGOON",
+      "systemName": "Qualcomm Technologies, Inc LAGOON",
+      "brand": "高通（Qualcomm）",
+      "score": 63.6,
+      "keywords": [
+        "LAGOON"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc ATOLL-AB",
+      "systemName": "Qualcomm Technologies, Inc ATOLL-AB",
+      "brand": "高通（Qualcomm）",
+      "score": 63.6,
+      "keywords": [
+        "ATOLL-AB"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc KHAJE",
+      "systemName": "Qualcomm Technologies, Inc KHAJE",
+      "brand": "高通（Qualcomm）",
+      "score": 63.5,
+      "keywords": [
+        "KHAJE"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDM765G",
+      "systemName": "Qualcomm SDM765G",
+      "brand": "高通（Qualcomm）",
+      "score": 63.5,
+      "keywords": [
+        "SDM765G",
+        "SDM768G"
+      ]
+    },
+    {
+      "consumerName": "Kirin T90A",
+      "systemName": "HUAWEI Kirin T90A",
+      "brand": "华为（HUAWEI）",
+      "score": 63.5,
+      "keywords": [
+        "Kirin T91",
+        "Kirin T90"
+      ]
+    },
+    {
+      "consumerName": "Exynos 9820",
+      "systemName": "Samsung Exynos 9820",
+      "brand": "SAMSUNG",
+      "score": 63.4,
+      "keywords": [
+        "Exynos 9820",
+        "Samsung Exynos 9820"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 750G",
+      "systemName": "Qualcomm SM7225",
+      "brand": "高通（Qualcomm）",
+      "score": 63.3,
+      "keywords": [
+        "SM7225"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc LITO",
+      "systemName": "Qualcomm Technologies, Inc LITO",
+      "brand": "高通（Qualcomm）",
+      "score": 63,
+      "keywords": [
+        "LITO"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDMMAGPIE",
+      "systemName": "Qualcomm Technologies, Inc SDMMAGPIE",
+      "brand": "高通（Qualcomm）",
+      "score": 63,
+      "keywords": [
+        "SDMMAGPIE"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 800",
+      "systemName": "Mediatek MT6873",
+      "brand": "MEDIATEK",
+      "score": 62.6,
+      "keywords": [
+        "MT6873"
+      ]
+    },
+    {
+      "consumerName": "Exynos 980",
+      "systemName": "Samsung Exynos 980",
+      "brand": "SAMSUNG",
+      "score": 62.6,
+      "keywords": [
+        "Exynos 980",
+        "Samsung Exynos 980"
+      ]
+    },
+    {
+      "consumerName": "Kirin 810",
+      "systemName": "HUAWEI Kirin 810",
+      "brand": "华为（HUAWEI）",
+      "score": 61.9,
+      "keywords": [
+        "Kirin 810"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum UMS9620",
+      "systemName": "UNISOC UMS9620",
+      "brand": "紫光展锐（UNISOC）",
+      "score": 61.5,
+      "keywords": [
+        "ums9620"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SM7150",
+      "systemName": "Qualcomm SM7150",
+      "brand": "高通（Qualcomm）",
+      "score": 61,
+      "keywords": [
+        "SM7150"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 765G",
+      "systemName": "Qualcomm SM7250",
+      "brand": "高通（Qualcomm）",
+      "score": 60.3,
+      "keywords": [
+        "SM7250"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc BENGAL",
+      "systemName": "Qualcomm Technologies, Inc BENGAL",
+      "brand": "高通（Qualcomm）",
+      "score": 60.2,
+      "keywords": [
+        "BENGAL"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc TRINKET",
+      "systemName": "Qualcomm Technologies, Inc TRINKET",
+      "brand": "高通（Qualcomm）",
+      "score": 60.1,
+      "keywords": [
+        "TRINKET"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDMMAGPIEP",
+      "systemName": "Qualcomm Technologies, Inc SDMMAGPIEP",
+      "brand": "高通（Qualcomm）",
+      "score": 60.1,
+      "keywords": [
+        "SDMMAGPIEP"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum UMS9230",
+      "systemName": "UNISOC UMS9230",
+      "brand": "紫光展锐（UNISOC）",
+      "score": 60,
+      "keywords": [
+        "ums9230"
+      ]
+    },
+    {
+      "consumerName": "Exynos 9825",
+      "systemName": "Samsung Exynos 9825",
+      "brand": "SAMSUNG",
+      "score": 60,
+      "keywords": [
+        "Exynos 9825",
+        "Samsung Exynos 9825"
+      ]
+    },
+    {
+      "consumerName": "Mediatek G99",
+      "systemName": "Mediatek MT6789",
+      "brand": "MEDIATEK",
+      "score": 57.7,
+      "keywords": [
+        "MT8781",
+        "mt8786",
+        "MT6789",
+        "G99"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 810(6080)",
+      "systemName": "Mediatek MT6835",
+      "brand": "MEDIATEK",
+      "score": 57,
+      "keywords": [
+        "MT6835"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 800U",
+      "systemName": "Mediatek MT6873V",
+      "brand": "MEDIATEK",
+      "score": 56.5,
+      "keywords": [
+        "MT6873V"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc",
+      "systemName": "Qualcomm Technologies, Inc",
+      "brand": "高通（Qualcomm）",
+      "score": 56,
+      "keywords": []
+    },
+    {
+      "consumerName": "Exynos 850",
+      "systemName": "Samsung Exynos 850",
+      "brand": "SAMSUNG",
+      "score": 55.6,
+      "keywords": [
+        "s5e3830",
+        "Exynos 850",
+        "Samsung Exynos 850"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 4s Gen2",
+      "systemName": "Qualcomm SM4635",
+      "brand": "高通（Qualcomm）",
+      "score": 55,
+      "keywords": [
+        "SM4635",
+        "4s Gen2"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T765",
+      "systemName": "Unisoc T765",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 54.5,
+      "keywords": [
+        "T765",
+        "Unisoc T765"
+      ]
+    },
+    {
+      "consumerName": "曦力 G90T",
+      "systemName": "Mediatek MT6785",
+      "brand": "MEDIATEK",
+      "score": 54.2,
+      "keywords": [
+        "MT6785",
+        "MT6781",
+        "G90T"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 720",
+      "systemName": "Mediatek MT6853",
+      "brand": "MEDIATEK",
+      "score": 54,
+      "keywords": [
+        "MT6853"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 700(6020)",
+      "systemName": "Mediatek MT6833",
+      "brand": "MEDIATEK",
+      "score": 53,
+      "keywords": [
+        "MT6833"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 730G",
+      "systemName": "Qualcomm SDM730G",
+      "brand": "高通（Qualcomm）",
+      "score": 52.1,
+      "keywords": [
+        "SDM730G"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 480",
+      "systemName": "Qualcomm SM4390",
+      "brand": "高通（Qualcomm）",
+      "score": 52,
+      "keywords": [
+        "SM4390"
+      ]
+    },
+    {
+      "consumerName": "Kirin T80",
+      "systemName": "HUAWEI Kirin T80",
+      "brand": "华为（HUAWEI）",
+      "score": 51.5,
+      "keywords": [
+        "Kirin T80",
+        "Kirin T82"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 675",
+      "systemName": "Qualcomm SDM675",
+      "brand": "高通（Qualcomm）",
+      "score": 50.9,
+      "keywords": [
+        "SDM675"
+      ]
+    },
+    {
+      "consumerName": " Qualcomm Technologies, Inc SM7125",
+      "systemName": "Qualcomm SM7125",
+      "brand": "高通（Qualcomm）",
+      "score": 50.8,
+      "keywords": [
+        "SM7125"
+      ]
+    },
+    {
+      "consumerName": "Mediatek Dimensity 720",
+      "systemName": "Mediatek MT6873E",
+      "brand": "MEDIATEK",
+      "score": 50.6,
+      "keywords": [
+        "MT6873E"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDM720G",
+      "systemName": "Qualcomm SDM720G",
+      "brand": "高通（Qualcomm）",
+      "score": 50.3,
+      "keywords": [
+        "SDM720G"
+      ]
+    },
+    {
+      "consumerName": "MT8186",
+      "systemName": "Mediatek MT8186",
+      "brand": "MEDIATEK",
+      "score": 50.1,
+      "keywords": [
+        "MT8186",
+        "MT8188"
+      ]
+    },
+    {
+      "consumerName": "Kirin 970",
+      "systemName": "HUAWEI Kirin 970",
+      "brand": "华为（HUAWEI）",
+      "score": 48.4,
+      "keywords": [
+        "Kirin 970"
+      ]
+    },
+    {
+      "consumerName": "曦力 P90",
+      "systemName": "Mediatek MT6779",
+      "brand": "MEDIATEK",
+      "score": 48.4,
+      "keywords": [
+        "MT6779",
+        "P90"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 835",
+      "systemName": "Qualcomm MSM8998",
+      "brand": "高通（Qualcomm）",
+      "score": 47.9,
+      "keywords": [
+        "MSM8998",
+        "MSM8997"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T740",
+      "systemName": "Unisoc T740",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 47.8,
+      "keywords": [
+        "T740",
+        "Unisoc T740"
+      ]
+    },
+    {
+      "consumerName": "MT8183",
+      "systemName": "Mediatek MT8183",
+      "brand": "MEDIATEK",
+      "score": 47,
+      "keywords": [
+        "MT8183"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 680",
+      "systemName": "Qualcomm SM6225-AA",
+      "brand": "高通（Qualcomm）",
+      "score": 46.8,
+      "keywords": [
+        "SM6225"
+      ]
+    },
+    {
+      "consumerName": "Kirin 960",
+      "systemName": "HUAWEI Kirin 960",
+      "brand": "华为（HUAWEI）",
+      "score": 46.8,
+      "keywords": [
+        "Kirin 960",
+        "hi3660"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDM670",
+      "systemName": "Qualcomm SDM670",
+      "brand": "高通（Qualcomm）",
+      "score": 46,
+      "keywords": [
+        "SDM670"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDM670",
+      "systemName": "Qualcomm SDM670",
+      "brand": "高通（Qualcomm）",
+      "score": 46,
+      "keywords": [
+        "SDM670"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 665",
+      "systemName": "Qualcomm SM6125",
+      "brand": "高通（Qualcomm）",
+      "score": 45.5,
+      "keywords": [
+        "SM6150",
+        "SM6125",
+        "SM6115"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum UMS512",
+      "systemName": "Unisoc UMS512",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 45,
+      "keywords": [
+        "UMS512",
+        "Unisoc UMS512"
+      ]
+    },
+    {
+      "consumerName": "Exynos 9611",
+      "systemName": "Samsung Exynos 9611",
+      "brand": "SAMSUNG",
+      "score": 44.5,
+      "keywords": [
+        "Exynos 9610",
+        "Exynos 9611",
+        "Samsung Exynos 9611"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 710",
+      "systemName": "Qualcomm SDM710",
+      "brand": "高通（Qualcomm）",
+      "score": 44.1,
+      "keywords": [
+        "SDM710",
+        "SDM712"
+      ]
+    },
+    {
+      "consumerName": "Exynos 8895",
+      "systemName": "Samsung Exynos 8895",
+      "brand": "SAMSUNG",
+      "score": 44.1,
+      "keywords": [
+        "Exynos 8895",
+        "Samsung Exynos 8895"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T700",
+      "systemName": "Unisoc T700",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 44,
+      "keywords": [
+        "T700",
+        "Unisoc T700"
+      ]
+    },
+    {
+      "consumerName": "Kirin 955",
+      "systemName": "HUAWEI Kirin 955",
+      "brand": "华为（HUAWEI）",
+      "score": 43,
+      "keywords": [
+        "Kirin 955",
+        "hi3650"
+      ]
+    },
+    {
+      "consumerName": "Exynos 8890",
+      "systemName": "Samsung Exynos 8890",
+      "brand": "SAMSUNG",
+      "score": 42.9,
+      "keywords": [
+        "Exynos 8890",
+        "Samsung Exynos 8890"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T615",
+      "systemName": "Unisoc T615",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 42.5,
+      "keywords": [
+        "T615",
+        "Unisoc T615"
+      ]
+    },
+    {
+      "consumerName": "Kirin 950",
+      "systemName": "HUAWEI Kirin 950",
+      "brand": "华为（HUAWEI）",
+      "score": 42.2,
+      "keywords": [
+        "Kirin 950"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 630",
+      "systemName": "Qualcomm SDM630",
+      "brand": "高通（Qualcomm）",
+      "score": 42.0,
+      "keywords": [
+        "SDM630"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 660",
+      "systemName": "Qualcomm SDM660",
+      "brand": "高通（Qualcomm）",
+      "score": 42,
+      "keywords": [
+        "SDM660"
+      ]
+    },
+    {
+      "consumerName": "曦力 P70",
+      "systemName": "Mediatek MT6771",
+      "brand": "MEDIATEK",
+      "score": 41,
+      "keywords": [
+        "MT6771",
+        "P70"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDA660",
+      "systemName": "Qualcomm SDA660",
+      "brand": "高通（Qualcomm）",
+      "score": 41,
+      "keywords": [
+        "SDA660"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T616",
+      "systemName": "Unisoc T616",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 40.9,
+      "keywords": [
+        "T616",
+        "Unisoc T616"
+      ]
+    },
+    {
+      "consumerName": "曦力 X30",
+      "systemName": "Mediatek MT6799",
+      "brand": "MEDIATEK",
+      "score": 40.6,
+      "keywords": [
+        "MT6799"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T618",
+      "systemName": "Unisoc T618",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 40.6,
+      "keywords": [
+        "T618",
+        "Unisoc T618",
+        "Unisoc T619"
+      ]
+    },
+    {
+      "consumerName": "曦力 G85",
+      "systemName": "Mediatek MT6769",
+      "brand": "MEDIATEK",
+      "score": 40.5,
+      "keywords": [
+        "MT6769",
+        "MT6768"
+      ]
+    },
+    {
+      "consumerName": "Exynos 7904",
+      "systemName": "Samsung Exynos 7904",
+      "brand": "三星（Samsung）",
+      "score": 40.5,
+      "keywords": [
+        "Exynos 7904"
+      ]
+    },
+    {
+      "consumerName": "Kirin 710F",
+      "systemName": "HUAWEI Kirin 710F",
+      "brand": "华为（HUAWEI）",
+      "score": 40.3,
+      "keywords": [
+        "Kirin 710F",
+        "Kirin 710"
+      ]
+    },
+    {
+      "consumerName": "Octa Core",
+      "systemName": "HUAWEI Octa Core",
+      "brand": "华为（HUAWEI）",
+      "score": 40.2,
+      "keywords": [
+        "Octa Core",
+        "HI6260"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 665",
+      "systemName": "Qualcomm SDM665",
+      "brand": "高通（Qualcomm）",
+      "score": 40.1,
+      "keywords": [
+        "SDM665"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T612",
+      "systemName": "Unisoc T612",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 40.1,
+      "keywords": [
+        "T612",
+        "Unisoc T612"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T610",
+      "systemName": "Unisoc T610",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 40.1,
+      "keywords": [
+        "T610",
+        "Unisoc T610"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T606",
+      "systemName": "Unisoc T606",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 40,
+      "keywords": [
+        "T606",
+        "Unisoc T606"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 662",
+      "systemName": "Qualcomm SDM662",
+      "brand": "高通（Qualcomm）",
+      "score": 39.4,
+      "keywords": [
+        "SDM662"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 632",
+      "systemName": "Qualcomm SDM632",
+      "brand": "高通（Qualcomm）",
+      "score": 38.5,
+      "keywords": [
+        "SDM632"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 821",
+      "systemName": "Qualcomm MSM8996 Pro",
+      "brand": "高通（Qualcomm）",
+      "score": 35.9,
+      "keywords": [
+        "MSM8996"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 450",
+      "systemName": "Qualcomm SDM450",
+      "brand": "高通（Qualcomm）",
+      "score": 35.6,
+      "keywords": [
+        "SDM450"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 460",
+      "systemName": "Qualcomm SM4250",
+      "brand": "高通（Qualcomm）",
+      "score": 35.0,
+      "keywords": [
+        "SM4250"
+      ]
+    },
+    {
+      "consumerName": "MT8176",
+      "systemName": "Mediatek MT8176",
+      "brand": "MEDIATEK",
+      "score": 35,
+      "keywords": [
+        "MT8176",
+        "MT8175"
+      ]
+    },
+    {
+      "consumerName": "MT6969",
+      "systemName": "Mediatek MT6969",
+      "brand": "MEDIATEK",
+      "score": 35,
+      "keywords": [
+        "MT6969"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 636",
+      "systemName": "Qualcomm SDM636",
+      "brand": "高通（Qualcomm）",
+      "score": 34.2,
+      "keywords": [
+        "SDM636"
+      ]
+    },
+    {
+      "consumerName": "曦力 X20",
+      "systemName": "Mediatek MT6797",
+      "brand": "MEDIATEK",
+      "score": 33.9,
+      "keywords": [
+        "MT6797"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 430",
+      "systemName": "Qualcomm MSM8937",
+      "brand": "高通（Qualcomm）",
+      "score": 32.1,
+      "keywords": [
+        "MSM8937",
+        "MSM8939"
+      ]
+    },
+    {
+      "consumerName": "Tegra X1",
+      "systemName": "NVIDIA Tegra X1",
+      "brand": "NVIDIA",
+      "score": 32,
+      "keywords": [
+        "Tegra X1",
+        "NVIDIA Tegra X1"
+      ]
+    },
+    {
+      "consumerName": "Exynos 7885",
+      "systemName": "Samsung Exynos 7885",
+      "brand": "三星（Samsung）",
+      "score": 32,
+      "keywords": [
+        "Exynos 7885"
+      ]
+    },
+    {
+      "consumerName": "Exynos 7884",
+      "systemName": "Samsung Exynos 7884",
+      "brand": "三星（Samsung）",
+      "score": 31.9,
+      "keywords": [
+        "Exynos 7884"
+      ]
+    },
+    {
+      "consumerName": "Exynos 7880",
+      "systemName": "Samsung Exynos 7880",
+      "brand": "三星（Samsung）",
+      "score": 31.8,
+      "keywords": [
+        "Exynos 7880"
+      ]
+    },
+    {
+      "consumerName": "Exynos 7870",
+      "systemName": "Samsung Exynos 7870",
+      "brand": "三星（Samsung）",
+      "score": 31.7,
+      "keywords": [
+        "Exynos 7870"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum UMS312",
+      "systemName": "Unisoc UMS312",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 30,
+      "keywords": [
+        "UMS312",
+        "Unisoc UMS312"
+      ]
+    },
+    {
+      "consumerName": "Exynos 7570",
+      "systemName": "Samsung Exynos 7570",
+      "brand": "SAMSUNG",
+      "score": 30,
+      "keywords": [
+        "Exynos 7570",
+        "Exynos 7580",
+        "Samsung Exynos 7570"
+      ]
+    },
+    {
+      "consumerName": "Exynos 7420",
+      "systemName": "Samsung Exynos 7420",
+      "brand": "SAMSUNG",
+      "score": 29.6,
+      "keywords": [
+        "Exynos 7420",
+        "Samsung Exynos 7420"
+      ]
+    },
+
+    {
+      "consumerName": "Snapdragon 625",
+      "systemName": "Qualcomm MSM8953",
+      "brand": "高通（Qualcomm）",
+      "score": 29.0,
+      "keywords": [
+        "MSM8953",
+        "MSM8952"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 625",
+      "systemName": "Qualcomm SDM625",
+      "brand": "高通（Qualcomm）",
+      "score": 29,
+      "keywords": [
+        "SDM625"
+      ]
+    },
+    {
+      "consumerName": "Kirin 659",
+      "systemName": "HUAWEI Kirin 659",
+      "brand": "华为（HUAWEI）",
+      "score": 29,
+      "keywords": [
+        "Kirin 659",
+        "hi6250"
+      ]
+    },
+    {
+      "consumerName": "曦力 P35变体",
+      "systemName": "Mediatek MT6765V/CB",
+      "brand": "MEDIATEK",
+      "score": 28.5,
+      "keywords": [
+        "MT6765V/CB",
+        "MT6765V",
+        "MT6765",
+        "P35"
+      ]
+    },
+    {
+      "consumerName": "曦力 P35",
+      "systemName": "Mediatek MT6765",
+      "brand": "MEDIATEK",
+      "score": 28.4,
+      "keywords": [
+        "MT6765",
+        "P35"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 425",
+      "systemName": "Qualcomm MSM8917",
+      "brand": "高通（Qualcomm）",
+      "score": 28.3,
+      "keywords": [
+        "MSM8920",
+        "MSM8917",
+        "MSM8916"
+      ]
+    },
+    {
+      "consumerName": "S922X",
+      "systemName": "Amlogic S922X",
+      "brand": "Amlogic",
+      "score": 26.9,
+      "keywords": [
+        "S922X",
+        "Amlogic S922X"
+      ]
+    },
+    {
+      "consumerName": "Tegra K1(64bit)",
+      "systemName": "NVIDIA Tegra K1 (64bit)",
+      "brand": "NVIDIA",
+      "score": 25.3,
+      "keywords": [
+        "Tegra K1",
+        "NVIDIA Tegra K1",
+        "64bit"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDM460",
+      "systemName": "Qualcomm SDM460",
+      "brand": "高通（Qualcomm）",
+      "score": 25,
+      "keywords": [
+        "SDM460"
+      ]
+    },
+    {
+      "consumerName": "澎湃 S1",
+      "systemName": "Xiaomi Surge S1",
+      "brand": "小米（Xiaomi）",
+      "score": 23.3,
+      "keywords": [
+        "Surge S1",
+        "澎湃",
+        "S1"
+      ]
+    },
+    {
+      "consumerName": "MT8127",
+      "systemName": "Mediatek MT8127",
+      "brand": "MEDIATEK",
+      "score": 25,
+      "keywords": [
+        "MT8127",
+        "MT8161",
+        "MT8163",
+        "MT8166",
+        "MT8167",
+        "MT8168",
+        "MT8169"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum SC9863A",
+      "systemName": "Unisoc SC9863A",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 22.9,
+      "keywords": [
+        "Unisoc L3",
+        "Unisoc L3R",
+        "SC9863",
+        "S9863"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 439",
+      "systemName": "Qualcomm SDM439",
+      "brand": "高通（Qualcomm）",
+      "score": 22.8,
+      "keywords": [
+        "SDM439"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 430",
+      "systemName": "Qualcomm SDM430",
+      "brand": "高通（Qualcomm）",
+      "score": 21.9,
+      "keywords": [
+        "SDM430",
+        "SDM429"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 810",
+      "systemName": "Qualcomm MSM8994",
+      "brand": "高通（Qualcomm）",
+      "score": 21.8,
+      "keywords": [
+        "MSM8994"
+      ]
+    },
+    {
+      "consumerName": "BCM2711(2GHz)",
+      "systemName": "Broadcom BCM2711 (2GHz)",
+      "brand": "BROADCOM",
+      "score": 21.7,
+      "keywords": [
+        "BCM2711",
+        "Broadcom BCM2711",
+        "2GHz"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 808",
+      "systemName": "Qualcomm MSM8992",
+      "brand": "高通（Qualcomm）",
+      "score": 20.4,
+      "keywords": [
+        "MSM8992"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc 450",
+      "systemName": "Qualcomm Inc 450",
+      "brand": "高通（Qualcomm）",
+      "score": 20.3,
+      "keywords": [
+        "Inc 450",
+        "QUALCOMM OCTA-CORE 450"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc MSM8976",
+      "systemName": "Qualcomm MSM8976",
+      "brand": "高通（Qualcomm）",
+      "score": 20.3,
+      "keywords": [
+        "MSM8976"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc APQ8076",
+      "systemName": "Qualcomm APQ8076",
+      "brand": "高通（Qualcomm）",
+      "score": 20.2,
+      "keywords": [
+        "APQ8076",
+        "APQ8053"
+      ]
+    },
+    {
+      "consumerName": "Kirin 935",
+      "systemName": "HUAWEI Kirin 935",
+      "brand": "华为（HUAWEI）",
+      "score": 20,
+      "keywords": [
+        "Kirin 935"
+      ]
+    },
+    {
+      "consumerName": "Snapdragon 800",
+      "systemName": "Qualcomm MSM8974",
+      "brand": "高通（Qualcomm）",
+      "score": 20,
+      "keywords": [
+        "MSM8974"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc MSM8956",
+      "systemName": "Qualcomm MSM8956",
+      "brand": "高通（Qualcomm）",
+      "score": 18.4,
+      "keywords": [
+        "MSM8956",
+        "MSM8952"
+      ]
+    },
+    {
+      "consumerName": "Tegra K1(32bit)",
+      "systemName": "NVIDIA Tegra K1 (32bit)",
+      "brand": "NVIDIA",
+      "score": 18.3,
+      "keywords": [
+        "Tegra K1",
+        "NVIDIA Tegra K1"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T603",
+      "systemName": "Spreadtrum T603",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 18.2,
+      "keywords": [
+        "T603"
+      ]
+    },
+    {
+      "consumerName": "BCM2711(树莓派4B)",
+      "systemName": "Broadcom BCM2711 (树莓派4B)",
+      "brand": "BROADCOM",
+      "score": 18.2,
+      "keywords": [
+        "BCM2711",
+        "Broadcom BCM2711"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc SDA450",
+      "systemName": "Qualcomm SDA450",
+      "brand": "高通（Qualcomm）",
+      "score": 18.2,
+      "keywords": [
+        "SDA450"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc MSM8940",
+      "systemName": "Qualcomm MSM8940",
+      "brand": "高通（Qualcomm）",
+      "score": 18,
+      "keywords": [
+        "MSM8940"
+      ]
+    },
+    {
+      "consumerName": "EXYNOS5433",
+      "systemName": "Samsung EXYNOS5433",
+      "brand": "SAMSUNG",
+      "score": 18,
+      "keywords": [
+        "EXYNOS5433",
+        "EXYNOS5430",
+        "EXYNOS5420"
+      ]
+    },
+    {
+      "consumerName": "Rockchip RK3566 RK817 TABLET LP4X Board",
+      "systemName": "Rockchip RK3566 RK817 TABLET LP4X Board",
+      "brand": "Rockchip",
+      "score": 15.5,
+      "keywords": [
+        "RK3566",
+        "RK817"
+      ]
+    },
+    {
+      "consumerName": "Tegra X1(NS底座)",
+      "systemName": "NVIDIA Tegra X1 (NS底座)",
+      "brand": "NVIDIA",
+      "score": 15.3,
+      "keywords": [
+        "Tegra X1",
+        "NVIDIA Tegra X1"
+      ]
+    },
+    {
+      "consumerName": "Tegra X1(NS掌机)",
+      "systemName": "NVIDIA Tegra X1 (NS掌机)",
+      "brand": "NVIDIA",
+      "score": 15.2,
+      "keywords": [
+        "Tegra X1",
+        "NVIDIA Tegra X1"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum T310",
+      "systemName": "Unisoc T310",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 15,
+      "keywords": [
+        "T310",
+        "Unisoc T310"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum SC7731e",
+      "systemName": "Unisoc SC7731e",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 13,
+      "keywords": [
+        "Unisoc SC7731e",
+        "SC7731e"
+      ]
+    },
+    {
+      "consumerName": "Rockchip rk3326 863 rkisp1 board",
+      "systemName": "Rockchip rk3326 863 rkisp1 board",
+      "brand": "Rockchip",
+      "score": 11,
+      "keywords": [
+        "rk3326"
+      ]
+    },
+    {
+      "consumerName": "Rockchip rk30board",
+      "systemName": "Rockchip rk30board",
+      "brand": "Rockchip",
+      "score": 7,
+      "keywords": [
+        "rk30board"
+      ]
+    },
+    {
+      "consumerName": "曦力 P35/G35",
+      "systemName": "Mediatek MT6765X",
+      "brand": "MEDIATEK",
+      "score": 28.5,
+      "keywords": [
+        "MT6765X",
+        "P35",
+        "G35"
+      ]
+    },
+    {
+      "consumerName": "MT8765",
+      "systemName": "Mediatek MT8765",
+      "brand": "MEDIATEK",
+      "score": 25,
+      "keywords": [
+        "MT8765",
+        "MT8766",
+        "MT8768"
+      ]
+    },
+    {
+      "consumerName": "MT8735",
+      "systemName": "Mediatek MT8735",
+      "brand": "MEDIATEK",
+      "score": 15,
+      "keywords": [
+        "MT8735",
+        "MT8321"
+      ]
+    },
+    {
+      "consumerName": "入门四核",
+      "systemName": "Mediatek MT6739WW",
+      "brand": "MEDIATEK",
+      "score": 12.1,
+      "keywords": [
+        "MT6739WW",
+        "MT6739"
+      ]
+    },
+    {
+      "consumerName": "曦力 A22",
+      "systemName": "Mediatek MT6761",
+      "brand": "MEDIATEK",
+      "score": 14.2,
+      "keywords": [
+        "MT6761",
+        "A22"
+      ]
+    },
+    {
+      "consumerName": "曦力 P22",
+      "systemName": "Mediatek MT6762",
+      "brand": "MEDIATEK",
+      "score": 18.5,
+      "keywords": [
+        "MT6762",
+        "MT6763",
+        "P22"
+      ]
+    },
+    {
+      "consumerName": "曦力 P15",
+      "systemName": "Mediatek MT6750",
+      "brand": "MEDIATEK",
+      "score": 16.5,
+      "keywords": [
+        "MT6757",
+        "MT6753",
+        "MT6750",
+        "MT6755"
+      ]
+    },
+    {
+      "consumerName": "瓴盛科技 JR510",
+      "systemName": "JLQ JR510",
+      "brand": "JLQ",
+      "score": 16.4,
+      "keywords": [
+        "JLQ JR510",
+        "JR510"
+      ]
+    },
+    {
+      "consumerName": "Generic DT based system",
+      "systemName": "Generic DT",
+      "brand": "Generic DT",
+      "score": 16,
+      "keywords": [
+        "Generic DT "
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc QM215",
+      "systemName": "Qualcomm QM215",
+      "brand": "高通（Qualcomm）",
+      "score": 15,
+      "keywords": [
+        "QM215"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc MSM8909",
+      "systemName": "Qualcomm MSM8909",
+      "brand": "高通（Qualcomm）",
+      "score": 15,
+      "keywords": [
+        "MSM8909"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc APQ8096",
+      "systemName": "Qualcomm APQ8096",
+      "brand": "高通（Qualcomm）",
+      "score": 15,
+      "keywords": [
+        "APQ8096",
+        "APQ8084"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc APQ8016",
+      "systemName": "Qualcomm APQ8016",
+      "brand": "高通（Qualcomm）",
+      "score": 14.5,
+      "keywords": [
+        "APQ8016",
+        "APQ8017"
+      ]
+    },
+    {
+      "consumerName": "Qualcomm Technologies, Inc MSM8216",
+      "systemName": "Qualcomm MSM8216",
+      "brand": "高通（Qualcomm）",
+      "score": 14.2,
+      "keywords": [
+        "MSM8216",
+        "MSM8228"
+      ]
+    },
+    {
+      "consumerName": "曦力 A22变体",
+      "systemName": "Mediatek MT6761V",
+      "brand": "MEDIATEK",
+      "score": 14.2,
+      "keywords": [
+        "MT6761V",
+        "MT6761",
+        "A22"
+      ]
+    },
+    {
+      "consumerName": "曦力 A22完整版",
+      "systemName": "Mediatek MT6761V/WBB",
+      "brand": "MEDIATEK",
+      "score": 14.2,
+      "keywords": [
+        "MT6761V/WBB",
+        "MT6761V",
+        "MT6761",
+        "A22"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum sc8830",
+      "systemName": "Spreadtrum sc8830",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 13,
+      "keywords": [
+        "sc8830"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum SC8603E",
+      "systemName": "Spreadtrum SC8603E",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 12.8,
+      "keywords": [
+        "SC8603E"
+      ]
+    },
+    {
+      "consumerName": "入门四核",
+      "systemName": "Mediatek MT6739",
+      "brand": "MEDIATEK",
+      "score": 12.1,
+      "keywords": [
+        "MT6739"
+      ]
+    },
+    {
+      "consumerName": "Spreadtrum SC9832E",
+      "systemName": "Spreadtrum SC9832E",
+      "brand": "紫光展锐（Unisoc）",
+      "score": 11.5,
+      "keywords": [
+        "SC9832E"
+      ]
+    },
+    {
+      "consumerName": "入门四核",
+      "systemName": "Mediatek MT6737",
+      "brand": "MEDIATEK",
+      "score": 10.2,
+      "keywords": [
+        "MT6737",
+        "MT6735",
+        "MT6735P"
+      ]
+    },
+    {
+      "consumerName": " sun55iw3p1",
+      "systemName": "sun55iw3p1",
+      "brand": "全志科技（Allwinner）",
+      "score": 10,
+      "keywords": [
+        "sun55iw3p1",
+        "sun50iw1p1",
+        "sun50iw10p1",
+        "sun60iw2p1",
+        "sun65iw1p1"
+      ]
+    },
+    {
+      "consumerName": "入门四核",
+      "systemName": "Mediatek MT6580",
+      "brand": "MEDIATEK",
+      "score": 8.5,
+      "keywords": [
+        "MT6582",
+        "MT6580"
+      ]
+    }
+  ]
+}

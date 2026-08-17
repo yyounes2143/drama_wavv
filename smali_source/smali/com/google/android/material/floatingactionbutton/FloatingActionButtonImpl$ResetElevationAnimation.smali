@@ -1,0 +1,53 @@
+.class Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$ResetElevationAnimation;
+.super Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$ShadowAnimatorImpl;
+.source "FloatingActionButtonImpl.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "ResetElevationAnimation"
+.end annotation
+
+
+# instance fields
+.field public final synthetic e:Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$ResetElevationAnimation;->e:Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$ShadowAnimatorImpl;-><init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;)V
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()F
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$ResetElevationAnimation;->e:Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;
+
+    .line 3
+    .line 4
+    iget v0, v0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl;->h:F
+
+    .line 5
+    return v0
+.end method

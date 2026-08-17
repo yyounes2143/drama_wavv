@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/theme_brand6"
+        android:gravity="center"
+        android:id="@+id/tv_policy_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Due to policy restrictions, you can only top up fixed amounts. The closest amount has been recommended for you."/>
+</LinearLayout>

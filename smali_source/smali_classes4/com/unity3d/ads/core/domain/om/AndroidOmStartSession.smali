@@ -1,0 +1,489 @@
+.class public final Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;
+.super Lcom/unity3d/ads/core/domain/om/AndroidOmInteraction;
+.source "AndroidOmStartSession.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J#\u0010\r\u001a\u00020\u000c2\u0006\u0010\t\u001a\u00020\u00082\u0006\u0010\u000b\u001a\u00020\nH\u0096B\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000eR\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0003\u0010\u000fR\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0005\u0010\u0010\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0011"
+    }
+    d2 = {
+        "Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;",
+        "Lcom/unity3d/ads/core/domain/om/AndroidOmInteraction;",
+        "Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;",
+        "openMeasurementRepository",
+        "Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;",
+        "sendDiagnosticEvent",
+        "<init>",
+        "(Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;)V",
+        "Lcom/unity3d/ads/core/data/model/AdObject;",
+        "adObject",
+        "Lorg/json/JSONObject;",
+        "options",
+        "",
+        "invoke",
+        "(Lcom/unity3d/ads/core/data/model/AdObject;Lorg/json/JSONObject;Lkotlin/coroutines/e;)Ljava/lang/Object;",
+        "Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;",
+        "Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;",
+        "unity-ads_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final openMeasurementRepository:Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final sendDiagnosticEvent:Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;)V
+    .locals 1
+    .param p1    # Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    const-string v0, "openMeasurementRepository"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    const-string v0, "sendDiagnosticEvent"
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-direct {p0}, Lcom/unity3d/ads/core/domain/om/AndroidOmInteraction;-><init>()V
+
+    .line 14
+    .line 15
+    iput-object p1, p0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;->openMeasurementRepository:Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;
+
+    .line 16
+    .line 17
+    iput-object p2, p0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;->sendDiagnosticEvent:Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;
+
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method public invoke(Lcom/unity3d/ads/core/data/model/AdObject;Lorg/json/JSONObject;Lkotlin/coroutines/e;)Ljava/lang/Object;
+    .locals 10
+    .param p1    # Lcom/unity3d/ads/core/data/model/AdObject;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lorg/json/JSONObject;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Lkotlin/coroutines/e;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/unity3d/ads/core/data/model/AdObject;",
+            "Lorg/json/JSONObject;",
+            "Lkotlin/coroutines/e<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    instance-of v0, p3, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    move-object v0, p3
+
+    .line 6
+    .line 7
+    check-cast v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;
+
+    .line 8
+    .line 9
+    iget v1, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->label:I
+
+    .line 10
+    .line 11
+    const/high16 v2, -0x80000000
+
+    .line 12
+    .line 13
+    and-int v3, v1, v2
+
+    .line 14
+    .line 15
+    if-eqz v3, :cond_0
+
+    .line 16
+    sub-int/2addr v1, v2
+
+    .line 17
+    .line 18
+    iput v1, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->label:I
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    .line 21
+    :cond_0
+    new-instance v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-direct {v0, p0, p3}, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;-><init>(Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;Lkotlin/coroutines/e;)V
+
+    .line 25
+    .line 26
+    :goto_0
+    iget-object p3, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->result:Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    sget-object v1, LD9/a;->a:LD9/a;
+
+    .line 29
+    .line 30
+    iget v2, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->label:I
+
+    .line 31
+    const/4 v3, 0x1
+
+    .line 32
+    .line 33
+    if-eqz v2, :cond_2
+
+    .line 34
+    .line 35
+    if-ne v2, v3, :cond_1
+
+    .line 36
+    .line 37
+    iget-object p1, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->L$1:Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    check-cast p1, Lcom/unity3d/ads/core/data/model/AdObject;
+
+    .line 40
+    .line 41
+    iget-object p2, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->L$0:Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    check-cast p2, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-static {p3}, Lkotlin/b;->b(Ljava/lang/Object;)V
+
+    .line 47
+    :goto_1
+    move-object v7, p1
+
+    .line 48
+    goto :goto_2
+
+    .line 49
+    .line 50
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 51
+    .line 52
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 56
+    throw p1
+
+    .line 57
+    .line 58
+    .line 59
+    :cond_2
+    invoke-static {p3}, Lkotlin/b;->b(Ljava/lang/Object;)V
+
+    .line 60
+    .line 61
+    iget-object p3, p0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;->openMeasurementRepository:Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {p1}, Lcom/unity3d/ads/core/data/model/AdObject;->getOpportunityId()Lcom/google/protobuf/ByteString;
+
+    .line 65
+    move-result-object v2
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {p0, p1}, Lcom/unity3d/ads/core/domain/om/AndroidOmInteraction;->getWebview(Lcom/unity3d/ads/core/data/model/AdObject;)Landroid/webkit/WebView;
+
+    .line 69
+    move-result-object v4
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {p0, p2}, Lcom/unity3d/ads/core/domain/om/AndroidOmInteraction;->getOMidOptions(Lorg/json/JSONObject;)Lcom/unity3d/ads/core/data/model/OmidOptions;
+
+    .line 73
+    move-result-object p2
+
+    .line 74
+    .line 75
+    iput-object p0, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->L$0:Ljava/lang/Object;
+
+    .line 76
+    .line 77
+    iput-object p1, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->L$1:Ljava/lang/Object;
+
+    .line 78
+    .line 79
+    iput v3, v0, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession$invoke$1;->label:I
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-interface {p3, v2, v4, p2, v0}, Lcom/unity3d/ads/core/data/repository/OpenMeasurementRepository;->startSession(Lcom/google/protobuf/ByteString;Landroid/webkit/WebView;Lcom/unity3d/ads/core/data/model/OmidOptions;Lkotlin/coroutines/e;)Ljava/lang/Object;
+
+    .line 83
+    move-result-object p3
+
+    .line 84
+    .line 85
+    if-ne p3, v1, :cond_3
+
+    .line 86
+    return-object v1
+
+    .line 87
+    :cond_3
+    move-object p2, p0
+
+    .line 88
+    goto :goto_1
+
+    .line 89
+    .line 90
+    :goto_2
+    check-cast p3, Lcom/unity3d/ads/core/data/model/OMResult;
+
+    .line 91
+    .line 92
+    instance-of p1, p3, Lcom/unity3d/ads/core/data/model/OMResult$Success;
+
+    .line 93
+    .line 94
+    if-eqz p1, :cond_4
+
+    .line 95
+    .line 96
+    iget-object v2, p2, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;->sendDiagnosticEvent:Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;
+
+    .line 97
+    const/4 v5, 0x0
+
+    .line 98
+    const/4 v6, 0x0
+
+    .line 99
+    .line 100
+    const-string v3, "om_session_start_success"
+
+    .line 101
+    const/4 v4, 0x0
+
+    .line 102
+    .line 103
+    const/16 v8, 0xe
+
+    .line 104
+    const/4 v9, 0x0
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-static/range {v2 .. v9}, Lcom/unity3d/ads/core/domain/SendDiagnosticEvent$DefaultImpls;->invoke$default(Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;Ljava/lang/String;Ljava/lang/Double;Ljava/util/Map;Ljava/util/Map;Lcom/unity3d/ads/core/data/model/AdObject;ILjava/lang/Object;)V
+
+    .line 108
+    goto :goto_3
+
+    .line 109
+    .line 110
+    :cond_4
+    instance-of p1, p3, Lcom/unity3d/ads/core/data/model/OMResult$Failure;
+
+    .line 111
+    .line 112
+    if-eqz p1, :cond_6
+
+    .line 113
+    .line 114
+    iget-object v2, p2, Lcom/unity3d/ads/core/domain/om/AndroidOmStartSession;->sendDiagnosticEvent:Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;
+
+    .line 115
+    .line 116
+    new-instance p1, Lkotlin/collections/builders/MapBuilder;
+
+    .line 117
+    .line 118
+    .line 119
+    invoke-direct {p1}, Lkotlin/collections/builders/MapBuilder;-><init>()V
+
+    .line 120
+    .line 121
+    check-cast p3, Lcom/unity3d/ads/core/data/model/OMResult$Failure;
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-virtual {p3}, Lcom/unity3d/ads/core/data/model/OMResult$Failure;->getReason()Ljava/lang/String;
+
+    .line 125
+    move-result-object p2
+
+    .line 126
+    .line 127
+    const-string v0, "reason"
+
+    .line 128
+    .line 129
+    .line 130
+    invoke-virtual {p1, v0, p2}, Lkotlin/collections/builders/MapBuilder;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 131
+    .line 132
+    .line 133
+    invoke-virtual {p3}, Lcom/unity3d/ads/core/data/model/OMResult$Failure;->getReasonDebug()Ljava/lang/String;
+
+    .line 134
+    move-result-object p2
+
+    .line 135
+    .line 136
+    if-eqz p2, :cond_5
+
+    .line 137
+    .line 138
+    const-string p2, "reason_debug"
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-virtual {p3}, Lcom/unity3d/ads/core/data/model/OMResult$Failure;->getReasonDebug()Ljava/lang/String;
+
+    .line 142
+    move-result-object p3
+
+    .line 143
+    .line 144
+    .line 145
+    invoke-virtual {p1, p2, p3}, Lkotlin/collections/builders/MapBuilder;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 146
+    .line 147
+    :cond_5
+    sget-object p2, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 148
+    .line 149
+    const-string p2, "builder"
+
+    .line 150
+    .line 151
+    .line 152
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 153
+    .line 154
+    .line 155
+    invoke-virtual {p1}, Lkotlin/collections/builders/MapBuilder;->c()Lkotlin/collections/builders/MapBuilder;
+
+    .line 156
+    move-result-object v5
+
+    .line 157
+    const/4 v4, 0x0
+
+    .line 158
+    const/4 v6, 0x0
+
+    .line 159
+    .line 160
+    const-string v3, "om_session_start_failure"
+
+    .line 161
+    .line 162
+    const/16 v8, 0xa
+
+    .line 163
+    const/4 v9, 0x0
+
+    .line 164
+    .line 165
+    .line 166
+    invoke-static/range {v2 .. v9}, Lcom/unity3d/ads/core/domain/SendDiagnosticEvent$DefaultImpls;->invoke$default(Lcom/unity3d/ads/core/domain/SendDiagnosticEvent;Ljava/lang/String;Ljava/lang/Double;Ljava/util/Map;Ljava/util/Map;Lcom/unity3d/ads/core/data/model/AdObject;ILjava/lang/Object;)V
+
+    .line 167
+    .line 168
+    :cond_6
+    :goto_3
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 169
+    return-object p1
+.end method

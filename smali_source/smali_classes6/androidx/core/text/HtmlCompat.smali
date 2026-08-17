@@ -1,0 +1,76 @@
+.class public final Landroidx/core/text/HtmlCompat;
+.super Ljava/lang/Object;
+.source "HtmlCompat.java"
+
+
+# annotations
+.annotation build Landroid/annotation/SuppressLint;
+    value = {
+        "InlinedApi"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/text/HtmlCompat$Api24Impl;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+.method public static a(Ljava/lang/String;)Landroid/text/Spanned;
+    .locals 2
+    .param p0    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 3
+    .line 4
+    const/16 v1, 0x18
+
+    .line 5
+    .line 6
+    if-lt v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {p0}, Landroidx/core/text/HtmlCompat$Api24Impl;->a(Ljava/lang/String;)Landroid/text/Spanned;
+
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+
+    .line 12
+    .line 13
+    .line 14
+    :cond_0
+    invoke-static {p0}, Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
+
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method

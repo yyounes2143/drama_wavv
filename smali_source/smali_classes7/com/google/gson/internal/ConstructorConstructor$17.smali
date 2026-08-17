@@ -1,0 +1,55 @@
+.class Lcom/google/gson/internal/ConstructorConstructor$17;
+.super Ljava/lang/Object;
+.source "ConstructorConstructor.java"
+
+# interfaces
+.implements Lcom/google/gson/internal/ObjectConstructor;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/gson/internal/ObjectConstructor<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public construct()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Ljava/util/LinkedHashMap;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+
+    .line 6
+    return-object v0
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff0b080b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/text_size_12" android:textColor="#ffffffff" android:textColorHint="#ff888888" android:id="@id/et_series_key" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="series_key" android:layout_weight="1.0" />
+        <EditText android:textSize="@dimen/text_size_12" android:textColor="#ffffffff" android:textColorHint="#ff888888" android:id="@id/et_episode_key" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="episode key" android:layout_weight="1.0" android:layout_marginStart="@dimen/_8sdp" />
+        <Button android:id="@id/btn_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load" android:layout_marginStart="@dimen/_8sdp" />
+        <Button android:id="@id/btn_load_rewrite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load Rewrite" android:layout_marginStart="@dimen/_8sdp" />
+    </LinearLayout>
+</LinearLayout>

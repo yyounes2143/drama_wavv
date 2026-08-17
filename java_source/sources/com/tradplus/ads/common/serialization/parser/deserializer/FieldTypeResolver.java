@@ -1,0 +1,8 @@
+package com.tradplus.ads.common.serialization.parser.deserializer;
+
+import java.lang.reflect.Type;
+
+/* loaded from: classes7.dex */
+public interface FieldTypeResolver extends ParseProcess {
+    Type resolve(Object obj, String str);
+}

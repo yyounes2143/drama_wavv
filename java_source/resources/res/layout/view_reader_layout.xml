@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.dramawave.shared.novel.widget.ReaderVerticalPanel
+        android:id="@+id/verticalPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.dramawave.shared.novel.widget.ReaderHorizontalPanel
+        android:id="@+id/horizontalPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</merge>

@@ -1,0 +1,7 @@
+package com.unity3d.services.core.device.reader;
+
+/* compiled from: R8$$SyntheticClass */
+/* renamed from: com.unity3d.services.core.device.reader.c */
+/* loaded from: classes.dex */
+public final /* synthetic */ class C25486c {
+}

@@ -1,0 +1,146 @@
+package com.google.android.gms.location;
+
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import com.google.android.gms.common.internal.Preconditions;
+import com.google.android.gms.common.util.DefaultClock;
+import com.google.android.gms.common.util.VisibleForTesting;
+
+/* compiled from: com.google.android.gms:play-services-location@@18.0.0 */
+@VisibleForTesting
+/* loaded from: classes3.dex */
+public interface Geofence {
+    public static final int GEOFENCE_TRANSITION_DWELL = 4;
+    public static final int GEOFENCE_TRANSITION_ENTER = 1;
+    public static final int GEOFENCE_TRANSITION_EXIT = 2;
+    public static final long NEVER_EXPIRE = -1;
+
+    /* compiled from: com.google.android.gms:play-services-location@@18.0.0 */
+    @VisibleForTesting
+    /* loaded from: classes3.dex */
+    public static final class Builder {
+        private double zze;
+        private double zzf;
+        private float zzg;
+        private String zza = null;
+
+        @TransitionTypes
+        private int zzb = 0;
+        private long zzc = Long.MIN_VALUE;
+        private short zzd = -1;
+        private int zzh = 0;
+        private int zzi = -1;
+
+        @NonNull
+        public Geofence build() {
+            String str = this.zza;
+            if (str != null) {
+                int i10 = this.zzb;
+                if (i10 != 0) {
+                    if ((i10 & 4) != 0 && this.zzi < 0) {
+                        throw new IllegalArgumentException("Non-negative loitering delay needs to be set when transition types include GEOFENCE_TRANSITION_DWELLING.");
+                    }
+                    long j10 = this.zzc;
+                    if (j10 != Long.MIN_VALUE) {
+                        if (this.zzd != -1) {
+                            int i11 = this.zzh;
+                            if (i11 >= 0) {
+                                return new com.google.android.gms.internal.location.zzbe(str, i10, (short) 1, this.zze, this.zzf, this.zzg, j10, i11, this.zzi);
+                            }
+                            throw new IllegalArgumentException("Notification responsiveness should be nonnegative.");
+                        }
+                        throw new IllegalArgumentException("Geofence region not set.");
+                    }
+                    throw new IllegalArgumentException("Expiration not set.");
+                }
+                throw new IllegalArgumentException("Transitions types not set.");
+            }
+            throw new IllegalArgumentException("Request ID not set.");
+        }
+
+        @NonNull
+        public Builder setExpirationDuration(long j10) {
+            if (j10 < 0) {
+                this.zzc = -1L;
+            } else {
+                this.zzc = DefaultClock.getInstance().elapsedRealtime() + j10;
+            }
+            return this;
+        }
+
+        @NonNull
+        public Builder setLoiteringDelay(int i10) {
+            this.zzi = i10;
+            return this;
+        }
+
+        @NonNull
+        public Builder setNotificationResponsiveness(@IntRange int i10) {
+            this.zzh = i10;
+            return this;
+        }
+
+        @NonNull
+        public Builder setRequestId(@NonNull String str) {
+            this.zza = (String) Preconditions.checkNotNull(str, "Request ID can't be set to null");
+            return this;
+        }
+
+        @NonNull
+        public Builder setTransitionTypes(@TransitionTypes int i10) {
+            this.zzb = i10;
+            return this;
+        }
+
+        @NonNull
+        public Builder setCircularRegion(@FloatRange double d10, @FloatRange double d11, @FloatRange float f10) {
+            boolean z10;
+            boolean z11;
+            boolean z12 = false;
+            if (d10 >= -90.0d && d10 <= 90.0d) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            StringBuilder sb = new StringBuilder(42);
+            sb.append("Invalid latitude: ");
+            sb.append(d10);
+            Preconditions.checkArgument(z10, sb.toString());
+            if (d11 >= -180.0d && d11 <= 180.0d) {
+                z11 = true;
+            } else {
+                z11 = false;
+            }
+            StringBuilder sb2 = new StringBuilder(43);
+            sb2.append("Invalid longitude: ");
+            sb2.append(d11);
+            Preconditions.checkArgument(z11, sb2.toString());
+            if (f10 > 0.0f) {
+                z12 = true;
+            }
+            StringBuilder sb3 = new StringBuilder(31);
+            sb3.append("Invalid radius: ");
+            sb3.append(f10);
+            Preconditions.checkArgument(z12, sb3.toString());
+            this.zzd = (short) 1;
+            this.zze = d10;
+            this.zzf = d11;
+            this.zzg = f10;
+            return this;
+        }
+    }
+
+    /* compiled from: com.google.android.gms:play-services-location@@18.0.0 */
+    /* loaded from: classes3.dex */
+    public @interface GeofenceTransition {
+    }
+
+    /* compiled from: com.google.android.gms:play-services-location@@18.0.0 */
+    /* loaded from: classes3.dex */
+    public @interface TransitionTypes {
+    }
+
+    @NonNull
+    String getRequestId();
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.compose.p326ui.platform.ComposeView
+        android:id="@+id/compose_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.dramawave.shared.general.view.DramaTaskFloatView
+        android:layout_gravity="end|bottom"
+        android:id="@+id/float_layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_100sdp"/>
+    <com.dramawave.shared.p448ui.view.InteractiveAdFloatView
+        android:layout_gravity="end|bottom"
+        android:id="@+id/interactive_ad_float_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_100sdp"/>
+</FrameLayout>

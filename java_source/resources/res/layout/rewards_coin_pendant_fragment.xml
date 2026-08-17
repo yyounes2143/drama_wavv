@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dramawave.shared.p448ui.view.SuctionSideView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/suction_side_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:suction_bound_bottom="@dimen/_62sdp"
+    app:suction_bound_top="@dimen/_12sdp">
+    <com.dramawave.feature.reward.novel.p442ui.view.CoinPendantView
+        android:id="@+id/coin_pendant_view"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_500sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+    <ImageView
+        android:id="@+id/iv_collapse_notice"
+        android:visibility="gone"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_49sdp"
+        android:src="@drawable/ic_collapse_notice"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+</com.dramawave.shared.p448ui.view.SuctionSideView>

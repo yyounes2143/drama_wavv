@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/ic_close" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_close_fill" android:layout_marginEnd="4.0dip" />
+    <ViewFlipper android:id="@id/viewFlipper" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="4.0dip" android:flipInterval="3000" android:autoStart="false" />
+</LinearLayout>

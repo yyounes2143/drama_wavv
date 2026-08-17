@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ic_payment_info" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/update_purchase_info_layout" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/purchase_bottom_link_bg" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="center" android:id="@id/im_compare_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_up" />
+    <include android:id="@id/ic_compare_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:layout_marginHorizontal="@dimen/_8sdp" layout="@layout/compare_purchase_info_layout" />
+    <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/theme_text3" android:gravity="start" android:id="@id/tv_content" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/_8sdp" android:paddingHorizontal="@dimen/_12sdp" />
+</LinearLayout>

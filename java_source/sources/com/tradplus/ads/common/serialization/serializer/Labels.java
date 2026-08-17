@@ -1,0 +1,52 @@
+package com.tradplus.ads.common.serialization.serializer;
+
+import java.util.Arrays;
+
+/* loaded from: classes6.dex */
+public class Labels {
+
+    /* loaded from: classes6.dex */
+    public static class DefaultLabelFilter implements LabelFilter {
+        private String[] excludes;
+        private String[] includes;
+
+        @Override // com.tradplus.ads.common.serialization.serializer.LabelFilter
+        public boolean apply(String str) {
+            String[] strArr = this.excludes;
+            if (strArr != null) {
+                if (Arrays.binarySearch(strArr, str) >= 0) {
+                    return false;
+                }
+                return true;
+            }
+            String[] strArr2 = this.includes;
+            if (strArr2 == null || Arrays.binarySearch(strArr2, str) < 0) {
+                return false;
+            }
+            return true;
+        }
+
+        public DefaultLabelFilter(String[] strArr, String[] strArr2) {
+            if (strArr != null) {
+                String[] strArr3 = new String[strArr.length];
+                this.includes = strArr3;
+                System.arraycopy(strArr, 0, strArr3, 0, strArr.length);
+                Arrays.sort(this.includes);
+            }
+            if (strArr2 != null) {
+                String[] strArr4 = new String[strArr2.length];
+                this.excludes = strArr4;
+                System.arraycopy(strArr2, 0, strArr4, 0, strArr2.length);
+                Arrays.sort(this.excludes);
+            }
+        }
+    }
+
+    public static LabelFilter excludes(String... strArr) {
+        return new DefaultLabelFilter(null, strArr);
+    }
+
+    public static LabelFilter includes(String... strArr) {
+        return new DefaultLabelFilter(strArr, null);
+    }
+}

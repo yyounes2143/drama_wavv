@@ -1,0 +1,48 @@
+.class public final Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem$b;
+.super Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem;
+.source "AvatarManagementItem.kt"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# static fields
+.field public static final c:Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem$b;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final d:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem$b;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem;-><init>()V
+
+    .line 6
+    .line 7
+    sput-object v0, Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem$b;->c:Lcom/dramawave/feature/ugc/avatar/AvatarManagementItem$b;
+
+    .line 8
+    return-void
+.end method

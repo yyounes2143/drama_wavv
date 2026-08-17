@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dramawave.core.common.view.GradientTextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:gravity="center" android:id="@id/tv_vip_title" android:paddingTop="@dimen/_32sdp" android:paddingBottom="@dimen/_16sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:gradientDirection="left_to_right" app:gradientEndColor="#ffffc76e" app:gradientMiddleColor="#ffffedaf" app:gradientStartColor="#ffffd571" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

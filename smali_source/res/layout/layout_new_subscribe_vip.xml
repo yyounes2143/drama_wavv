@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/theme_else_mask" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/theme_text5" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_66sdp" android:layout_marginRight="@dimen/_66sdp" android:text="@string/sr_watch_ad_to_continue" android:layout_marginHorizontal="@dimen/_66sdp" style="@style/theme_TextBold24" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/_16sdp" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_watch_ads" android:background="@drawable/shape_conner_8_brand6" android:paddingLeft="@dimen/_16sdp" android:paddingTop="@dimen/_12sdp" android:paddingRight="@dimen/_16sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" android:layout_marginLeft="@dimen/_66sdp" android:layout_marginRight="@dimen/_66sdp" android:layout_marginHorizontal="@dimen/_66sdp" android:paddingHorizontal="@dimen/_16sdp" android:paddingVertical="@dimen/_12sdp">
+        <ImageView android:id="@id/iv_video_icon" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_video_fill" android:layout_marginEnd="@dimen/_4sdp" />
+        <TextView android:textColor="@color/theme_text5" android:id="@id/tv_watch_ads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_ad_now" style="@style/theme_TextMedium14" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/_16sdp" />
+    <TextView android:gravity="center" android:id="@id/tv_return_episode_1" android:background="@drawable/common_shape_conner_8_line_5" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" android:layout_marginLeft="@dimen/_66sdp" android:layout_marginRight="@dimen/_66sdp" android:text="@string/ad_free_experience" android:layout_marginHorizontal="@dimen/_66sdp" style="@style/theme_TextMedium16" />
+</LinearLayout>

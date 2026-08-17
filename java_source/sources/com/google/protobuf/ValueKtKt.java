@@ -1,0 +1,59 @@
+package com.google.protobuf;
+
+import com.google.protobuf.Value;
+import com.google.protobuf.ValueKt;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: ValueKt.kt */
+@Metadata(m51404d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a'\u0010\u0007\u001a\u00020\u00042\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00020\u0000H\u0087\bø\u0001\u0000¢\u0006\u0004\b\u0005\u0010\u0006\u001a+\u0010\b\u001a\u00020\u0004*\u00020\u00042\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00020\u0000H\u0086\bø\u0001\u0000¢\u0006\u0004\b\b\u0010\t\"\u0017\u0010\u000e\u001a\u0004\u0018\u00010\u000b*\u00020\n8F¢\u0006\u0006\u001a\u0004\b\f\u0010\r\"\u0017\u0010\u0012\u001a\u0004\u0018\u00010\u000f*\u00020\n8F¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006\u0013"}, m51405d2 = {"Lkotlin/Function1;", "Lcom/google/protobuf/ValueKt$Dsl;", "", "block", "Lcom/google/protobuf/Value;", "-initializevalue", "(Lkotlin/jvm/functions/Function1;)Lcom/google/protobuf/Value;", "value", "copy", "(Lcom/google/protobuf/Value;Lkotlin/jvm/functions/Function1;)Lcom/google/protobuf/Value;", "Lcom/google/protobuf/ValueOrBuilder;", "Lcom/google/protobuf/Struct;", "getStructValueOrNull", "(Lcom/google/protobuf/ValueOrBuilder;)Lcom/google/protobuf/Struct;", "structValueOrNull", "Lcom/google/protobuf/ListValue;", "getListValueOrNull", "(Lcom/google/protobuf/ValueOrBuilder;)Lcom/google/protobuf/ListValue;", "listValueOrNull", "java_kotlin-lite-well_known_protos_kotlin_lite"}, m51406k = 2, m51407mv = {1, 8, 0}, m51409xi = 48)
+@SourceDebugExtension({"SMAP\nValueKt.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ValueKt.kt\ncom/google/protobuf/ValueKtKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,198:1\n1#2:199\n*E\n"})
+/* loaded from: classes8.dex */
+public final class ValueKtKt {
+    @NotNull
+    /* renamed from: -initializevalue, reason: not valid java name */
+    public static final Value m54949initializevalue(@NotNull Function1<? super ValueKt.Dsl, Unit> block) {
+        Intrinsics.checkNotNullParameter(block, "block");
+        ValueKt.Dsl.Companion companion = ValueKt.Dsl.INSTANCE;
+        Value.Builder newBuilder = Value.newBuilder();
+        Intrinsics.checkNotNullExpressionValue(newBuilder, "newBuilder()");
+        ValueKt.Dsl _create = companion._create(newBuilder);
+        block.invoke(_create);
+        return _create._build();
+    }
+
+    @NotNull
+    public static final Value copy(@NotNull Value value, @NotNull Function1<? super ValueKt.Dsl, Unit> block) {
+        Intrinsics.checkNotNullParameter(value, "<this>");
+        Intrinsics.checkNotNullParameter(block, "block");
+        ValueKt.Dsl.Companion companion = ValueKt.Dsl.INSTANCE;
+        Value.Builder builder = value.toBuilder();
+        Intrinsics.checkNotNullExpressionValue(builder, "this.toBuilder()");
+        ValueKt.Dsl _create = companion._create(builder);
+        block.invoke(_create);
+        return _create._build();
+    }
+
+    @Nullable
+    public static final ListValue getListValueOrNull(@NotNull ValueOrBuilder valueOrBuilder) {
+        Intrinsics.checkNotNullParameter(valueOrBuilder, "<this>");
+        if (valueOrBuilder.hasListValue()) {
+            return valueOrBuilder.getListValue();
+        }
+        return null;
+    }
+
+    @Nullable
+    public static final Struct getStructValueOrNull(@NotNull ValueOrBuilder valueOrBuilder) {
+        Intrinsics.checkNotNullParameter(valueOrBuilder, "<this>");
+        if (valueOrBuilder.hasStructValue()) {
+            return valueOrBuilder.getStructValue();
+        }
+        return null;
+    }
+}

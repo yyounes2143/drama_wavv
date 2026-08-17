@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:id="@+id/media_seek_bar_container"
+        android:background="#123456"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.dramawave.shared.player.widgets.MediaSeekBar
+            android:id="@+id/media_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout
+        android:background="#654321"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.dramawave.shared.player.view.VideoSeekBar
+            android:id="@+id/video_seek_bar"
+            android:background="#80ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:vsb_drag_bar="@drawable/video_seek_bar_thumb"
+            app:vsb_drag_bar_reached_color="@color/theme_fill4"
+            app:vsb_progress_background_color="@color/white_20"
+            app:vsb_progress_bar_color="@color/white_20"
+            app:vsb_progress_color="@color/theme_fill4"
+            app:vsb_progress_drag_height="50dp"
+            app:vsb_progress_height="2dp"/>
+    </FrameLayout>
+</LinearLayout>

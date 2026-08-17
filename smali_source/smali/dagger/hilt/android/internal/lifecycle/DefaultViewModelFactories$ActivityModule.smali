@@ -1,0 +1,38 @@
+.class interface abstract Ldagger/hilt/android/internal/lifecycle/DefaultViewModelFactories$ActivityModule;
+.super Ljava/lang/Object;
+.source "DefaultViewModelFactories.java"
+
+
+# annotations
+.annotation build Ldagger/hilt/InstallIn;
+    value = {
+        Ldagger/hilt/android/components/ActivityComponent;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ldagger/hilt/android/internal/lifecycle/DefaultViewModelFactories;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "ActivityModule"
+.end annotation
+
+
+# virtual methods
+.method public abstract viewModelKeys()Ljava/util/Map;
+    .annotation build Ldagger/hilt/android/internal/lifecycle/HiltViewModelMap$KeySet;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/Class<",
+            "*>;",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method

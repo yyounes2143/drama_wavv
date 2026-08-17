@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ugc_famous_scene_bg_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dramawave.feature.ugc.topic.widget.UgcTemplateTagView android:layout_gravity="start" android:id="@id/template_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:paddingStart="@dimen/_16sdp" android:paddingEnd="@dimen/_16sdp">
+        <com.dramawave.shared.player.widget.UgcVideoPreviewView android:id="@id/video_preview" style="@style/UgcTemplatePreview" />
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="#fffdfbfc" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" />
+        <com.dramawave.feature.ugc.topic.widget.UgcFaceSwapRowView android:id="@id/face_swap_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_swap_action" android:background="@drawable/ugc_bg_button_brand3" android:layout_width="fill_parent" android:layout_height="@dimen/_38sdp" android:layout_marginTop="@dimen/_12sdp" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffcccacb" android:id="@id/btn_later" android:padding="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:text="@string/ugc_famous_scene_later" />
+    </LinearLayout>
+</LinearLayout>

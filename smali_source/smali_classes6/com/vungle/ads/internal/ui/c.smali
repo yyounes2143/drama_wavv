@@ -1,0 +1,66 @@
+.class public final synthetic Lcom/vungle/ads/internal/ui/c;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/vungle/ads/internal/ui/VungleWebClient;
+
+.field public final synthetic b:Landroid/os/Handler;
+
+.field public final synthetic c:Landroid/webkit/WebView;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/vungle/ads/internal/ui/VungleWebClient;Landroid/os/Handler;Landroid/webkit/WebView;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/vungle/ads/internal/ui/c;->a:Lcom/vungle/ads/internal/ui/VungleWebClient;
+
+    .line 6
+    .line 7
+    iput-object p2, p0, Lcom/vungle/ads/internal/ui/c;->b:Landroid/os/Handler;
+
+    .line 8
+    .line 9
+    iput-object p3, p0, Lcom/vungle/ads/internal/ui/c;->c:Landroid/webkit/WebView;
+
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/vungle/ads/internal/ui/c;->b:Landroid/os/Handler;
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lcom/vungle/ads/internal/ui/c;->a:Lcom/vungle/ads/internal/ui/VungleWebClient;
+
+    .line 5
+    .line 6
+    iget-object v2, p0, Lcom/vungle/ads/internal/ui/c;->c:Landroid/webkit/WebView;
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {v1, v0, v2}, Lcom/vungle/ads/internal/ui/VungleWebClient;->c(Lcom/vungle/ads/internal/ui/VungleWebClient;Landroid/os/Handler;Landroid/webkit/WebView;)V
+
+    .line 10
+    return-void
+.end method

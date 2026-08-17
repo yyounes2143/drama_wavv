@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/common_shape_conner_8_surface_4"
+    android:layout_width="@dimen/_299sdp"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/_56sdp"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:elevation="@dimen/_12sdp">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/theme_text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dev_custom_in_app_banner_message"
+        android:includeFontPadding="false"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/_12sdp"/>
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/theme_brand6"
+        android:gravity="center"
+        android:id="@+id/action"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/dev_custom_in_app_banner_action"
+        android:includeFontPadding="false"/>
+</LinearLayout>

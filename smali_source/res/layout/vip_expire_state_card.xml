@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_common_vip_expired" android:paddingTop="@dimen/_4sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_vip_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_12sdp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.dramawave.shared.ui.view.DramaAvatar android:id="@id/iv_vip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/mine_empty" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:small="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginStart="@dimen/_4sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_vip_icon" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/theme_text4" android:ellipsize="end" android:id="@id/tv_package_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/vip_center_page_card" android:maxLines="1" />
+            <TextView android:textColor="@color/theme_text4" android:ellipsize="end" android:id="@id/vip_valid_time_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_2sdp" android:maxLines="1" style="@style/theme_TextRegular10" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginHorizontal="@dimen/_12sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/cl_vip_info">
+        <FrameLayout android:background="@drawable/shape_conner_8_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/theme_text9" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_delete" android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:text="@string/vip_repurchase_des" android:includeFontPadding="false" android:drawablePadding="@dimen/_2sdp" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_save_money" android:background="@drawable/bg_common_vip_retention_period" android:paddingLeft="@dimen/_8sdp" android:paddingTop="@dimen/_2sdp" android:paddingRight="@dimen/_8sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/_8sdp" android:paddingVertical="@dimen/_2sdp">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/theme_text5" android:gravity="center" android:id="@id/tv_saved_money" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

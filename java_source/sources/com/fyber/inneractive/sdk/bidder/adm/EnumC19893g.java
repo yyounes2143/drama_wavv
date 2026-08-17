@@ -1,0 +1,47 @@
+package com.fyber.inneractive.sdk.bidder.adm;
+
+import com.fyber.inneractive.sdk.protobuf.InterfaceC21012e0;
+import com.fyber.inneractive.sdk.protobuf.InterfaceC21015f0;
+
+/* renamed from: com.fyber.inneractive.sdk.bidder.adm.g */
+/* loaded from: classes7.dex */
+public enum EnumC19893g implements InterfaceC21012e0 {
+    AUTOSTOREKITNONE(0),
+    AUTOSTOREKITPRESENTONLY(1),
+    AUTOSTOREKITPRESENTANDTRACK(2),
+    UNRECOGNIZED(-1);
+
+    public static final int AUTOSTOREKITNONE_VALUE = 0;
+    public static final int AUTOSTOREKITPRESENTANDTRACK_VALUE = 2;
+    public static final int AUTOSTOREKITPRESENTONLY_VALUE = 1;
+    private static final InterfaceC21015f0 internalValueMap = new InterfaceC21015f0() { // from class: com.fyber.inneractive.sdk.bidder.adm.f
+        @Override // com.fyber.inneractive.sdk.protobuf.InterfaceC21015f0
+        /* renamed from: a */
+        public final InterfaceC21012e0 mo35346a(int i10) {
+            if (i10 != 0) {
+                if (i10 != 1) {
+                    if (i10 != 2) {
+                        return null;
+                    }
+                    return EnumC19893g.AUTOSTOREKITPRESENTANDTRACK;
+                }
+                return EnumC19893g.AUTOSTOREKITPRESENTONLY;
+            }
+            return EnumC19893g.AUTOSTOREKITNONE;
+        }
+    };
+    private final int value;
+
+    @Override // com.fyber.inneractive.sdk.protobuf.InterfaceC21012e0
+    /* renamed from: a */
+    public final int mo35347a() {
+        if (this != UNRECOGNIZED) {
+            return this.value;
+        }
+        throw new IllegalArgumentException("Can't get the number of an unknown enum value.");
+    }
+
+    EnumC19893g(int i10) {
+        this.value = i10;
+    }
+}

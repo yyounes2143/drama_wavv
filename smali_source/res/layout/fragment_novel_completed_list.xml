@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar android:id="@id/status_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.hjq.bar.TitleBar android:id="@id/title_bar" app:rightIconGravity="end" app:rightTitleColor="@color/theme_text1" app:title="@string/novel_complete_title" app:titleGravity="center" style="@style/CustomTitleBarStyle" />
+    </com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar>
+    <com.dramawave.shared.ui.view.content.ContentContainer android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/status_bar">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </com.dramawave.shared.ui.view.content.ContentContainer>
+</androidx.constraintlayout.widget.ConstraintLayout>

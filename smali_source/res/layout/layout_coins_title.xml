@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/theme_text2" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/balance" android:includeFontPadding="false" />
+    <ImageView android:id="@id/img_crown_balance" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:src="@drawable/ic_common_coin_single_alpha" android:contentDescription="@string/mine_empty" android:layout_marginStart="@dimen/_4sdp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme_text2" android:id="@id/tv_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/_2sdp" />
+</LinearLayout>

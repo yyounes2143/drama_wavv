@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/_8sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/_48sdp" android:layout_height="@dimen/_48sdp">
+        <ImageView android:id="@id/iv_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_selected" android:visibility="gone" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_ugc_swap_face_checked" android:contentDescription="@null" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/ugc_text_3" android:ellipsize="end" android:gravity="center" android:id="@id/tv_name" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:maxLines="3" />
+</LinearLayout>

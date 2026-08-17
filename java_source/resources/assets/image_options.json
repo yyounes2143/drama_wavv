@@ -1,0 +1,19 @@
+{
+  "dynamic_quality": true,
+  "banner": {
+    "width": 600,
+    "quality": 70
+  },
+  "nine_grid": {
+    "width": 250,
+    "quality": 78
+  },
+  "staggered_grid": {
+    "width": 300,
+    "quality": 78
+  },
+  "small_icon": {
+    "width": 150,
+    "quality": 70
+  }
+}

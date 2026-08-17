@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/theme_text1"
+    android:id="@+id/tv_tag_name"
+    android:paddingTop="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_6sdp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:text="@string/you_might_like"
+    android:textAlignment="viewStart"
+    android:layout_marginHorizontal="12dp"/>

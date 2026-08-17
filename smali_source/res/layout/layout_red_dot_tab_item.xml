@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/theme_text6" android:layout_gravity="center_vertical" android:id="@id/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/tab_red_dot" android:background="@drawable/ui_shape_red_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="4.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/iv_tab_arrow" android:visibility="gone" android:layout_width="@dimen/_11sdp" android:layout_height="@dimen/_11sdp" android:src="@drawable/ic_down_fill" android:scaleType="fitCenter" android:layout_marginStart="@dimen/_4sdp" />
+</LinearLayout>

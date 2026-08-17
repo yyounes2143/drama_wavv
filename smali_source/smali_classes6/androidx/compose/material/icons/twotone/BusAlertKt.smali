@@ -1,0 +1,27 @@
+.class public final Landroidx/compose/material/icons/twotone/BusAlertKt;
+.super Ljava/lang/Object;
+.source "BusAlert.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0002\n\u0000\u00a8\u0006\u0000"
+    }
+    d2 = {
+        "material-icons-extended_release"
+    }
+    k = 0x2
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nBusAlert.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BusAlert.kt\nandroidx/compose/material/icons/twotone/BusAlertKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,132:1\n212#2,12:133\n233#2,18:146\n253#2:183\n233#2,18:184\n253#2:221\n233#2,18:222\n253#2:259\n233#2,18:260\n253#2:297\n233#2,18:298\n253#2:335\n233#2,18:336\n253#2:373\n174#3:145\n705#4,2:164\n717#4,2:166\n719#4,11:172\n705#4,2:202\n717#4,2:204\n719#4,11:210\n705#4,2:240\n717#4,2:242\n719#4,11:248\n705#4,2:278\n717#4,2:280\n719#4,11:286\n705#4,2:316\n717#4,2:318\n719#4,11:324\n705#4,2:354\n717#4,2:356\n719#4,11:362\n72#5,4:168\n72#5,4:206\n72#5,4:244\n72#5,4:282\n72#5,4:320\n72#5,4:358\n*S KotlinDebug\n*F\n+ 1 BusAlert.kt\nandroidx/compose/material/icons/twotone/BusAlertKt\n*L\n29#1:133,12\n30#1:146,18\n30#1:183\n52#1:184,18\n52#1:221\n59#1:222,18\n59#1:259\n95#1:260,18\n95#1:297\n101#1:298,18\n101#1:335\n107#1:336,18\n107#1:373\n29#1:145\n30#1:164,2\n30#1:166,2\n30#1:172,11\n52#1:202,2\n52#1:204,2\n52#1:210,11\n59#1:240,2\n59#1:242,2\n59#1:248,11\n95#1:278,2\n95#1:280,2\n95#1:286,11\n101#1:316,2\n101#1:318,2\n101#1:324,11\n107#1:354,2\n107#1:356,2\n107#1:362,11\n30#1:168,4\n52#1:206,4\n59#1:244,4\n95#1:282,4\n101#1:320,4\n107#1:358,4\n*E\n"
+    }
+.end annotation

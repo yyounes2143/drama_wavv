@@ -1,0 +1,39 @@
+package androidx.core.util;
+
+import android.util.LongSparseArray;
+import java.util.Iterator;
+import kotlin.Metadata;
+import kotlin.jvm.internal.markers.KMappedMarker;
+
+/* compiled from: LongSparseArray.kt */
+@Metadata(m51404d1 = {"\u0000\b\n\u0000\n\u0002\u0010(\n\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001¨\u0006\u0002"}, m51405d2 = {"androidx/core/util/LongSparseArrayKt$valueIterator$1", "", "core-ktx_release"}, m51406k = 1, m51407mv = {1, 8, 0}, m51409xi = 48)
+/* loaded from: classes3.dex */
+public final class LongSparseArrayKt$valueIterator$1 implements Iterator<Object>, KMappedMarker {
+
+    /* renamed from: a */
+    public int f26933a;
+
+    /* renamed from: b */
+    final /* synthetic */ LongSparseArray<Object> f26934b;
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        if (this.f26933a < this.f26934b.size()) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.util.Iterator
+    public final Object next() {
+        LongSparseArray<Object> longSparseArray = this.f26934b;
+        int i10 = this.f26933a;
+        this.f26933a = i10 + 1;
+        return longSparseArray.valueAt(i10);
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+}

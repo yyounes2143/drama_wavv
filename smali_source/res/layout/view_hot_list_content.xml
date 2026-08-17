@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dramawave.shared.ui.view.content.ContentContainer android:id="@id/content" android:background="@drawable/common_shape_top_conner_12_surface_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/contentcontainer_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:paddingTop="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabLayout android:layout_gravity="center" android:id="@id/tab" android:background="@color/theme_surface1" android:layout_width="fill_parent" android:layout_height="@dimen/_28sdp" app:tabBackground="@drawable/theater_hot_list_tab_indicator" app:tabIndicatorHeight="0.0dip" app:tabSelectedTextColor="@color/theme_text1" app:tabTextAppearance="@style/MyTabTextAppearance" app:tabTextColor="@color/theme_text2" />
+            </FrameLayout>
+            <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/_8sdp" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.dramawave.shared.ui.view.content.ContentContainer>
+</merge>

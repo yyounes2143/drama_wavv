@@ -1,0 +1,25 @@
+.class public Lcom/tp/adx/sdk/util/ResourceDownloadError;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final cancel_code:Ljava/lang/String; = "-10001"
+
+.field public static final exception_code:Ljava/lang/String; = "-10000"
+
+.field public static final fail_save_msg:Ljava/lang/String; = "Save fail!"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method

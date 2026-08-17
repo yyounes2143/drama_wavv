@@ -1,0 +1,5 @@
+package com.tradplus.ads.common.serialization.serializer;
+
+/* loaded from: classes7.dex */
+public interface SerializeFilter {
+}

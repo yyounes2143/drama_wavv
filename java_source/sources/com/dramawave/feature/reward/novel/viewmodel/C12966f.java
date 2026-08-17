@@ -1,0 +1,64 @@
+package com.dramawave.feature.reward.novel.viewmodel;
+
+import com.dramawave.core.mvi.architecture.C8358a;
+import com.dramawave.core.mvi.architecture.C8365h;
+import com.dramawave.feature.reward.novel.viewmodel.AbstractC12961a;
+import kotlin.C27136b;
+import kotlin.Unit;
+import kotlin.coroutines.InterfaceC27211e;
+import kotlin.jvm.functions.Function2;
+import p047D9.EnumC0226a;
+import p059E9.AbstractC0273j;
+import p059E9.InterfaceC0269f;
+
+/* compiled from: NewbieWelfareViewModel.kt */
+@InterfaceC0269f(m255c = "com.dramawave.feature.reward.novel.viewmodel.NewbieWelfareViewModel$intent4CloseReceivedDialog$1", m256f = "NewbieWelfareViewModel.kt", m257l = {115}, m258m = "invokeSuspend")
+/* renamed from: com.dramawave.feature.reward.novel.viewmodel.f */
+/* loaded from: classes.dex */
+public final class C12966f extends AbstractC0273j implements Function2<C8358a<C12962b, AbstractC12961a>, InterfaceC27211e<? super Unit>, Object> {
+
+    /* renamed from: a */
+    int f65784a;
+
+    /* renamed from: b */
+    private /* synthetic */ Object f65785b;
+
+    public C12966f() {
+        throw null;
+    }
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [E9.j, kotlin.coroutines.e<kotlin.Unit>, com.dramawave.feature.reward.novel.viewmodel.f] */
+    @Override // p059E9.AbstractC0264a
+    public final InterfaceC27211e<Unit> create(Object obj, InterfaceC27211e<?> interfaceC27211e) {
+        ?? abstractC0273j = new AbstractC0273j(2, interfaceC27211e);
+        abstractC0273j.f65785b = obj;
+        return abstractC0273j;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(C8358a<C12962b, AbstractC12961a> c8358a, InterfaceC27211e<? super Unit> interfaceC27211e) {
+        return ((C12966f) create(c8358a, interfaceC27211e)).invokeSuspend(Unit.f119604a);
+    }
+
+    @Override // p059E9.AbstractC0264a
+    public final Object invokeSuspend(Object obj) {
+        EnumC0226a enumC0226a = EnumC0226a.f605a;
+        int i10 = this.f65784a;
+        if (i10 != 0) {
+            if (i10 == 1) {
+                C27136b.m51416b(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            C27136b.m51416b(obj);
+            C8358a c8358a = (C8358a) this.f65785b;
+            AbstractC12961a.b bVar = AbstractC12961a.b.f65760b;
+            this.f65784a = 1;
+            if (C8365h.m22216m(c8358a, bVar, this) == enumC0226a) {
+                return enumC0226a;
+            }
+        }
+        return Unit.f119604a;
+    }
+}

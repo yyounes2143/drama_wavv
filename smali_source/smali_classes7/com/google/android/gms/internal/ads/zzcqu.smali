@@ -1,0 +1,90 @@
+.class final Lcom/google/android/gms/internal/ads/zzcqu;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@24.2.0"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzgbo;
+
+
+# instance fields
+.field final synthetic zza:Lcom/google/android/gms/internal/ads/zzgbo;
+
+.field final synthetic zzb:Lcom/google/android/gms/internal/ads/zzcqv;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzcqv;Lcom/google/android/gms/internal/ads/zzgbo;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzcqu;->zza:Lcom/google/android/gms/internal/ads/zzgbo;
+
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzcqu;->zzb:Lcom/google/android/gms/internal/ads/zzcqv;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zza(Ljava/lang/Throwable;)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzcqu;->zzb:Lcom/google/android/gms/internal/ads/zzcqv;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/zzcqv;->zzd(Lcom/google/android/gms/internal/ads/zzcqv;)V
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzcqu;->zza:Lcom/google/android/gms/internal/ads/zzgbo;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzgbo;->zza(Ljava/lang/Throwable;)V
+
+    .line 11
+    return-void
+.end method
+
+.method public final bridge synthetic zzb(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzcqu;->zzb:Lcom/google/android/gms/internal/ads/zzcqv;
+
+    .line 3
+    .line 4
+    check-cast p1, Lcom/google/android/gms/internal/ads/zzcqg;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/zzcqv;->zzd(Lcom/google/android/gms/internal/ads/zzcqv;)V
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzcqu;->zza:Lcom/google/android/gms/internal/ads/zzgbo;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzgbo;->zzb(Ljava/lang/Object;)V
+
+    .line 13
+    return-void
+.end method

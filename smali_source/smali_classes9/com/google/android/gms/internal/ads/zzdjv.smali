@@ -1,0 +1,78 @@
+.class public final Lcom/google/android/gms/internal/ads/zzdjv;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@24.2.0"
+
+
+# instance fields
+.field private final zza:Lcom/google/android/gms/internal/ads/zzbpn;
+
+.field private final zzb:Lcom/google/android/gms/internal/ads/zzbpk;
+
+.field private final zzc:Lcom/google/android/gms/internal/ads/zzbpj;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzbpk;Lcom/google/android/gms/internal/ads/zzbpj;Lcom/google/android/gms/internal/ads/zzbpn;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdjv;->zzb:Lcom/google/android/gms/internal/ads/zzbpk;
+
+    .line 6
+    .line 7
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdjv;->zzc:Lcom/google/android/gms/internal/ads/zzbpj;
+
+    .line 8
+    .line 9
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzdjv;->zza:Lcom/google/android/gms/internal/ads/zzbpn;
+
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zza()Lcom/google/android/gms/internal/ads/zzbpn;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdjv;->zza:Lcom/google/android/gms/internal/ads/zzbpn;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public final zzb()Lcom/google/android/gms/internal/ads/zzbpj;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdjv;->zzc:Lcom/google/android/gms/internal/ads/zzbpj;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public final zzc()Lcom/google/android/gms/internal/ads/zzbpk;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdjv;->zzb:Lcom/google/android/gms/internal/ads/zzbpk;
+
+    .line 3
+    return-object v0
+.end method

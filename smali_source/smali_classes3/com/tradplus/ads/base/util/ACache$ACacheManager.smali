@@ -1,0 +1,903 @@
+.class public Lcom/tradplus/ads/base/util/ACache$ACacheManager;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tradplus/ads/base/util/ACache;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "ACacheManager"
+.end annotation
+
+
+# instance fields
+.field private final cacheCount:Ljava/util/concurrent/atomic/AtomicInteger;
+
+.field protected cacheDir:Ljava/io/File;
+
+.field private final cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+.field private final countLimit:I
+
+.field private final lastUsageDates:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/io/File;",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final sizeLimit:J
+
+.field final synthetic this$0:Lcom/tradplus/ads/base/util/ACache;
+
+
+# direct methods
+.method private constructor <init>(Lcom/tradplus/ads/base/util/ACache;Ljava/io/File;JI)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->this$0:Lcom/tradplus/ads/base/util/ACache;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    invoke-static {}, Landroidx/compose/foundation/lazy/grid/a;->b()Ljava/util/Map;
+
+    move-result-object p1
+
+    .line 3
+    iput-object p1, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    iput-object p2, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheDir:Ljava/io/File;
+
+    iput-wide p3, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->sizeLimit:J
+
+    iput p5, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->countLimit:I
+
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicLong;
+
+    invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
+
+    iput-object p1, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
+
+    iput-object p1, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheCount:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-direct {p0}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->calculateCacheSizeAndCacheCount()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/tradplus/ads/base/util/ACache;Ljava/io/File;JILcom/tradplus/ads/base/util/ACache$1;)V
+    .locals 0
+
+    .line 7
+    invoke-direct/range {p0 .. p5}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;-><init>(Lcom/tradplus/ads/base/util/ACache;Ljava/io/File;JI)V
+
+    return-void
+.end method
+
+.method public static synthetic access$100(Lcom/tradplus/ads/base/util/ACache$ACacheManager;Ljava/lang/String;)Ljava/io/File;
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->newFile(Ljava/lang/String;)Ljava/io/File;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic access$1400(Lcom/tradplus/ads/base/util/ACache$ACacheManager;Ljava/lang/String;)Z
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->hasCache(Ljava/lang/String;)Z
+
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static synthetic access$1500(Lcom/tradplus/ads/base/util/ACache$ACacheManager;Ljava/lang/String;)Z
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->remove(Ljava/lang/String;)Z
+
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static synthetic access$1600(Lcom/tradplus/ads/base/util/ACache$ACacheManager;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->clear()V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic access$1700(Lcom/tradplus/ads/base/util/ACache$ACacheManager;Ljava/io/File;)J
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->calculateSize(Ljava/io/File;)J
+
+    .line 4
+    move-result-wide p0
+
+    .line 5
+    return-wide p0
+.end method
+
+.method public static synthetic access$1800(Lcom/tradplus/ads/base/util/ACache$ACacheManager;)Ljava/util/Map;
+    .locals 0
+
+    .line 1
+    .line 2
+    iget-object p0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public static synthetic access$1900(Lcom/tradplus/ads/base/util/ACache$ACacheManager;)Ljava/util/concurrent/atomic/AtomicLong;
+    .locals 0
+
+    .line 1
+    .line 2
+    iget-object p0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public static synthetic access$200(Lcom/tradplus/ads/base/util/ACache$ACacheManager;Ljava/io/File;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->put(Ljava/io/File;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic access$2000(Lcom/tradplus/ads/base/util/ACache$ACacheManager;)Ljava/util/concurrent/atomic/AtomicInteger;
+    .locals 0
+
+    .line 1
+    .line 2
+    iget-object p0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheCount:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public static synthetic access$400(Lcom/tradplus/ads/base/util/ACache$ACacheManager;Ljava/lang/String;)Ljava/io/File;
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->get(Ljava/lang/String;)Ljava/io/File;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method private calculateCacheSizeAndCacheCount()V
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Ljava/lang/Thread;
+
+    .line 3
+    .line 4
+    new-instance v1, Lcom/tradplus/ads/base/util/ACache$ACacheManager$1;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {v1, p0}, Lcom/tradplus/ads/base/util/ACache$ACacheManager$1;-><init>(Lcom/tradplus/ads/base/util/ACache$ACacheManager;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 14
+    return-void
+.end method
+
+.method private calculateSize(Ljava/io/File;)J
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/io/File;->length()J
+
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    return-wide v0
+.end method
+
+.method private clear()V
+    .locals 4
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0}, Ljava/util/Map;->clear()V
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 8
+    .line 9
+    const-wide/16 v1, 0x0
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheDir:Ljava/io/File;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    .line 18
+    move-result-object v0
+
+    .line 19
+    .line 20
+    if-eqz v0, :cond_0
+
+    .line 21
+    array-length v1, v0
+
+    .line 22
+    const/4 v2, 0x0
+
+    .line 23
+    .line 24
+    :goto_0
+    if-ge v2, v1, :cond_0
+
+    .line 25
+    .line 26
+    aget-object v3, v0, v2
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v3}, Ljava/io/File;->delete()Z
+
+    .line 30
+    .line 31
+    add-int/lit8 v2, v2, 0x1
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    return-void
+.end method
+
+.method private get(Ljava/lang/String;)Ljava/io/File;
+    .locals 3
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->newFile(Ljava/lang/String;)Ljava/io/File;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 12
+    move-result-object v2
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p1, v0, v1}, Ljava/io/File;->setLastModified(J)Z
+
+    .line 16
+    .line 17
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-interface {v0, p1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 21
+    return-object p1
+.end method
+
+.method private hasCache(Ljava/lang/String;)Z
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->newFile(Ljava/lang/String;)Ljava/io/File;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Ljava/io/File;->exists()Z
+
+    .line 8
+    move-result p1
+
+    .line 9
+    return p1
+.end method
+
+.method private newFile(Ljava/lang/String;)Ljava/io/File;
+    .locals 3
+
+    .line 1
+    .line 2
+    new-instance v0, Ljava/io/File;
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheDir:Ljava/io/File;
+
+    .line 5
+    .line 6
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+
+    .line 13
+    move-result p1
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    const-string p1, ""
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 25
+    move-result-object p1
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 29
+    return-object v0
+.end method
+
+.method private put(Ljava/io/File;)V
+    .locals 6
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheCount:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    .line 6
+    move-result v0
+
+    .line 7
+    :goto_0
+    const/4 v1, 0x1
+
+    .line 8
+    add-int/2addr v0, v1
+
+    .line 9
+    .line 10
+    iget v2, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->countLimit:I
+
+    .line 11
+    .line 12
+    if-le v0, v2, :cond_0
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-direct {p0}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->removeNext()J
+
+    .line 16
+    move-result-wide v0
+
+    .line 17
+    .line 18
+    iget-object v2, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 19
+    neg-long v0, v0
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
+
+    .line 23
+    .line 24
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheCount:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 25
+    const/4 v1, -0x1
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
+
+    .line 29
+    move-result v0
+
+    .line 30
+    goto :goto_0
+
+    .line 31
+    .line 32
+    :cond_0
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheCount:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->calculateSize(Ljava/io/File;)J
+
+    .line 39
+    move-result-wide v0
+
+    .line 40
+    .line 41
+    iget-object v2, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+
+    .line 45
+    move-result-wide v2
+
+    .line 46
+    :goto_1
+    add-long/2addr v2, v0
+
+    .line 47
+    .line 48
+    iget-wide v4, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->sizeLimit:J
+
+    .line 49
+    .line 50
+    cmp-long v2, v2, v4
+
+    .line 51
+    .line 52
+    if-lez v2, :cond_1
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-direct {p0}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->removeNext()J
+
+    .line 56
+    move-result-wide v2
+
+    .line 57
+    .line 58
+    iget-object v4, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 59
+    neg-long v2, v2
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-virtual {v4, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
+
+    .line 63
+    move-result-wide v2
+
+    .line 64
+    goto :goto_1
+
+    .line 65
+    .line 66
+    :cond_1
+    iget-object v2, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->cacheSize:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 73
+    move-result-wide v0
+
+    .line 74
+    .line 75
+    .line 76
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 77
+    move-result-object v2
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {p1, v0, v1}, Ljava/io/File;->setLastModified(J)Z
+
+    .line 81
+    .line 82
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-interface {v0, p1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 86
+    return-void
+.end method
+
+.method private remove(Ljava/lang/String;)Z
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->get(Ljava/lang/String;)Ljava/io/File;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    .line 8
+    move-result p1
+
+    .line 9
+    return p1
+.end method
+
+.method private removeNext()J
+    .locals 10
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    .line 6
+    move-result v0
+
+    .line 7
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    const-wide/16 v0, 0x0
+
+    .line 11
+    return-wide v0
+
+    .line 12
+    .line 13
+    :cond_0
+    iget-object v0, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    .line 17
+    move-result-object v0
+
+    .line 18
+    .line 19
+    iget-object v1, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 20
+    monitor-enter v1
+
+    .line 21
+    .line 22
+    .line 23
+    :try_start_0
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 24
+    move-result-object v0
+
+    .line 25
+    const/4 v2, 0x0
+
+    .line 26
+    move-object v3, v2
+
+    .line 27
+    .line 28
+    .line 29
+    :cond_1
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 30
+    move-result v4
+
+    .line 31
+    .line 32
+    if-eqz v4, :cond_3
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 36
+    move-result-object v4
+
+    .line 37
+    .line 38
+    check-cast v4, Ljava/util/Map$Entry;
+
+    .line 39
+    .line 40
+    if-nez v2, :cond_2
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 44
+    move-result-object v2
+
+    .line 45
+    .line 46
+    check-cast v2, Ljava/io/File;
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 50
+    move-result-object v3
+
+    .line 51
+    .line 52
+    check-cast v3, Ljava/lang/Long;
+
+    .line 53
+    goto :goto_0
+
+    .line 54
+    :catchall_0
+    move-exception v0
+
+    .line 55
+    goto :goto_1
+
+    .line 56
+    .line 57
+    .line 58
+    :cond_2
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 59
+    move-result-object v5
+
+    .line 60
+    .line 61
+    check-cast v5, Ljava/lang/Long;
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
+
+    .line 65
+    move-result-wide v6
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
+
+    .line 69
+    move-result-wide v8
+
+    .line 70
+    .line 71
+    cmp-long v6, v6, v8
+
+    .line 72
+    .line 73
+    if-gez v6, :cond_1
+
+    .line 74
+    .line 75
+    .line 76
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 77
+    move-result-object v2
+
+    .line 78
+    .line 79
+    check-cast v2, Ljava/io/File;
+
+    .line 80
+    move-object v3, v5
+
+    .line 81
+    goto :goto_0
+
+    .line 82
+    :cond_3
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-direct {p0, v2}, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->calculateSize(Ljava/io/File;)J
+
+    .line 86
+    move-result-wide v0
+
+    .line 87
+    .line 88
+    .line 89
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
+
+    .line 90
+    move-result v3
+
+    .line 91
+    .line 92
+    if-eqz v3, :cond_4
+
+    .line 93
+    .line 94
+    iget-object v3, p0, Lcom/tradplus/ads/base/util/ACache$ACacheManager;->lastUsageDates:Ljava/util/Map;
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-interface {v3, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 98
+    :cond_4
+    return-wide v0
+
+    .line 99
+    :goto_1
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 100
+    throw v0
+.end method

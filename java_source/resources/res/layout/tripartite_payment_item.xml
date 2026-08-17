@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_8sdp">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ll_content"
+        android:background="@drawable/payment_selector_coins_new"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/im_channel"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_23sdp"/>
+    </LinearLayout>
+    <include
+        android:layout_gravity="end"
+        android:id="@+id/include_purchase_tag"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        layout="@layout/purchase_tag_layout"/>
+</FrameLayout>

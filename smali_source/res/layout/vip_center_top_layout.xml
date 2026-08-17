@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar android:id="@id/status_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@null" android:outlineProvider="none">
+        <com.hjq.bar.TitleBar android:id="@id/title_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" app:leftIcon="@drawable/ic_back_left" app:lineSize="0.0dip" app:lineVisible="false" app:title="" />
+    </com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar>
+</LinearLayout>

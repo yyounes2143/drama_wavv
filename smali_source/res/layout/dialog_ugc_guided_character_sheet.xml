@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ugc_guided_sheet_bg" android:paddingTop="@dimen/_20sdp" android:paddingBottom="@dimen/_24sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/ugc_text_1" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_16sdp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_characters" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_16sdp" />
+</LinearLayout>

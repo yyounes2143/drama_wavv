@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RadioGroup android:id="@id/rg_channel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textColor="@color/white" android:id="@id/rb_channel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="channel1" />
+        <RadioButton android:textColor="@color/white" android:id="@id/rb_channel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="channel2" />
+        <RadioButton android:textColor="@color/white" android:id="@id/rb_channel3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="channel3" />
+    </RadioGroup>
+    <EditText android:textColor="@color/white" android:id="@id/et_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="input group" />
+    <Button android:id="@id/dev_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="send" />
+</LinearLayout>

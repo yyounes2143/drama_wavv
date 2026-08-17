@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_22sdp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/ll_content"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <com.dramawave.shared.p448ui.view.CircleProgressView
+            android:id="@+id/circle_progress_bar"
+            android:background="@drawable/bg_novel_right_progress_bg"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"/>
+        <TextView
+            android:textSize="@dimen/text_size_10"
+            android:id="@+id/tv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_arrow_right"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/common_ic_arrow"
+            android:layout_marginHorizontal="2dp"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_coin"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_margin="@dimen/_3sdp"
+        android:src="@drawable/ic_common_coin_single"
+        android:layout_marginEnd="4dp"/>
+</FrameLayout>

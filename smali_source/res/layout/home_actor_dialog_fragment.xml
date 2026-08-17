@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sr_shape_top_end_radius_12_surface2" android:paddingBottom="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/theme_text1" android:gravity="center_horizontal" android:id="@id/tv_title" android:paddingTop="@dimen/_16sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="相关演员" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_actor" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_10sdp" />
+</LinearLayout>

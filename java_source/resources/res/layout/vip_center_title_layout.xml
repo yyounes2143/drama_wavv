@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.dramawave.core.common.view.GradientTextView
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv_vip_title"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_weight="1"
+        android:paddingHorizontal="@dimen/_30sdp"
+        app:gradientDirection="left_to_right"
+        app:gradientEndColor="#ffc76e"
+        app:gradientMiddleColor="#fff4cf"
+        app:gradientStartColor="#ffd571"/>
+</LinearLayout>

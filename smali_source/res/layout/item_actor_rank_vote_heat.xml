@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_container" android:background="@drawable/bg_rank_actor_heat_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/_62sdp" android:layout_marginLeft="@dimen/_6sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_6sdp" android:layout_marginBottom="@dimen/_5sdp" android:layout_marginHorizontal="@dimen/_6sdp" android:layout_marginVertical="@dimen/_5sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start|center" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp">
+        <ImageView android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_rank_actor_heat_icon_item" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/theme_text1" android:id="@id/tv_heat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <com.dramawave.shared.ui.view.PurchaseFlashView android:id="@id/flash_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/profile_store_top_scan" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

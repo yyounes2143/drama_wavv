@@ -1,0 +1,36 @@
+.class public final synthetic Landroidx/compose/foundation/text/input/internal/f0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+
+# direct methods
+.method public static bridge synthetic a(Ljava/util/concurrent/atomic/DoubleAdder;)D
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/DoubleAdder;->doubleValue()D
+
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    return-wide v0
+.end method
+
+.method public static synthetic b([Ljava/util/Locale;)Landroid/os/LocaleList;
+    .locals 1
+
+    .line 1
+    .line 2
+    new-instance v0, Landroid/os/LocaleList;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0, p0}, Landroid/os/LocaleList;-><init>([Ljava/util/Locale;)V
+
+    .line 6
+    return-object v0
+.end method

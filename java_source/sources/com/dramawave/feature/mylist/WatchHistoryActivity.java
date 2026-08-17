@@ -1,0 +1,49 @@
+package com.dramawave.feature.mylist;
+
+import android.os.Bundle;
+import androidx.compose.runtime.internal.StabilityInferred;
+import androidx.fragment.app.FragmentTransaction;
+import com.dramawave.feature.mylist.WatchHistoryFragment;
+import com.dramawave.feature.mylist.databinding.ActivityWatchHistoryBinding;
+import com.dramawave.shared.base.activity.BaseTraceActivity;
+import kotlin.Metadata;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: WatchHistoryActivity.kt */
+@StabilityInferred
+@Metadata(m51404d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0007¢\u0006\u0004\b\u0003\u0010\u0004J\u0012\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u000bH\u0016J\b\u0010\f\u001a\u00020\tH\u0016J\b\u0010\r\u001a\u00020\tH\u0016J\b\u0010\u000e\u001a\u00020\tH\u0016R\u0016\u0010\u0005\u001a\u0004\u0018\u00010\u00068\u0006@\u0006X\u0087\u000e¢\u0006\u0004\n\u0002\u0010\u0007¨\u0006\u000f"}, m51405d2 = {"Lcom/dramawave/feature/mylist/WatchHistoryActivity;", "Lcom/dramawave/shared/base/activity/BaseTraceActivity;", "Lcom/dramawave/feature/mylist/databinding/ActivityWatchHistoryBinding;", "<init>", "()V", "args", "", "Ljava/lang/Boolean;", "initView", "", "savedInstanceState", "Landroid/os/Bundle;", "initObserver", "afterInit", "release", "feature_mylist_release"}, m51406k = 1, m51407mv = {2, 1, 0}, m51409xi = 48)
+/* loaded from: classes7.dex */
+public final class WatchHistoryActivity extends BaseTraceActivity<ActivityWatchHistoryBinding> {
+    public static final int $stable = 8;
+
+    @Nullable
+    public Boolean args;
+
+    @Override // com.dramawave.shared.base.activity.BaseTraceActivity, com.dramawave.shared.base.activity.BaseThemeActivity, com.dramawave.shared.base.activity.BaseA, p735s5.InterfaceC28479a
+    public void afterInit() {
+    }
+
+    @Override // com.dramawave.shared.base.activity.BaseTraceActivity, com.dramawave.shared.base.activity.BaseThemeActivity, com.dramawave.shared.base.activity.BaseA, p735s5.InterfaceC28479a
+    public void initObserver() {
+    }
+
+    @Override // com.dramawave.shared.base.activity.BaseTraceActivity, com.dramawave.shared.base.activity.BaseThemeActivity, com.dramawave.shared.base.activity.BaseA, p735s5.InterfaceC28479a
+    public void release() {
+    }
+
+    @Override // com.dramawave.shared.base.activity.BaseThemeActivity, com.dramawave.shared.base.activity.BaseA, p735s5.InterfaceC28479a
+    public void initView(@Nullable Bundle savedInstanceState) {
+        boolean z10;
+        FragmentTransaction m11460d = getSupportFragmentManager().m11460d();
+        int i10 = R$id.f56775h;
+        WatchHistoryFragment.Companion companion = WatchHistoryFragment.INSTANCE;
+        Boolean bool = this.args;
+        if (bool != null) {
+            z10 = bool.booleanValue();
+        } else {
+            z10 = false;
+        }
+        m11460d.m11534n(i10, companion.newInstance(z10), null);
+        m11460d.mo11344g();
+    }
+}

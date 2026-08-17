@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/_12sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingRight="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_12sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_12sdp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/lottie_up"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:scaleType="fitXY"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="ad_speed_up.json"
+            app:lottie_imageAssetsFolder="images/"
+            app:lottie_loop="true"
+            app:lottie_speed="1.1"/>
+        <ImageView
+            android:id="@+id/iv_up"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/ic_double_up"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/theme_text2"
+            android:ellipsize="end"
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginStart="@dimen/_4sdp"/>
+    </LinearLayout>
+</FrameLayout>

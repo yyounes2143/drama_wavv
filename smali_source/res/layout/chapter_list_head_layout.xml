@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:paddingBottom="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_80sdp" app:cardCornerRadius="@dimen/_4sdp" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/iv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/_12sdp">
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="?reader_text_primary" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_detail_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="?reader_text_secondary" android:id="@id/tv_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chapter_list_book_detail" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/common_ic_arrow" android:layout_marginStart="@dimen/_2sdp" app:tint="?reader_text_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

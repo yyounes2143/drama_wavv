@@ -1,0 +1,51 @@
+package com.facebook.ads.redexgen.core;
+
+import android.text.TextUtils;
+import android.util.SparseBooleanArray;
+import java.util.Map;
+
+/* renamed from: com.facebook.ads.redexgen.X.Ex */
+/* loaded from: assets/audience_network.dex */
+public class C17398Ex extends AbstractC18968eW {
+    public final /* synthetic */ InterfaceC18350US A00;
+    public final /* synthetic */ C18520XH A01;
+    public final /* synthetic */ C18862cn A02;
+    public final /* synthetic */ C17396Ev A03;
+    public final /* synthetic */ String A04;
+    public final /* synthetic */ Map A05;
+
+    public C17398Ex(C17396Ev c17396Ev, String str, C18862cn c18862cn, InterfaceC18350US interfaceC18350US, Map map, C18520XH c18520xh) {
+        this.A03 = c17396Ev;
+        this.A04 = str;
+        this.A02 = c18862cn;
+        this.A00 = interfaceC18350US;
+        this.A05 = map;
+        this.A01 = c18520xh;
+    }
+
+    @Override // com.facebook.ads.redexgen.core.AbstractC18968eW
+    public final void A03() {
+        C18969eX c18969eX;
+        SparseBooleanArray sparseBooleanArray;
+        C18969eX c18969eX2;
+        C17897N3 c17897n3;
+        C18895dL c18895dL;
+        SparseBooleanArray sparseBooleanArray2;
+        c18969eX = this.A03.A02;
+        if (!c18969eX.A0Z() && !TextUtils.isEmpty(this.A04)) {
+            sparseBooleanArray = this.A03.A08;
+            if (!sparseBooleanArray.get(this.A02.A02())) {
+                InterfaceC18350US interfaceC18350US = this.A00;
+                String str = this.A04;
+                C18678Zp c18678Zp = new C18678Zp(this.A05);
+                c18969eX2 = this.A03.A03;
+                interfaceC18350US.AB5(str, c18678Zp.A03(c18969eX2).A02(this.A01).A05());
+                c17897n3 = this.A03.A00;
+                c18895dL = this.A03.A09;
+                C17897N3.A07(c17897n3, c18895dL);
+                sparseBooleanArray2 = this.A03.A08;
+                sparseBooleanArray2.put(this.A02.A02(), true);
+            }
+        }
+    }
+}

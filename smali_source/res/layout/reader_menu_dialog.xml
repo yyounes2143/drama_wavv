@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_shape_conner_12_top_surface_2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_faq" android:paddingLeft="@dimen/_16sdp" android:paddingTop="@dimen/_12sdp" android:paddingRight="@dimen/_16sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:paddingHorizontal="@dimen/_16sdp" android:paddingVertical="@dimen/_12sdp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" app:srcCompat="@drawable/profile_ic_service_center" app:tint="@color/theme_text1" />
+        <TextView android:textColor="@color/theme_text2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sr_faq" android:layout_weight="1.0" android:layout_marginStart="@dimen/_8sdp" style="@style/theme_TextMedium16" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:tint="@color/theme_text3" app:srcCompat="@drawable/ic_chevron_right_automirror" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/_20sdp" />
+    <View android:id="@id/bottom_safe_area" android:background="@color/theme_surface2" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</LinearLayout>

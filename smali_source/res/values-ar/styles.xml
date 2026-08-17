@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="board_header_sub_title_style" parent="@style/theme_TextRegular12">
+        <item name="android:textColor">@color/theme_99FFC76E</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:lineSpacingMultiplier">0.8</item>
+    </style>
+</resources>

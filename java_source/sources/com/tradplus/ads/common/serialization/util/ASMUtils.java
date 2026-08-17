@@ -1,0 +1,180 @@
+package com.tradplus.ads.common.serialization.util;
+
+import com.tradplus.ads.common.serialization.annotation.JSONField;
+import com.tradplus.ads.common.serialization.asm.ClassReader;
+import com.tradplus.ads.common.serialization.asm.TypeCollector;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AccessibleObject;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+
+/* loaded from: classes5.dex */
+public class ASMUtils {
+    public static final boolean IS_ANDROID;
+    public static final String JAVA_VM_NAME;
+
+    public static boolean checkName(String str) {
+        for (int i10 = 0; i10 < str.length(); i10++) {
+            char charAt = str.charAt(i10);
+            if (charAt < 1 || charAt > 127 || charAt == '.') {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static String desc(Class<?> cls) {
+        StringBuilder sb;
+        String str;
+        if (cls.isPrimitive()) {
+            return getPrimitiveLetter(cls);
+        }
+        if (cls.isArray()) {
+            sb = new StringBuilder("[");
+            str = desc(cls.getComponentType());
+        } else {
+            sb = new StringBuilder("L");
+            sb.append(type(cls));
+            str = ";";
+        }
+        sb.append(str);
+        return sb.toString();
+    }
+
+    public static Type getMethodType(Class<?> cls, String str) {
+        try {
+            return cls.getMethod(str, null).getGenericReturnType();
+        } catch (Exception unused) {
+            return null;
+        }
+    }
+
+    public static boolean isAndroid(String str) {
+        if (str == null) {
+            return false;
+        }
+        String lowerCase = str.toLowerCase();
+        if (!lowerCase.contains("dalvik") && !lowerCase.contains("lemur")) {
+            return false;
+        }
+        return true;
+    }
+
+    static {
+        String property = System.getProperty("java.vm.name");
+        JAVA_VM_NAME = property;
+        IS_ANDROID = isAndroid(property);
+    }
+
+    public static String desc(Method method) {
+        Class<?>[] parameterTypes = method.getParameterTypes();
+        StringBuilder sb = new StringBuilder((parameterTypes.length + 1) << 4);
+        sb.append('(');
+        for (Class<?> cls : parameterTypes) {
+            sb.append(desc(cls));
+        }
+        sb.append(')');
+        sb.append(desc(method.getReturnType()));
+        return sb.toString();
+    }
+
+    public static String getPrimitiveLetter(Class<?> cls) {
+        if (Integer.TYPE == cls) {
+            return "I";
+        }
+        if (Void.TYPE == cls) {
+            return "V";
+        }
+        if (Boolean.TYPE == cls) {
+            return "Z";
+        }
+        if (Character.TYPE == cls) {
+            return "C";
+        }
+        if (Byte.TYPE == cls) {
+            return "B";
+        }
+        if (Short.TYPE == cls) {
+            return "S";
+        }
+        if (Float.TYPE == cls) {
+            return "F";
+        }
+        if (Long.TYPE == cls) {
+            return "J";
+        }
+        if (Double.TYPE == cls) {
+            return "D";
+        }
+        throw new IllegalStateException("Type: " + cls.getCanonicalName() + " is not a primitive type");
+    }
+
+    public static String[] lookupParameterNames(AccessibleObject accessibleObject) {
+        Class<?>[] parameterTypes;
+        Class<?> declaringClass;
+        Annotation[][] parameterAnnotations;
+        String str;
+        String name;
+        if (IS_ANDROID) {
+            return new String[0];
+        }
+        if (accessibleObject instanceof Method) {
+            Method method = (Method) accessibleObject;
+            parameterTypes = method.getParameterTypes();
+            str = method.getName();
+            declaringClass = method.getDeclaringClass();
+            parameterAnnotations = TypeUtils.getParameterAnnotations(method);
+        } else {
+            Constructor constructor = (Constructor) accessibleObject;
+            parameterTypes = constructor.getParameterTypes();
+            declaringClass = constructor.getDeclaringClass();
+            parameterAnnotations = TypeUtils.getParameterAnnotations(constructor);
+            str = "<init>";
+        }
+        if (parameterTypes.length == 0) {
+            return new String[0];
+        }
+        ClassLoader classLoader = declaringClass.getClassLoader();
+        if (classLoader == null) {
+            classLoader = ClassLoader.getSystemClassLoader();
+        }
+        InputStream resourceAsStream = classLoader.getResourceAsStream(declaringClass.getName().replace('.', '/') + ".class");
+        if (resourceAsStream == null) {
+            return new String[0];
+        }
+        try {
+            ClassReader classReader = new ClassReader(resourceAsStream, false);
+            TypeCollector typeCollector = new TypeCollector(str, parameterTypes);
+            classReader.accept(typeCollector);
+            String[] parameterNamesForMethod = typeCollector.getParameterNamesForMethod();
+            for (int i10 = 0; i10 < parameterNamesForMethod.length; i10++) {
+                Annotation[] annotationArr = parameterAnnotations[i10];
+                if (annotationArr != null) {
+                    for (Annotation annotation : annotationArr) {
+                        if ((annotation instanceof JSONField) && (name = ((JSONField) annotation).name()) != null && name.length() > 0) {
+                            parameterNamesForMethod[i10] = name;
+                        }
+                    }
+                }
+            }
+            return parameterNamesForMethod;
+        } catch (IOException unused) {
+            return new String[0];
+        } finally {
+            IOUtils.close(resourceAsStream);
+        }
+    }
+
+    public static String type(Class<?> cls) {
+        if (cls.isArray()) {
+            return "[" + desc(cls.getComponentType());
+        }
+        if (!cls.isPrimitive()) {
+            return cls.getName().replace('.', '/');
+        }
+        return getPrimitiveLetter(cls);
+    }
+}

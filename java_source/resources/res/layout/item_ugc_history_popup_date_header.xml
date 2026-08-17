@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_size_16"
+    android:textColor="@color/theme_text1"
+    android:gravity="start|center_vertical"
+    android:id="@+id/tv_date_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_43sdp"
+    android:includeFontPadding="false"
+    android:paddingEnd="@dimen/_10sdp"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dramawave.shared.toast.view.AccurateWidthTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="14sp"
+    android:textColor="@color/white"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:id="@android:id/message"
+    android:background="@drawable/bg_custom_toast_default"
+    android:paddingLeft="16dp"
+    android:paddingTop="12dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="2"
+    android:includeFontPadding="false"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp"/>

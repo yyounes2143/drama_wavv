@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/theme_141414" />
+        </shape>
+    </item>
+    <item android:gravity="start" android:width="@dimen/_0.5sdp">
+        <shape>
+            <solid android:color="@color/theme_line1" />
+        </shape>
+    </item>
+    <item android:gravity="end" android:width="@dimen/_0.5sdp">
+        <shape>
+            <solid android:color="@color/theme_line1" />
+        </shape>
+    </item>
+    <item android:gravity="top" android:height="@dimen/_12sdp">
+        <shape>
+            <solid android:color="@color/theme_surface1" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/theme_surface1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.hjq.bar.TitleBar
+            android:id="@+id/title_bar"
+            android:background="@color/theme_surface1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:leftIcon="@drawable/ic_back_left"
+            app:lineVisible="false"
+            app:rightTitle="@string/sr_done"
+            app:rightTitleColor="@color/common_base_color"
+            app:title="@string/sr_display_language"
+            app:titleColor="@color/white"/>
+    </com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar>
+    <androidx.compose.p326ui.platform.ComposeView
+        android:id="@+id/compose_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

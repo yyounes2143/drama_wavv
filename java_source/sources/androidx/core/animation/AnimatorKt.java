@@ -1,0 +1,11 @@
+package androidx.core.animation;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* compiled from: Animator.kt */
+@Metadata(m51404d1 = {"\u0000\u0002\n\u0000¨\u0006\u0000"}, m51405d2 = {"core-ktx_release"}, m51406k = 2, m51407mv = {1, 8, 0}, m51409xi = 48)
+@SourceDebugExtension({"SMAP\nAnimator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Animator.kt\nandroidx/core/animation/AnimatorKt\n*L\n1#1,123:1\n85#1,18:124\n85#1,18:142\n85#1,18:160\n85#1,18:178\n*S KotlinDebug\n*F\n+ 1 Animator.kt\nandroidx/core/animation/AnimatorKt\n*L\n29#1:124,18\n39#1:142,18\n49#1:160,18\n58#1:178,18\n*E\n"})
+/* loaded from: classes7.dex */
+public final class AnimatorKt {
+}

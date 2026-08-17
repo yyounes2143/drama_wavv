@@ -1,0 +1,33 @@
+package com.google.android.gms.common.util;
+
+import android.content.Context;
+import android.content.pm.PackageManager;
+import androidx.annotation.NonNull;
+import com.google.android.gms.common.GoogleSignatureVerifier;
+import com.google.android.gms.common.annotation.KeepForSdk;
+import com.google.android.gms.common.wrappers.Wrappers;
+
+/* compiled from: com.google.android.gms:play-services-basement@@18.9.0 */
+@KeepForSdk
+/* loaded from: classes.dex */
+public final class UidVerifier {
+    @KeepForSdk
+    public static boolean isGooglePlayServicesUid(@NonNull Context context, int i10) {
+        if (uidHasPackageName(context, i10, "com.google.android.gms")) {
+            try {
+                return GoogleSignatureVerifier.getInstance(context).isGooglePublicSignedPackage(context.getPackageManager().getPackageInfo("com.google.android.gms", 64));
+            } catch (PackageManager.NameNotFoundException unused) {
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private UidVerifier() {
+    }
+
+    @KeepForSdk
+    public static boolean uidHasPackageName(@NonNull Context context, int i10, @NonNull String str) {
+        return Wrappers.packageManager(context).zza(i10, str);
+    }
+}

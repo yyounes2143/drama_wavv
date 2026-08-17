@@ -1,0 +1,131 @@
+package com.google.android.gms.ads;
+
+import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.gms.ads.internal.client.zzv;
+import com.taurusx.tax.p482n.p487z.C24187y;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* compiled from: com.google.android.gms:play-services-ads-api@@24.2.0 */
+/* loaded from: classes5.dex */
+public final class AdapterResponseInfo {
+    private final zzv zza;
+
+    @Nullable
+    private final AdError zzb;
+
+    @Nullable
+    public static AdapterResponseInfo zza(@Nullable zzv zzvVar) {
+        if (zzvVar != null) {
+            return new AdapterResponseInfo(zzvVar);
+        }
+        return null;
+    }
+
+    @Nullable
+    public AdError getAdError() {
+        return this.zzb;
+    }
+
+    @NonNull
+    public String getAdSourceId() {
+        return this.zza.zzf;
+    }
+
+    @NonNull
+    public String getAdSourceInstanceId() {
+        return this.zza.zzh;
+    }
+
+    @NonNull
+    public String getAdSourceInstanceName() {
+        return this.zza.zzg;
+    }
+
+    @NonNull
+    public String getAdSourceName() {
+        return this.zza.zze;
+    }
+
+    @NonNull
+    public String getAdapterClassName() {
+        return this.zza.zza;
+    }
+
+    @NonNull
+    public Bundle getCredentials() {
+        return this.zza.zzd;
+    }
+
+    public long getLatencyMillis() {
+        return this.zza.zzb;
+    }
+
+    @NonNull
+    public final JSONObject zzb() throws JSONException {
+        JSONObject jSONObject = new JSONObject();
+        zzv zzvVar = this.zza;
+        jSONObject.put("Adapter", zzvVar.zza);
+        jSONObject.put("Latency", zzvVar.zzb);
+        String adSourceName = getAdSourceName();
+        if (adSourceName == null) {
+            jSONObject.put("Ad Source Name", C24187y.f110593z);
+        } else {
+            jSONObject.put("Ad Source Name", adSourceName);
+        }
+        String adSourceId = getAdSourceId();
+        if (adSourceId == null) {
+            jSONObject.put("Ad Source ID", C24187y.f110593z);
+        } else {
+            jSONObject.put("Ad Source ID", adSourceId);
+        }
+        String adSourceInstanceName = getAdSourceInstanceName();
+        if (adSourceInstanceName == null) {
+            jSONObject.put("Ad Source Instance Name", C24187y.f110593z);
+        } else {
+            jSONObject.put("Ad Source Instance Name", adSourceInstanceName);
+        }
+        String adSourceInstanceId = getAdSourceInstanceId();
+        if (adSourceInstanceId == null) {
+            jSONObject.put("Ad Source Instance ID", C24187y.f110593z);
+        } else {
+            jSONObject.put("Ad Source Instance ID", adSourceInstanceId);
+        }
+        JSONObject jSONObject2 = new JSONObject();
+        Bundle bundle = zzvVar.zzd;
+        for (String str : bundle.keySet()) {
+            jSONObject2.put(str, bundle.get(str));
+        }
+        jSONObject.put("Credentials", jSONObject2);
+        AdError adError = this.zzb;
+        if (adError == null) {
+            jSONObject.put("Ad Error", C24187y.f110593z);
+        } else {
+            jSONObject.put("Ad Error", adError.zzb());
+        }
+        return jSONObject;
+    }
+
+    private AdapterResponseInfo(zzv zzvVar) {
+        AdError zza;
+        this.zza = zzvVar;
+        com.google.android.gms.ads.internal.client.zze zzeVar = zzvVar.zzc;
+        if (zzeVar == null) {
+            zza = null;
+        } else {
+            zza = zzeVar.zza();
+        }
+        this.zzb = zza;
+    }
+
+    @NonNull
+    public String toString() {
+        try {
+            return zzb().toString(2);
+        } catch (JSONException unused) {
+            return "Error forming toString output.";
+        }
+    }
+}

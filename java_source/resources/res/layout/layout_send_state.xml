@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:indeterminateTint="@color/theme_text5"
+        android:indeterminateTintMode="src_atop"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/failedSend"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/ic_send_err"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

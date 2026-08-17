@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dramawave.shared.ui.view.SquareLayout android:background="@drawable/sr_shape_conner_8_surface_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/theme_text1" android:ellipsize="end" android:gravity="center" android:id="@id/tv_index" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" style="@style/theme_TextMedium14" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/iv_flag" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="@dimen/_4sdp" android:layout_marginEnd="@dimen/_4sdp" android:layout_alignParentEnd="true" app:lottie_autoPlay="true" app:lottie_fileName="playing_icon.json" app:lottie_imageAssetsFolder="images/" app:lottie_loop="true" />
+    <LinearLayout android:id="@id/iv_lock" android:background="@drawable/shape_conner_tr_8_surface_4" android:paddingLeft="@dimen/_2sdp" android:paddingTop="@dimen/_1sdp" android:paddingRight="@dimen/_2sdp" android:paddingBottom="@dimen/_1sdp" android:visibility="gone" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_14sdp" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/_2sdp" android:paddingVertical="@dimen/_1sdp">
+        <ImageView android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="@drawable/ic_lock" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_vip_flag" android:visibility="gone" android:layout_width="@dimen/_27sdp" android:layout_height="@dimen/_14sdp" android:src="@drawable/ic_tag_vip" android:layout_alignParentEnd="true" />
+</com.dramawave.shared.ui.view.SquareLayout>

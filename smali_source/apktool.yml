@@ -1,0 +1,237 @@
+version: 2.10.0
+apkFileName: app.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 35
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 1950001
+  versionName: 1.9.50
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  billing-ktx.properties: 8
+  billing.properties: 8
+  bundle.properties: 8
+  core-common.properties: 8
+  firebase-analytics.properties: 8
+  firebase-encoders-proto.properties: 8
+  firebase-encoders.properties: 8
+  firebase-iid-interop.properties: 8
+  firebase-measurement-connector.properties: 8
+  integrity.properties: 8
+  kotlin-tooling-metadata.json: 8
+  play-services-ads-api.properties: 8
+  play-services-ads-identifier.properties: 8
+  play-services-ads.properties: 8
+  play-services-appset.properties: 8
+  play-services-auth-api-phone.properties: 8
+  play-services-auth-base.properties: 8
+  play-services-auth.properties: 8
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-cloud-messaging.properties: 8
+  play-services-cronet.properties: 8
+  play-services-fido.properties: 8
+  play-services-location.properties: 8
+  play-services-measurement-api.properties: 8
+  play-services-measurement-base.properties: 8
+  play-services-measurement-impl.properties: 8
+  play-services-measurement-sdk-api.properties: 8
+  play-services-measurement-sdk.properties: 8
+  play-services-measurement.properties: 8
+  play-services-places-placereport.properties: 8
+  play-services-stats.properties: 8
+  play-services-tasks.properties: 8
+  user-messaging-platform.properties: 8
+  okhttp3/internal/publicsuffix/NOTICE: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 0
+  org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.properties: 8
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.properties: 8
+  org/jacoco/core/jacoco.properties: 8
+doNotCompress:
+- classes.dex
+- classes2.dex
+- classes3.dex
+- classes4.dex
+- classes5.dex
+- classes6.dex
+- classes7.dex
+- classes8.dex
+- classes9.dex
+- resources.arsc
+- META-INF/androidx.activity_activity-compose.version
+- META-INF/androidx.activity_activity-ktx.version
+- META-INF/androidx.activity_activity.version
+- META-INF/androidx.annotation_annotation-experimental.version
+- META-INF/androidx.appcompat_appcompat-resources.version
+- META-INF/androidx.appcompat_appcompat.version
+- META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version
+- META-INF/androidx.autofill_autofill.version
+- META-INF/androidx.browser_browser.version
+- META-INF/androidx.cardview_cardview.version
+- META-INF/androidx.compose.animation_animation-core.version
+- META-INF/androidx.compose.animation_animation.version
+- META-INF/androidx.compose.foundation_foundation-layout.version
+- META-INF/androidx.compose.foundation_foundation.version
+- META-INF/androidx.compose.material3_material3.version
+- META-INF/androidx.compose.material_material-icons-core.version
+- META-INF/androidx.compose.material_material-icons-extended.version
+- META-INF/androidx.compose.material_material-ripple.version
+- META-INF/androidx.compose.runtime_runtime-saveable.version
+- META-INF/androidx.compose.runtime_runtime.version
+- META-INF/androidx.compose.ui_ui-geometry.version
+- META-INF/androidx.compose.ui_ui-graphics.version
+- META-INF/androidx.compose.ui_ui-text.version
+- META-INF/androidx.compose.ui_ui-tooling-preview.version
+- META-INF/androidx.compose.ui_ui-unit.version
+- META-INF/androidx.compose.ui_ui-util.version
+- META-INF/androidx.compose.ui_ui.version
+- META-INF/androidx.constraintlayout_constraintlayout-compose.version
+- META-INF/androidx.coordinatorlayout_coordinatorlayout.version
+- META-INF/androidx.core_core-ktx.version
+- META-INF/androidx.core_core.version
+- META-INF/androidx.cursoradapter_cursoradapter.version
+- META-INF/androidx.customview_customview-poolingcontainer.version
+- META-INF/androidx.customview_customview.version
+- META-INF/androidx.databinding_library.version
+- META-INF/androidx.databinding_viewbinding.version
+- META-INF/androidx.datastore_datastore-core.version
+- META-INF/androidx.datastore_datastore-preferences.version
+- META-INF/androidx.datastore_datastore.version
+- META-INF/androidx.documentfile_documentfile.version
+- META-INF/androidx.drawerlayout_drawerlayout.version
+- META-INF/androidx.dynamicanimation_dynamicanimation.version
+- META-INF/androidx.emoji2_emoji2-views-helper.version
+- META-INF/androidx.emoji2_emoji2.version
+- META-INF/androidx.exifinterface_exifinterface.version
+- META-INF/androidx.fragment_fragment-ktx.version
+- META-INF/androidx.fragment_fragment.version
+- META-INF/androidx.graphics_graphics-path.version
+- META-INF/androidx.hilt_hilt-navigation-compose.version
+- META-INF/androidx.hilt_hilt-navigation.version
+- META-INF/androidx.interpolator_interpolator.version
+- META-INF/androidx.legacy_legacy-support-core-ui.version
+- META-INF/androidx.legacy_legacy-support-core-utils.version
+- META-INF/androidx.legacy_legacy-support-v4.version
+- META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+- META-INF/androidx.lifecycle_lifecycle-livedata-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-livedata.version
+- META-INF/androidx.lifecycle_lifecycle-process.version
+- META-INF/androidx.lifecycle_lifecycle-runtime-compose.version
+- META-INF/androidx.lifecycle_lifecycle-runtime-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-runtime.version
+- META-INF/androidx.lifecycle_lifecycle-service.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel-compose.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel.version
+- META-INF/androidx.loader_loader.version
+- META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version
+- META-INF/androidx.media_media.version
+- META-INF/androidx.navigation_navigation-common-ktx.version
+- META-INF/androidx.navigation_navigation-common.version
+- META-INF/androidx.navigation_navigation-compose.version
+- META-INF/androidx.navigation_navigation-fragment-ktx.version
+- META-INF/androidx.navigation_navigation-fragment.version
+- META-INF/androidx.navigation_navigation-runtime-ktx.version
+- META-INF/androidx.navigation_navigation-runtime.version
+- META-INF/androidx.navigation_navigation-ui-ktx.version
+- META-INF/androidx.navigation_navigation-ui.version
+- META-INF/androidx.print_print.version
+- META-INF/androidx.privacysandbox.ads_ads-adservices-java.version
+- META-INF/androidx.privacysandbox.ads_ads-adservices.version
+- META-INF/androidx.profileinstaller_profileinstaller.version
+- META-INF/androidx.recyclerview_recyclerview.version
+- META-INF/androidx.room_room-ktx.version
+- META-INF/androidx.room_room-runtime.version
+- META-INF/androidx.savedstate_savedstate-ktx.version
+- META-INF/androidx.savedstate_savedstate.version
+- META-INF/androidx.slidingpanelayout_slidingpanelayout.version
+- META-INF/androidx.sqlite_sqlite-framework.version
+- META-INF/androidx.sqlite_sqlite.version
+- META-INF/androidx.startup_startup-runtime.version
+- META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version
+- META-INF/androidx.tracing_tracing-ktx.version
+- META-INF/androidx.tracing_tracing.version
+- META-INF/androidx.transition_transition.version
+- META-INF/androidx.vectordrawable_vectordrawable-animated.version
+- META-INF/androidx.vectordrawable_vectordrawable.version
+- META-INF/androidx.versionedparcelable_versionedparcelable.version
+- META-INF/androidx.viewpager2_viewpager2.version
+- META-INF/androidx.viewpager_viewpager.version
+- META-INF/androidx.webkit_webkit.version
+- META-INF/androidx.window_window-core.version
+- META-INF/androidx.window_window.version
+- META-INF/androidx.work_work-runtime-ktx.version
+- META-INF/androidx.work_work-runtime.version
+- META-INF/com.google.android.material_material.version
+- META-INF/com.google.dagger_dagger-lint-aar.version
+- META-INF/com.google.dagger_dagger.version
+- META-INF/com.google.dagger_hilt-android.version
+- META-INF/com.google.dagger_hilt-core.version
+- META-INF/kotlinx_coroutines_android.version
+- META-INF/kotlinx_coroutines_core.version
+- META-INF/kotlinx_coroutines_play_services.version
+- META-INF/services/Sa.I
+- META-INF/services/Wa.p
+- META-INF/services/coil3.util.d
+- META-INF/services/coil3.util.f
+- assets/com/appsflyer/internal/1a7e8023f147cacac-
+- assets/com/appsflyer/internal/3e6e8a8a85e1aaa2b-
+- assets/com/appsflyer/internal/cc32cb866f63cd58a-
+- assets/com/appsflyer/internal/cf2b565222edadded-
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- png
+- lib/arm64-v8a/libandroidx.graphics.path.so
+- lib/arm64-v8a/libapminsighta.so
+- lib/arm64-v8a/libapminsightb.so
+- lib/arm64-v8a/libapplovin-native-crash-reporter.so
+- lib/arm64-v8a/libbuffer_pgl.so
+- lib/arm64-v8a/libcrashlytics-common.so
+- lib/arm64-v8a/libcrashlytics-handler.so
+- lib/arm64-v8a/libcrashlytics-trampoline.so
+- lib/arm64-v8a/libcrashlytics.so
+- lib/arm64-v8a/libdatastore_shared_counter.so
+- lib/arm64-v8a/libdownloadproxy.so
+- lib/arm64-v8a/libdwguard.so
+- lib/arm64-v8a/libfile_lock_pgl.so
+- lib/arm64-v8a/libliteavsdk.so
+- lib/arm64-v8a/libmmkv.so
+- lib/arm64-v8a/libnms.so
+- lib/arm64-v8a/libpglarmor.so
+- lib/arm64-v8a/libtobEmbedPagEncrypt.so
+- lib/arm64-v8a/libtpcore-master.so
+- lib/arm64-v8a/libtpthirdparties-master.so
+- lib/arm64-v8a/libtt_ugen_layout.so
+- lib/arm64-v8a/libtxffmpeg.so
+- lib/arm64-v8a/libtxsoundtouch.so
+- webp
+- jpg
+- m4a
+- res/raw/com_android_billingclient_heterodyne_info
+- res/raw/com_android_billingclient_registration_info.binarypb

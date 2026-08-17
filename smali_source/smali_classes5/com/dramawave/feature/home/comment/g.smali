@@ -1,0 +1,173 @@
+.class public final synthetic Lcom/dramawave/feature/home/comment/g;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput p2, p0, Lcom/dramawave/feature/home/comment/g;->a:I
+
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/dramawave/feature/home/comment/g;->b:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/dramawave/feature/home/comment/g;->b:Ljava/lang/Object;
+
+    .line 3
+    .line 4
+    iget v1, p0, Lcom/dramawave/feature/home/comment/g;->a:I
+
+    .line 5
+    .line 6
+    .line 7
+    packed-switch v1, :pswitch_data_0
+
+    .line 8
+    move-object v3, p1
+
+    .line 9
+    .line 10
+    check-cast v3, Lcom/dramawave/shared/models/tag/ContentTagModel;
+
+    .line 11
+    .line 12
+    check-cast p2, Ljava/lang/Integer;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    sget p1, Lcom/dramawave/feature/home/detail/widget/SeriesInfoView;->$stable:I
+
+    .line 18
+    .line 19
+    const-string p1, "tagModel"
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-static {v3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    sget-object v2, Lcom/dramawave/shared/ui/tag/b;->a:Lcom/dramawave/shared/ui/tag/b;
+
+    .line 25
+    .line 26
+    sget-object p1, Lcom/dramawave/shared/models/Source;->b0:Lcom/dramawave/shared/models/Source;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {p1}, Lcom/dramawave/shared/models/Source;->b()Ljava/lang/String;
+
+    .line 30
+    move-result-object v4
+
+    .line 31
+    .line 32
+    check-cast v0, Lcom/dramawave/shared/models/Series;
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0}, Lcom/dramawave/shared/models/Series;->g1()Ljava/lang/String;
+
+    .line 36
+    move-result-object v7
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v0}, Lcom/dramawave/shared/models/Series;->A0()Ljava/lang/String;
+
+    .line 40
+    move-result-object v8
+
+    .line 41
+    .line 42
+    const-string v5, "selectedhalf_popup"
+
+    .line 43
+    .line 44
+    const-string v6, "selectedhalf_popup"
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-static/range {v2 .. v8}, Lcom/dramawave/shared/ui/tag/b;->c(Lcom/dramawave/shared/ui/tag/b;Lcom/dramawave/shared/models/tag/ContentTagModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 48
+    .line 49
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 50
+    return-object p1
+
+    .line 51
+    .line 52
+    :pswitch_0
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 56
+    .line 57
+    check-cast p2, Lcom/dramawave/service/api/model/comment/CommentActivityModel;
+
+    .line 58
+    .line 59
+    check-cast v0, Lcom/dramawave/feature/home/comment/SeriesCommentDialog;
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-static {v0, p2}, Lcom/dramawave/feature/home/comment/SeriesCommentDialog;->Q3(Lcom/dramawave/feature/home/comment/SeriesCommentDialog;Lcom/dramawave/service/api/model/comment/CommentActivityModel;)Lkotlin/Unit;
+
+    .line 63
+    move-result-object p1
+
+    .line 64
+    return-object p1
+
+    .line 65
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

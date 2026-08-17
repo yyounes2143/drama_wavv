@@ -1,0 +1,75 @@
+package com.dramawave.feature.ugc.publish.viewmodel;
+
+import com.dramawave.core.mvi.architecture.C8358a;
+import com.dramawave.feature.ugc.publish.viewmodel.UgcPublishEditViewModel;
+import kotlin.C27136b;
+import kotlin.Unit;
+import kotlin.coroutines.InterfaceC27211e;
+import kotlin.jvm.functions.Function2;
+import p047D9.EnumC0226a;
+import p059E9.AbstractC0273j;
+import p059E9.InterfaceC0269f;
+import p184P3.AbstractC1175b;
+import p220S3.C1383d;
+
+/* compiled from: UgcPublishEditViewModel.kt */
+@InterfaceC0269f(m255c = "com.dramawave.feature.ugc.publish.viewmodel.UgcPublishEditViewModel$refreshAccountAndHandleAction$1", m256f = "UgcPublishEditViewModel.kt", m257l = {313}, m258m = "invokeSuspend")
+/* renamed from: com.dramawave.feature.ugc.publish.viewmodel.T */
+/* loaded from: classes6.dex */
+public final class C14073T extends AbstractC0273j implements Function2<C8358a<C1383d, AbstractC1175b>, InterfaceC27211e<? super Unit>, Object> {
+
+    /* renamed from: a */
+    int f71456a;
+
+    /* renamed from: b */
+    private /* synthetic */ Object f71457b;
+
+    /* renamed from: c */
+    final /* synthetic */ UgcPublishEditViewModel f71458c;
+
+    /* renamed from: d */
+    final /* synthetic */ String f71459d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C14073T(UgcPublishEditViewModel ugcPublishEditViewModel, String str, InterfaceC27211e<? super C14073T> interfaceC27211e) {
+        super(2, interfaceC27211e);
+        this.f71458c = ugcPublishEditViewModel;
+        this.f71459d = str;
+    }
+
+    @Override // p059E9.AbstractC0264a
+    public final InterfaceC27211e<Unit> create(Object obj, InterfaceC27211e<?> interfaceC27211e) {
+        C14073T c14073t = new C14073T(this.f71458c, this.f71459d, interfaceC27211e);
+        c14073t.f71457b = obj;
+        return c14073t;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(C8358a<C1383d, AbstractC1175b> c8358a, InterfaceC27211e<? super Unit> interfaceC27211e) {
+        return ((C14073T) create(c8358a, interfaceC27211e)).invokeSuspend(Unit.f119604a);
+    }
+
+    @Override // p059E9.AbstractC0264a
+    public final Object invokeSuspend(Object obj) {
+        EnumC0226a enumC0226a = EnumC0226a.f605a;
+        int i10 = this.f71456a;
+        if (i10 != 0) {
+            if (i10 == 1) {
+                C27136b.m51416b(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            C27136b.m51416b(obj);
+            C8358a c8358a = (C8358a) this.f71457b;
+            UgcPublishEditViewModel ugcPublishEditViewModel = this.f71458c;
+            String str = this.f71459d;
+            this.f71456a = 1;
+            UgcPublishEditViewModel.Companion companion = UgcPublishEditViewModel.INSTANCE;
+            if (ugcPublishEditViewModel.m29181p(c8358a, true, str, this) == enumC0226a) {
+                return enumC0226a;
+            }
+        }
+        return Unit.f119604a;
+    }
+}

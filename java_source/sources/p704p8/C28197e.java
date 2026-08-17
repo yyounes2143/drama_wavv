@@ -1,0 +1,19 @@
+package p704p8;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Lambda;
+
+/* compiled from: TheRouter.kt */
+/* renamed from: p8.e */
+/* loaded from: classes3.dex */
+public final class C28197e extends Lambda implements Function0<Unit> {
+
+    /* renamed from: a */
+    public static final C28197e f123338a = new Lambda(0);
+
+    @Override // kotlin.jvm.functions.Function0
+    public final /* bridge */ /* synthetic */ Unit invoke() {
+        return Unit.f119604a;
+    }
+}

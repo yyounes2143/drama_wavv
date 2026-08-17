@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff111318" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/tlb_action" android:layout_width="fill_parent" android:layout_height="wrap_content" app:title="视频区间选择器 Demo" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tv_state" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="#b3ffffff" android:id="@id/tv_player_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="XML View" />
+            <com.dramawave.shared.ui.videorange.VideoRangeSeekBar android:id="@id/xml_range_seek_bar" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="12.0dip" app:maxRangeDuration="15000" app:minRangeDuration="5000" app:timelineHandleColor="#ffffffff" app:timelinePlayHeadColor="#ffff4d4f" app:timelineSelectedColor="#ffefb33d" app:timelineTrackColor="#33ffffff" app:videoDuration="60000" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="Jetpack Compose" />
+            <androidx.compose.ui.platform.ComposeView android:id="@id/compose_range_container" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_marginTop="4.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <Button android:id="@id/btn_play_start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="播放到开头" android:layout_weight="1.0" />
+                <Button android:id="@id/btn_play_middle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="播放到中间" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                <Button android:id="@id/btn_play_end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="播放到结尾" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

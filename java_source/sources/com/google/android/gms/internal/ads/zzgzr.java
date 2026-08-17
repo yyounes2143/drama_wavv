@@ -1,0 +1,155 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.compose.foundation.text.input.C3090a;
+import java.util.AbstractList;
+import java.util.Arrays;
+import java.util.RandomAccess;
+
+/* compiled from: com.google.android.gms:play-services-ads-api@@24.2.0 */
+/* loaded from: classes7.dex */
+final class zzgzr extends zzgvz implements RandomAccess {
+    private static final Object[] zza;
+    private static final zzgzr zzb;
+    private Object[] zzc;
+    private int zzd;
+
+    static {
+        Object[] objArr = new Object[0];
+        zza = objArr;
+        zzb = new zzgzr(objArr, 0, false);
+    }
+
+    public zzgzr() {
+        this(zza, 0, true);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgvz, java.util.AbstractList, java.util.List
+    public final void add(int i10, Object obj) {
+        int i11;
+        zzdG();
+        if (i10 >= 0 && i10 <= (i11 = this.zzd)) {
+            int i12 = i10 + 1;
+            Object[] objArr = this.zzc;
+            int length = objArr.length;
+            if (i11 < length) {
+                System.arraycopy(objArr, i10, objArr, i12, i11 - i10);
+            } else {
+                Object[] objArr2 = new Object[zzg(length)];
+                System.arraycopy(this.zzc, 0, objArr2, 0, i10);
+                System.arraycopy(this.zzc, i10, objArr2, i12, this.zzd - i10);
+                this.zzc = objArr2;
+            }
+            this.zzc[i10] = obj;
+            this.zzd++;
+            ((AbstractList) this).modCount++;
+            return;
+        }
+        throw new IndexOutOfBoundsException(zzh(i10));
+    }
+
+    private zzgzr(Object[] objArr, int i10, boolean z10) {
+        super(z10);
+        this.zzc = objArr;
+        this.zzd = i10;
+    }
+
+    public static zzgzr zzd() {
+        return zzb;
+    }
+
+    private static int zzg(int i10) {
+        return Math.max(((i10 * 3) / 2) + 1, 10);
+    }
+
+    private final String zzh(int i10) {
+        return C3090a.m5596a(i10, this.zzd, "Index:", ", Size:");
+    }
+
+    private final void zzi(int i10) {
+        if (i10 >= 0 && i10 < this.zzd) {
+        } else {
+            throw new IndexOutOfBoundsException(zzh(i10));
+        }
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.zzd;
+    }
+
+    public final void zze(int i10) {
+        int length = this.zzc.length;
+        if (i10 <= length) {
+            return;
+        }
+        if (length != 0) {
+            while (length < i10) {
+                length = zzg(length);
+            }
+            this.zzc = Arrays.copyOf(this.zzc, length);
+            return;
+        }
+        this.zzc = new Object[Math.max(i10, 10)];
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgyh
+    public final /* bridge */ /* synthetic */ zzgyh zzf(int i10) {
+        Object[] copyOf;
+        if (i10 >= this.zzd) {
+            if (i10 == 0) {
+                copyOf = zza;
+            } else {
+                copyOf = Arrays.copyOf(this.zzc, i10);
+            }
+            return new zzgzr(copyOf, this.zzd, true);
+        }
+        throw new IllegalArgumentException();
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final Object get(int i10) {
+        zzi(i10);
+        return this.zzc[i10];
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgvz, java.util.AbstractList, java.util.List
+    public final Object remove(int i10) {
+        zzdG();
+        zzi(i10);
+        Object[] objArr = this.zzc;
+        Object obj = objArr[i10];
+        if (i10 < this.zzd - 1) {
+            System.arraycopy(objArr, i10 + 1, objArr, i10, (r2 - i10) - 1);
+        }
+        this.zzd--;
+        ((AbstractList) this).modCount++;
+        return obj;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgvz, java.util.AbstractList, java.util.List
+    public final Object set(int i10, Object obj) {
+        zzdG();
+        zzi(i10);
+        Object[] objArr = this.zzc;
+        Object obj2 = objArr[i10];
+        objArr[i10] = obj;
+        ((AbstractList) this).modCount++;
+        return obj2;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgvz, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final boolean add(Object obj) {
+        zzdG();
+        int i10 = this.zzd;
+        int length = this.zzc.length;
+        if (i10 == length) {
+            this.zzc = Arrays.copyOf(this.zzc, zzg(length));
+        }
+        Object[] objArr = this.zzc;
+        int i11 = this.zzd;
+        this.zzd = i11 + 1;
+        objArr[i11] = obj;
+        ((AbstractList) this).modCount++;
+        return true;
+    }
+}

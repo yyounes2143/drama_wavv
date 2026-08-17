@@ -1,0 +1,11 @@
+package androidx.compose.material3;
+
+import androidx.compose.runtime.internal.StabilityInferred;
+import kotlin.Metadata;
+
+/* compiled from: Tooltip.kt */
+@StabilityInferred
+@Metadata(m51404d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0000\u0018\u00002\u00020\u0001¨\u0006\u0002"}, m51405d2 = {"Landroidx/compose/material3/TooltipScopeImpl;", "Landroidx/compose/material3/TooltipScope;", "material3_release"}, m51406k = 1, m51407mv = {1, 8, 0}, m51409xi = 48)
+/* loaded from: classes5.dex */
+public final class TooltipScopeImpl implements TooltipScope {
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/profile_vip_pro_benefit_gradient" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_benefit_icon" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:scaleType="centerInside" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme_text2" android:layout_gravity="center_vertical" android:id="@id/tv_benefit_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="@dimen/_12sdp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme_brand6" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sr_chat" app:drawableEndCompat="@drawable/ic_chevron_right_automirror" app:drawableTint="@color/theme_brand6" />
+</LinearLayout>

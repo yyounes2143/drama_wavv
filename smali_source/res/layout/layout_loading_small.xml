@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/shape_chat_text_left_bg" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_16sdp" android:minHeight="@dimen/_43sdp" android:layout_marginEnd="@dimen/_80sdp" android:paddingHorizontal="@dimen/_12sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/theme_text5" android:id="@id/content" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/_43sdp" android:text="@string/sr_chat_load_time_out" android:layout_weight="1.0" android:paddingVertical="@dimen/_10sdp" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@id/lottieView" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_23sdp" app:lottie_autoPlay="true" app:lottie_fileName="thinking.json" app:lottie_imageAssetsFolder="images/" app:lottie_loop="true" />
+</LinearLayout>

@@ -1,0 +1,76 @@
+package androidx.compose.material3;
+
+import androidx.compose.foundation.lazy.LazyListState;
+import kotlin.C27136b;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.InterfaceC27211e;
+import kotlin.jvm.functions.Function2;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p047D9.EnumC0226a;
+import p059E9.AbstractC0273j;
+import p059E9.InterfaceC0269f;
+import p227Sa.InterfaceC1423L;
+
+/* compiled from: DatePicker.kt */
+@Metadata(m51404d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@¢\u0006\u0004\b\u0002\u0010\u0003"}, m51405d2 = {"LSa/L;", "", "<anonymous>", "(LSa/L;)V"}, m51406k = 3, m51407mv = {1, 8, 0})
+@InterfaceC0269f(m255c = "androidx.compose.material3.DatePickerKt$DatePickerContent$1$1", m256f = "DatePicker.kt", m257l = {1506}, m258m = "invokeSuspend")
+/* loaded from: classes8.dex */
+final class DatePickerKt$DatePickerContent$1$1 extends AbstractC0273j implements Function2<InterfaceC1423L, InterfaceC27211e<? super Unit>, Object> {
+
+    /* renamed from: a */
+    public int f15430a;
+
+    /* renamed from: b */
+    public final /* synthetic */ LazyListState f15431b;
+
+    /* renamed from: c */
+    public final /* synthetic */ int f15432c;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public DatePickerKt$DatePickerContent$1$1(LazyListState lazyListState, int i10, InterfaceC27211e<? super DatePickerKt$DatePickerContent$1$1> interfaceC27211e) {
+        super(2, interfaceC27211e);
+        this.f15431b = lazyListState;
+        this.f15432c = i10;
+    }
+
+    @Override // p059E9.AbstractC0264a
+    @NotNull
+    public final InterfaceC27211e<Unit> create(@Nullable Object obj, @NotNull InterfaceC27211e<?> interfaceC27211e) {
+        return new DatePickerKt$DatePickerContent$1$1(this.f15431b, this.f15432c, interfaceC27211e);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(InterfaceC1423L interfaceC1423L, InterfaceC27211e<? super Unit> interfaceC27211e) {
+        return ((DatePickerKt$DatePickerContent$1$1) create(interfaceC1423L, interfaceC27211e)).invokeSuspend(Unit.f119604a);
+    }
+
+    @Override // p059E9.AbstractC0264a
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        EnumC0226a enumC0226a = EnumC0226a.f605a;
+        int i10 = this.f15430a;
+        if (i10 != 0) {
+            if (i10 == 1) {
+                C27136b.m51416b(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            C27136b.m51416b(obj);
+            LazyListState lazyListState = this.f15431b;
+            if (!lazyListState.f11675h.mo4794a()) {
+                int m5281h = lazyListState.m5281h();
+                int i11 = this.f15432c;
+                if (m5281h != i11) {
+                    this.f15430a = 1;
+                    if (lazyListState.m5284k(i11, 0, this) == enumC0226a) {
+                        return enumC0226a;
+                    }
+                }
+            }
+        }
+        return Unit.f119604a;
+    }
+}

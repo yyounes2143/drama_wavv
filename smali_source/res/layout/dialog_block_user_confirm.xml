@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sr_shape_top_end_radius_12_surface3" android:paddingLeft="@dimen/_32sdp" android:paddingRight="@dimen/_32sdp" android:paddingBottom="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_32sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/theme_text1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:text="@string/comment_block" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme_text1" android:gravity="center" android:id="@id/tv_block_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/comment_block_tips" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/theme_text1" android:gravity="center" android:id="@id/tv_block_confirm" android:background="@drawable/bg_block_user_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" android:layout_marginTop="@dimen/_30sdp" android:text="@string/sr_send" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/theme_text1" android:gravity="center" android:id="@id/tv_block_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_16sdp" android:text="@string/cancel_up" />
+</LinearLayout>

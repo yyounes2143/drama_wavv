@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.List;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.2.0 */
+/* loaded from: classes5.dex */
+public final class zzfm {
+    public final zzfww zza;
+    public final int[] zzb;
+
+    public zzfm(List list, int[] iArr) {
+        this.zza = zzfww.zzl(list);
+        this.zzb = iArr;
+    }
+}

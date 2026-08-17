@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff0b080b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar android:id="@id/translucent_top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:textColor="#fffdfbfc" android:textColorHint="#ffa1a0a3" android:id="@id/et_series_key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" android:hint="series key" android:inputType="text" android:imeOptions="actionDone" android:layout_marginStart="@dimen/_12sdp" android:layout_marginEnd="@dimen/_12sdp" />
+    <Button android:layout_gravity="end" android:id="@id/btn_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp" android:text="load" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/theme_surface1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxHeight="@dimen/_500sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <include android:id="@id/ic_guide_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/guide_grade_layout" />
+        <FrameLayout android:id="@id/fl_plans" android:background="@drawable/guide_content_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_233sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:gravity="start" android:orientation="vertical" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_48sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_123sdp" android:paddingHorizontal="@dimen/_12sdp">
+                <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/theme_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_tips_title" />
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

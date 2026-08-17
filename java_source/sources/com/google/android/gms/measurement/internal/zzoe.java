@@ -1,0 +1,13 @@
+package com.google.android.gms.measurement.internal;
+
+import androidx.annotation.VisibleForTesting;
+
+/* compiled from: com.google.android.gms:play-services-measurement-impl@@23.0.0 */
+@VisibleForTesting
+/* loaded from: classes9.dex */
+enum zzoe {
+    CONSENT,
+    LEGITIMATE_INTEREST,
+    FLEXIBLE_CONSENT,
+    FLEXIBLE_LEGITIMATE_INTEREST
+}

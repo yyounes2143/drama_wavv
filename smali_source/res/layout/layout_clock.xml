@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/notifications_title_color" android:id="@id/tv_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fr_push_remaining" android:textAlignment="textStart" />
+    <ImageView android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginRight="@dimen/_4sdp" android:src="@drawable/ic_clock" android:layout_marginHorizontal="@dimen/_4sdp" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/notifications_icon_color" android:id="@id/tv_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="textStart" />
+</LinearLayout>

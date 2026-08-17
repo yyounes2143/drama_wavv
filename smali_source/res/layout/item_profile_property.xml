@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|center" android:id="@id/iv_icon" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:scaleType="fitXY" />
+    <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_30sdp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/theme_text1" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_12" android:textColor="@color/theme_text3" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" />
+    </LinearLayout>
+</merge>

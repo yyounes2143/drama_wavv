@@ -1,0 +1,41 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: com.google.android.gms:play-services-ads@@24.2.0 */
+/* loaded from: classes8.dex */
+public final class zzqu {
+    public final zzz zza;
+    public final int zzb;
+    public final int zzc;
+    public final int zzd;
+    public final int zze;
+    public final int zzf;
+    public final int zzg;
+    public final int zzh;
+    public final zzck zzi;
+    public final boolean zzj = false;
+    public final boolean zzk = false;
+    public final boolean zzl = false;
+
+    public final zzpz zza() {
+        boolean z10;
+        if (this.zzc == 1) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        return new zzpz(this.zzg, this.zze, this.zzf, false, z10, this.zzh);
+    }
+
+    public zzqu(zzz zzzVar, int i10, int i11, int i12, int i13, int i14, int i15, int i16, zzck zzckVar, boolean z10, boolean z11, boolean z12) {
+        this.zza = zzzVar;
+        this.zzb = i10;
+        this.zzc = i11;
+        this.zzd = i12;
+        this.zze = i13;
+        this.zzf = i14;
+        this.zzg = i15;
+        this.zzh = i16;
+        this.zzi = zzckVar;
+    }
+}

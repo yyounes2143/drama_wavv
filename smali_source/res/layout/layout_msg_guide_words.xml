@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_16sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme_text5" android:id="@id/notice" android:background="@drawable/sty_radius_4_bubble2" android:paddingLeft="@dimen/_12sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/_40sdp" android:lineSpacingMultiplier="1.2" android:layout_marginEnd="@dimen/_80sdp" android:paddingHorizontal="@dimen/_12sdp" android:paddingVertical="@dimen/_10sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/theme_TextRegular14" />
+    <Space android:id="@id/chat_space_guide" android:layout_width="wrap_content" android:layout_height="@dimen/_24sdp" />
+</LinearLayout>

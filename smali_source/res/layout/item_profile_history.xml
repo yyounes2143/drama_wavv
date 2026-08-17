@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/_70sdp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginHorizontal="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dramawave.shared.general.view.SeriesCoverView android:id="@id/iv_cover" android:layout_width="@dimen/_70sdp" android:layout_height="wrap_content" app:isShowOperatorTag="false" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/theme_text3" android:ellipsize="end" android:id="@id/tvProgress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" style="@style/theme_TextRegular12" />
+</LinearLayout>

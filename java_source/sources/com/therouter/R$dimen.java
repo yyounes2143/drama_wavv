@@ -1,0 +1,5 @@
+package com.therouter;
+
+/* loaded from: classes3.dex */
+public final class R$dimen {
+}

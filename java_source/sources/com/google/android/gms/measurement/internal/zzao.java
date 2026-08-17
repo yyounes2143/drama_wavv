@@ -1,0 +1,31 @@
+package com.google.android.gms.measurement.internal;
+
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
+
+/* compiled from: com.google.android.gms:play-services-measurement-impl@@23.0.0 */
+@SafeParcelable.Class(creator = "ConsentParcelCreator")
+/* loaded from: classes8.dex */
+public final class zzao extends AbstractSafeParcelable {
+    public static final Parcelable.Creator<zzao> CREATOR = new zzap();
+
+    @SafeParcelable.Field(m37227id = 1)
+    public final Bundle zza;
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i10) {
+        Bundle bundle = this.zza;
+        int beginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeBundle(parcel, 1, bundle, false);
+        SafeParcelWriter.finishObjectHeader(parcel, beginObjectHeader);
+    }
+
+    @SafeParcelable.Constructor
+    public zzao(@SafeParcelable.Param(m37228id = 1) Bundle bundle) {
+        this.zza = bundle;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/common_header_space" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_text_color_9197A3" android:id="@id/common_dialog_title" android:paddingTop="12.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:textAlignment="viewStart" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <FrameLayout android:id="@id/lyt_custom_title_wrap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:overScrollMode="never" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/theme_text3" android:ellipsize="end" android:gravity="center" android:id="@id/common_dialog_btn_negative" android:background="@drawable/common_btn_dialog_gray" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/mine_dialog_logout_cancel" android:maxLines="1" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+</LinearLayout>

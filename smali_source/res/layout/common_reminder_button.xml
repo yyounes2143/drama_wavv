@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_reminder" android:paddingLeft="@dimen/_16sdp" android:paddingRight="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/_16sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/ic_notice_white" />
+    <Space android:layout_width="@dimen/_4sdp" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme_text1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="2.0dip" android:layout_marginEnd="@dimen/_2sdp" />
+</LinearLayout>

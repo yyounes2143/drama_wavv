@@ -1,0 +1,49 @@
+package org.eclipse.paho.client.mqttv3;
+
+/* loaded from: classes7.dex */
+public class DisconnectedBufferOptions {
+    public static final boolean DELETE_OLDEST_MESSAGES_DEFAULT = false;
+    public static final boolean DISCONNECTED_BUFFER_ENABLED_DEFAULT = false;
+    public static final int DISCONNECTED_BUFFER_SIZE_DEFAULT = 5000;
+    public static final boolean PERSIST_DISCONNECTED_BUFFER_DEFAULT = false;
+    private int bufferSize = 5000;
+    private boolean bufferEnabled = false;
+    private boolean persistBuffer = false;
+    private boolean deleteOldestMessages = false;
+
+    public void setBufferSize(int i10) {
+        if (i10 >= 1) {
+            this.bufferSize = i10;
+            return;
+        }
+        throw new IllegalArgumentException();
+    }
+
+    public int getBufferSize() {
+        return this.bufferSize;
+    }
+
+    public boolean isBufferEnabled() {
+        return this.bufferEnabled;
+    }
+
+    public boolean isDeleteOldestMessages() {
+        return this.deleteOldestMessages;
+    }
+
+    public boolean isPersistBuffer() {
+        return this.persistBuffer;
+    }
+
+    public void setBufferEnabled(boolean z10) {
+        this.bufferEnabled = z10;
+    }
+
+    public void setDeleteOldestMessages(boolean z10) {
+        this.deleteOldestMessages = z10;
+    }
+
+    public void setPersistBuffer(boolean z10) {
+        this.persistBuffer = z10;
+    }
+}

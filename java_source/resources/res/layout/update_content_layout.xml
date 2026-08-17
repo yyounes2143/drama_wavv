@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_surface1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp">
+            <com.dramawave.shared.p448ui.view.SimpleBannerViewPager
+                android:id="@+id/update_purchase_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:autoScrollInterval="5000"
+                app:isAutoScrollEnabled="true"/>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="bottom|center_horizontal"
+                android:orientation="horizontal"
+                android:id="@+id/ll_dot_indicator"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+        </FrameLayout>
+        <include
+            android:id="@+id/ic_purchase_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            layout="@layout/update_purchase_content_layout"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="8.0dip" android:layout_marginHorizontal="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:scaleType="fitXY" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_actor_profile" android:layout_width="@dimen/_44sdp" android:layout_height="@dimen/_44sdp" android:scaleType="centerCrop" android:layout_marginStart="@dimen/_4sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_number" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_rank_crown" android:layout_width="@dimen/_66sdp" android:layout_height="@dimen/_66sdp" android:src="@drawable/ic_crown_1" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="@id/iv_actor_profile" app:layout_constraintEnd_toEndOf="@id/iv_actor_profile" app:layout_constraintStart_toStartOf="@id/iv_actor_profile" app:layout_constraintTop_toTopOf="@id/iv_actor_profile" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_actor_profile" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/theme_text1" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" />
+        <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp">
+            <ImageView android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:src="@drawable/ic_rank_actor_heat_icon_item" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/theme_AD_1" android:gravity="start" android:id="@id/tv_hot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

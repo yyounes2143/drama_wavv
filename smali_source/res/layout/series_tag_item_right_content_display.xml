@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@color/theme_text3" android:ellipsize="end" android:id="@id/tv_tag_name" android:background="@drawable/common_shape_conner_4_fill2" android:paddingLeft="@dimen/_8sdp" android:paddingTop="@dimen/_1sdp" android:paddingRight="@dimen/_8sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="false" android:singleLine="true" android:includeFontPadding="false" android:textDirection="locale" android:textAlignment="viewStart" android:backgroundTint="@color/theme_surface2" android:paddingHorizontal="@dimen/_8sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

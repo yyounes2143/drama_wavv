@@ -1,0 +1,121 @@
+.class public final Lcom/google/android/play/core/integrity/bp;
+.super Ljava/lang/Object;
+.source "com.google.android.play:integrity@@1.3.0"
+
+# interfaces
+.implements Lcom/google/android/play/integrity/internal/ak;
+
+
+# instance fields
+.field public final a:Lcom/google/android/play/integrity/internal/an;
+
+.field public final b:Lcom/google/android/play/integrity/internal/an;
+
+.field public final c:Lcom/google/android/play/integrity/internal/an;
+
+.field public final d:Lcom/google/android/play/integrity/internal/an;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/play/integrity/internal/an;Lcom/google/android/play/integrity/internal/an;Lcom/google/android/play/integrity/internal/an;Lcom/google/android/play/integrity/internal/an;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/google/android/play/core/integrity/bp;->a:Lcom/google/android/play/integrity/internal/an;
+
+    .line 6
+    .line 7
+    iput-object p2, p0, Lcom/google/android/play/core/integrity/bp;->b:Lcom/google/android/play/integrity/internal/an;
+
+    .line 8
+    .line 9
+    iput-object p3, p0, Lcom/google/android/play/core/integrity/bp;->c:Lcom/google/android/play/integrity/internal/an;
+
+    .line 10
+    .line 11
+    iput-object p4, p0, Lcom/google/android/play/core/integrity/bp;->d:Lcom/google/android/play/integrity/internal/an;
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic a()Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/android/play/core/integrity/bp;->a:Lcom/google/android/play/integrity/internal/an;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lcom/google/android/play/integrity/internal/an;->a()Ljava/lang/Object;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Lcom/google/android/play/core/integrity/bp;->b:Lcom/google/android/play/integrity/internal/an;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-interface {v1}, Lcom/google/android/play/integrity/internal/an;->a()Ljava/lang/Object;
+
+    .line 12
+    move-result-object v1
+
+    .line 13
+    .line 14
+    check-cast v1, Lcom/google/android/play/integrity/internal/s;
+
+    .line 15
+    .line 16
+    iget-object v2, p0, Lcom/google/android/play/core/integrity/bp;->c:Lcom/google/android/play/integrity/internal/an;
+
+    .line 17
+    .line 18
+    check-cast v2, Lcom/google/android/play/core/integrity/au;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v2}, Lcom/google/android/play/core/integrity/au;->b()Lcom/google/android/play/core/integrity/at;
+
+    .line 22
+    move-result-object v2
+
+    .line 23
+    .line 24
+    new-instance v3, Lcom/google/android/play/core/integrity/j;
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-direct {v3}, Lcom/google/android/play/core/integrity/j;-><init>()V
+
+    .line 28
+    .line 29
+    new-instance v4, Lcom/google/android/play/core/integrity/bn;
+
+    .line 30
+    .line 31
+    check-cast v0, Landroid/content/Context;
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-direct {v4, v0, v1, v2, v3}, Lcom/google/android/play/core/integrity/bn;-><init>(Landroid/content/Context;Lcom/google/android/play/integrity/internal/s;Lcom/google/android/play/core/integrity/at;Lcom/google/android/play/core/integrity/j;)V
+
+    .line 35
+    return-object v4
+.end method

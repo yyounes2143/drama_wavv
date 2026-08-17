@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/tp_inner_detail" android:background="@drawable/tp_inner_ttd_black" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="Detail" />
+        <ImageView android:id="@id/tp_video_more" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/tp_inner_round_more" android:scaleType="fitXY" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/tp_inner_time" android:background="@drawable/tp_inner_ttd_gray" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="90s" android:layout_alignParentLeft="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/tp_inner_skip" android:background="@drawable/tp_inner_ttd_gray" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="Skip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/tp_inner_privacy_tips" android:background="@drawable/tp_inner_ad_tips" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tp_ad_flag" android:background="@drawable/tp_inner_video_ad_tag" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD" android:paddingHorizontal="10.0dip" android:paddingVertical="2.0dip" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cl_root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/_300sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="-60.0dip" android:src="@drawable/ic_content_empty" android:scaleType="centerInside" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/theme_text2" android:gravity="center" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_60sdp" android:layout_marginRight="@dimen/_60sdp" android:text="@string/myliet_no_content_tip" android:layout_marginHorizontal="@dimen/_60sdp" />
+    <TextView android:textColor="@color/theme_text5" android:gravity="center" android:id="@id/tv_discover_more" android:background="@drawable/shape_conner_8_brand6" android:paddingLeft="@dimen/_40sdp" android:paddingRight="@dimen/_40sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/_32sdp" android:layout_marginTop="@dimen/_20sdp" android:text="@string/common_empty_discover_more" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" android:paddingHorizontal="@dimen/_40sdp" style="@style/theme_TextMedium14" />
+</LinearLayout>

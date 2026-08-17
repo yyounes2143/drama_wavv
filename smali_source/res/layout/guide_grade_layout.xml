@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_guide" android:padding="@dimen/_64sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/_220sdp" android:layout_height="@dimen/_44sdp" android:src="@drawable/ic_guide_logo" />
+    <TextView android:textSize="@dimen/_24sdp" android:textStyle="bold" android:textColor="@color/theme_text12" android:gravity="center" android:id="@id/tv_rating_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" />
+    <com.dramawave.shared.ui.widget.StarRatingView android:id="@id/star_rating_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" />
+    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/theme_text3" android:gravity="center" android:id="@id/tv_rating_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" />
+</LinearLayout>

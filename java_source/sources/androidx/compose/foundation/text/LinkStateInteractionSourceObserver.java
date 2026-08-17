@@ -1,0 +1,29 @@
+package androidx.compose.foundation.text;
+
+import androidx.compose.foundation.interaction.MutableInteractionSource;
+import androidx.compose.runtime.MutableIntState;
+import androidx.compose.runtime.SnapshotIntStateKt;
+import androidx.compose.runtime.internal.StabilityInferred;
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+
+/* compiled from: LinkStateInteractionSourceObserver.kt */
+@StabilityInferred
+@Metadata(m51404d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\b\u0000\u0018\u00002\u00020\u0001¨\u0006\u0002"}, m51405d2 = {"Landroidx/compose/foundation/text/LinkStateInteractionSourceObserver;", "", "foundation_release"}, m51406k = 1, m51407mv = {1, 9, 0}, m51409xi = 48)
+@SourceDebugExtension({"SMAP\nLinkStateInteractionSourceObserver.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LinkStateInteractionSourceObserver.kt\nandroidx/compose/foundation/text/LinkStateInteractionSourceObserver\n+ 2 ObjectList.kt\nandroidx/collection/ObjectListKt\n*L\n1#1,70:1\n1516#2:71\n*S KotlinDebug\n*F\n+ 1 LinkStateInteractionSourceObserver.kt\nandroidx/compose/foundation/text/LinkStateInteractionSourceObserver\n*L\n36#1:71\n*E\n"})
+/* loaded from: classes8.dex */
+public final class LinkStateInteractionSourceObserver {
+
+    /* renamed from: a */
+    @NotNull
+    public final MutableInteractionSource f13225a;
+
+    /* renamed from: b */
+    @NotNull
+    public final MutableIntState f13226b = SnapshotIntStateKt.m6637a(0);
+
+    public LinkStateInteractionSourceObserver(@NotNull MutableInteractionSource mutableInteractionSource) {
+        this.f13225a = mutableInteractionSource;
+    }
+}

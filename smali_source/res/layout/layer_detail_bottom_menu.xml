@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="top" android:background="@drawable/top_gradient_mask" android:layout_width="fill_parent" android:layout_height="@dimen/_100sdp" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/ll_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" android:layout_marginTop="@dimen/_40sdp">
+        <ImageView android:id="@id/iv_back" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_marginTop="@dimen/_10sdp" android:src="@drawable/ic_back_left" android:layout_marginStart="@dimen/_12sdp" android:layout_marginEnd="@dimen/_4sdp" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_title_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/iv_more" android:layout_toEndOf="@id/iv_back">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/theme_TextRegular16" />
+                <Space android:layout_width="@dimen/_6sdp" android:layout_height="wrap_content" />
+                <TextView android:id="@id/tv_episode_index" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/theme_TextRegular16" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_ellipsis_vertical" android:paddingStart="@dimen/_16sdp" android:paddingEnd="@dimen/_12sdp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_bottom_bar" android:background="@color/theme_surface1" android:paddingLeft="@dimen/_16sdp" android:paddingTop="@dimen/_8sdp" android:paddingRight="@dimen/_16sdp" android:paddingBottom="@dimen/_4sdp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/_46sdp" android:paddingHorizontal="@dimen/_16sdp">
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_audion" android:background="@drawable/common_shape_conner_8_line_2" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_audio_track" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:id="@id/space_audion" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_subtitle" android:background="@drawable/common_shape_conner_8_line_2" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_subtitles_track" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:id="@id/space_subtitle" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_rate" android:background="@drawable/common_shape_conner_8_line_2" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="1.0X" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <FrameLayout android:background="@drawable/common_shape_conner_8_line_2" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_resolution" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_str" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+                <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/theme_text13" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_1080P" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1080p" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="end" android:id="@id/iv_vip_label_tips" android:visibility="gone" android:layout_width="@dimen/_19sdp" android:layout_height="@dimen/_10sdp" android:src="@drawable/ic_vip_tag" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@drawable/bottom_gradient_mask" android:layout_width="fill_parent" android:layout_height="@dimen/_100sdp" />
+</FrameLayout>

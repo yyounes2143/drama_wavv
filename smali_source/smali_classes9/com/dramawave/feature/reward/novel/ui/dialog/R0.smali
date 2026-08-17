@@ -1,0 +1,290 @@
+.class public final Lcom/dramawave/feature/reward/novel/ui/dialog/R0;
+.super Ljava/lang/Object;
+.source "ComposeExt.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nComposeExt.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposeExt.kt\ncom/dramawave/shared/ui/wrapper/ComposeExtKt$singleClick$2\n+ 2 ComposeExt.kt\ncom/dramawave/shared/ui/wrapper/ComposeExtKt$noRippleClickable$1\n+ 3 RewardsReceivedDialogFrame.kt\ncom/dramawave/feature/reward/novel/ui/dialog/RewardsReceivedDialogFrameKt$RewardsReceivedDialogFrame$1$6\n*L\n1#1,76:1\n48#2:77\n49#2:90\n188#3,4:78\n187#3,8:82\n*E\n"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:I
+
+.field final synthetic b:Landroidx/compose/runtime/MutableState;
+
+.field final synthetic c:Lcom/dramawave/shared/models/reward/RewardsReceiveResp;
+
+.field final synthetic d:Lkotlin/jvm/functions/Function0;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/runtime/MutableState;Lcom/dramawave/shared/models/reward/RewardsReceiveResp;Lkotlin/jvm/functions/Function0;)V
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    const/16 v0, 0x3e8
+
+    .line 6
+    .line 7
+    iput v0, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->a:I
+
+    .line 8
+    .line 9
+    iput-object p1, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->b:Landroidx/compose/runtime/MutableState;
+
+    .line 10
+    .line 11
+    iput-object p2, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->c:Lcom/dramawave/shared/models/reward/RewardsReceiveResp;
+
+    .line 12
+    .line 13
+    iput-object p3, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->d:Lkotlin/jvm/functions/Function0;
+
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 7
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    .line 6
+    iget v2, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->a:I
+
+    .line 7
+    int-to-long v2, v2
+
+    .line 8
+    .line 9
+    sub-long v2, v0, v2
+
+    .line 10
+    .line 11
+    iget-object v4, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->b:Landroidx/compose/runtime/MutableState;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-static {v4}, Lcom/dramawave/shared/ui/wrapper/k;->a(Landroidx/compose/runtime/MutableState;)J
+
+    .line 15
+    move-result-wide v4
+
+    .line 16
+    .line 17
+    cmp-long v2, v2, v4
+
+    .line 18
+    .line 19
+    if-ltz v2, :cond_2
+
+    .line 20
+    .line 21
+    iget-object v2, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->c:Lcom/dramawave/shared/models/reward/RewardsReceiveResp;
+
+    .line 22
+    const/4 v3, 0x0
+
+    .line 23
+    .line 24
+    if-eqz v2, :cond_0
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {v2}, Lcom/dramawave/shared/models/reward/RewardsReceiveResp;->b()Lcom/dramawave/shared/models/reward/DialogBean;
+
+    .line 28
+    move-result-object v2
+
+    .line 29
+    .line 30
+    if-eqz v2, :cond_0
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v2}, Lcom/dramawave/shared/models/reward/DialogBean;->h()Ljava/lang/Integer;
+
+    .line 34
+    move-result-object v2
+
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :cond_0
+    move-object v2, v3
+
+    .line 37
+    .line 38
+    :goto_0
+    new-instance v4, Lkotlin/Pair;
+
+    .line 39
+    .line 40
+    const-string v5, "task_id"
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-direct {v4, v5, v2}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 44
+    .line 45
+    iget-object v2, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->c:Lcom/dramawave/shared/models/reward/RewardsReceiveResp;
+
+    .line 46
+    .line 47
+    if-eqz v2, :cond_1
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v2}, Lcom/dramawave/shared/models/reward/RewardsReceiveResp;->b()Lcom/dramawave/shared/models/reward/DialogBean;
+
+    .line 51
+    move-result-object v2
+
+    .line 52
+    .line 53
+    if-eqz v2, :cond_1
+
+    .line 54
+    .line 55
+    .line 56
+    invoke-virtual {v2}, Lcom/dramawave/shared/models/reward/DialogBean;->j()Ljava/lang/String;
+
+    .line 57
+    move-result-object v3
+
+    .line 58
+    .line 59
+    :cond_1
+    new-instance v2, Lkotlin/Pair;
+
+    .line 60
+    .line 61
+    const-string v5, "task_name"
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-direct {v2, v5, v3}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 65
+    .line 66
+    new-instance v3, Lkotlin/Pair;
+
+    .line 67
+    .line 68
+    const-string v5, "clicked_content"
+
+    .line 69
+    .line 70
+    const-string v6, "close"
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-direct {v3, v5, v6}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 74
+    const/4 v5, 0x3
+
+    .line 75
+    .line 76
+    new-array v5, v5, [Lkotlin/Pair;
+
+    .line 77
+    const/4 v6, 0x0
+
+    .line 78
+    .line 79
+    aput-object v4, v5, v6
+
+    .line 80
+    const/4 v4, 0x1
+
+    .line 81
+    .line 82
+    aput-object v2, v5, v4
+
+    .line 83
+    const/4 v2, 0x2
+
+    .line 84
+    .line 85
+    aput-object v3, v5, v2
+
+    .line 86
+    .line 87
+    const-string v2, "getrewards_popup_click"
+
+    .line 88
+    .line 89
+    const/16 v3, 0x1c
+
+    .line 90
+    .line 91
+    .line 92
+    invoke-static {v2, v5, v3}, Lcom/dramawave/shared/analytics/q;->f(Ljava/lang/String;[Lkotlin/Pair;I)V
+
+    .line 93
+    .line 94
+    iget-object v2, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->d:Lkotlin/jvm/functions/Function0;
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    .line 98
+    .line 99
+    iget-object v2, p0, Lcom/dramawave/feature/reward/novel/ui/dialog/R0;->b:Landroidx/compose/runtime/MutableState;
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-static {v2, v0, v1}, Lcom/dramawave/shared/ui/wrapper/k;->b(Landroidx/compose/runtime/MutableState;J)V
+
+    .line 103
+    .line 104
+    :cond_2
+    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 105
+    return-object v0
+.end method

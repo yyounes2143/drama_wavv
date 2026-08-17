@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/option_cover_container" android:background="@drawable/ugc_template_publish_option_bg" android:clipChildren="true" android:clipToPadding="true" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/option_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <View android:id="@id/option_selected_stroke" android:background="@drawable/ugc_template_publish_option_selected_stroke" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/ugc_text_2" android:ellipsize="end" android:gravity="center" android:id="@id/option_title" android:layout_width="fill_parent" android:layout_height="@dimen/_17sdp" android:layout_marginTop="@dimen/_4sdp" android:maxLines="1" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/option_cover_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,391 @@
+.class Landroidx/transition/Visibility$DisappearListener;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "Visibility.java"
+
+# interfaces
+.implements Landroidx/transition/Transition$TransitionListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/transition/Visibility;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "DisappearListener"
+.end annotation
+
+
+# instance fields
+.field public final a:Landroid/view/View;
+
+.field public final b:I
+
+.field public final c:Landroid/view/ViewGroup;
+
+.field public final d:Z
+
+.field public e:Z
+
+.field public f:Z
+
+
+# direct methods
+.method public constructor <init>(Landroid/view/View;I)V
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    .line 6
+    iput-boolean v0, p0, Landroidx/transition/Visibility$DisappearListener;->f:Z
+
+    .line 7
+    .line 8
+    iput-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->a:Landroid/view/View;
+
+    .line 9
+    .line 10
+    iput p2, p0, Landroidx/transition/Visibility$DisappearListener;->b:I
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 14
+    move-result-object p1
+
+    .line 15
+    .line 16
+    check-cast p1, Landroid/view/ViewGroup;
+
+    .line 17
+    .line 18
+    iput-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->c:Landroid/view/ViewGroup;
+
+    .line 19
+    const/4 p1, 0x1
+
+    .line 20
+    .line 21
+    iput-boolean p1, p0, Landroidx/transition/Visibility$DisappearListener;->d:Z
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$DisappearListener;->a(Z)V
+
+    .line 25
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Z)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Landroidx/transition/Visibility$DisappearListener;->d:Z
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    iget-boolean v0, p0, Landroidx/transition/Visibility$DisappearListener;->e:Z
+
+    .line 7
+    .line 8
+    if-eq v0, p1, :cond_0
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Landroidx/transition/Visibility$DisappearListener;->c:Landroid/view/ViewGroup;
+
+    .line 11
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    iput-boolean p1, p0, Landroidx/transition/Visibility$DisappearListener;->e:Z
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-static {v0, p1}, Landroidx/transition/ViewGroupUtils;->a(Landroid/view/ViewGroup;Z)V
+
+    .line 18
+    :cond_0
+    return-void
+.end method
+
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x1
+
+    .line 2
+    .line 3
+    iput-boolean p1, p0, Landroidx/transition/Visibility$DisappearListener;->f:Z
+
+    .line 4
+    return-void
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-boolean p1, p0, Landroidx/transition/Visibility$DisappearListener;->f:Z
+
+    if-nez p1, :cond_0
+
+    .line 2
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->a:Landroid/view/View;
+
+    iget v0, p0, Landroidx/transition/Visibility$DisappearListener;->b:I
+
+    invoke-static {p1, v0}, Landroidx/transition/ViewUtils;->c(Landroid/view/View;I)V
+
+    .line 3
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->c:Landroid/view/ViewGroup;
+
+    if-eqz p1, :cond_0
+
+    .line 4
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 5
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$DisappearListener;->a(Z)V
+
+    return-void
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;Z)V
+    .locals 0
+    .param p1    # Landroid/animation/Animator;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    if-nez p2, :cond_1
+
+    .line 6
+    iget-boolean p1, p0, Landroidx/transition/Visibility$DisappearListener;->f:Z
+
+    if-nez p1, :cond_0
+
+    .line 7
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->a:Landroid/view/View;
+
+    iget p2, p0, Landroidx/transition/Visibility$DisappearListener;->b:I
+
+    invoke-static {p1, p2}, Landroidx/transition/ViewUtils;->c(Landroid/view/View;I)V
+
+    .line 8
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->c:Landroid/view/ViewGroup;
+
+    if-eqz p1, :cond_0
+
+    .line 9
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 10
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$DisappearListener;->a(Z)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;Z)V
+    .locals 0
+    .param p1    # Landroid/animation/Animator;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->a:Landroid/view/View;
+
+    const/4 p2, 0x0
+
+    invoke-static {p1, p2}, Landroidx/transition/ViewUtils;->c(Landroid/view/View;I)V
+
+    .line 3
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->c:Landroid/view/ViewGroup;
+
+    if-eqz p1, :cond_0
+
+    .line 4
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onTransitionCancel(Landroidx/transition/Transition;)V
+    .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method
+
+.method public final onTransitionEnd(Landroidx/transition/Transition;)V
+    .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$TransitionListener;)Landroidx/transition/Transition;
+
+    return-void
+.end method
+
+.method public final onTransitionEnd(Landroidx/transition/Transition;Z)V
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$DisappearListener;->onTransitionEnd(Landroidx/transition/Transition;)V
+
+    return-void
+.end method
+
+.method public final onTransitionPause(Landroidx/transition/Transition;)V
+    .locals 1
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$DisappearListener;->a(Z)V
+
+    .line 5
+    .line 6
+    iget-boolean p1, p0, Landroidx/transition/Visibility$DisappearListener;->f:Z
+
+    .line 7
+    .line 8
+    if-nez p1, :cond_0
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->a:Landroid/view/View;
+
+    .line 11
+    .line 12
+    iget v0, p0, Landroidx/transition/Visibility$DisappearListener;->b:I
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-static {p1, v0}, Landroidx/transition/ViewUtils;->c(Landroid/view/View;I)V
+
+    .line 16
+    :cond_0
+    return-void
+.end method
+
+.method public final onTransitionResume(Landroidx/transition/Transition;)V
+    .locals 1
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 p1, 0x1
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility$DisappearListener;->a(Z)V
+
+    .line 5
+    .line 6
+    iget-boolean p1, p0, Landroidx/transition/Visibility$DisappearListener;->f:Z
+
+    .line 7
+    .line 8
+    if-nez p1, :cond_0
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Landroidx/transition/Visibility$DisappearListener;->a:Landroid/view/View;
+
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-static {p1, v0}, Landroidx/transition/ViewUtils;->c(Landroid/view/View;I)V
+
+    .line 15
+    :cond_0
+    return-void
+.end method
+
+.method public final onTransitionStart(Landroidx/transition/Transition;)V
+    .locals 0
+    .param p1    # Landroidx/transition/Transition;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public final onTransitionStart(Landroidx/transition/Transition;Z)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method

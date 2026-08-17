@@ -1,0 +1,58 @@
+package androidx.compose.p326ui.platform;
+
+import androidx.compose.p326ui.unit.IntSize;
+import androidx.compose.runtime.MutableState;
+import androidx.compose.runtime.SnapshotMutableStateImpl;
+import androidx.compose.runtime.SnapshotStateKt;
+import androidx.compose.runtime.internal.StabilityInferred;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: AndroidWindowInfo.android.kt */
+@StabilityInferred
+@Metadata(m51404d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, m51405d2 = {"Landroidx/compose/ui/platform/LazyWindowInfo;", "Landroidx/compose/ui/platform/WindowInfo;", "<init>", "()V", "ui_release"}, m51406k = 1, m51407mv = {1, 9, 0}, m51409xi = 48)
+@SourceDebugExtension({"SMAP\nAndroidWindowInfo.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidWindowInfo.android.kt\nandroidx/compose/ui/platform/LazyWindowInfo\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,392:1\n85#2:393\n113#2,2:394\n1#3:396\n*S KotlinDebug\n*F\n+ 1 AndroidWindowInfo.android.kt\nandroidx/compose/ui/platform/LazyWindowInfo\n*L\n49#1:393\n49#1:394,2\n*E\n"})
+/* loaded from: classes7.dex */
+public final class LazyWindowInfo implements WindowInfo {
+
+    /* renamed from: a */
+    @Nullable
+    public Function0<IntSize> f22481a;
+
+    /* renamed from: b */
+    @Nullable
+    public MutableState<IntSize> f22482b;
+
+    /* renamed from: c */
+    @NotNull
+    public final MutableState f22483c = SnapshotStateKt.m6647g(Boolean.FALSE);
+
+    @Override // androidx.compose.p326ui.platform.WindowInfo
+    /* renamed from: a */
+    public final long mo8363a() {
+        long m54854getZeroYbymL2g;
+        if (this.f22482b == null) {
+            Function0<IntSize> function0 = this.f22481a;
+            if (function0 != null) {
+                m54854getZeroYbymL2g = ((IntSize) ((AndroidComposeView$onAttachedToWindow$1) function0).invoke()).f23790a;
+            } else {
+                m54854getZeroYbymL2g = IntSize.f23789b.m54854getZeroYbymL2g();
+            }
+            this.f22482b = SnapshotStateKt.m6647g(new IntSize(m54854getZeroYbymL2g));
+            this.f22481a = null;
+        }
+        MutableState<IntSize> mutableState = this.f22482b;
+        Intrinsics.checkNotNull(mutableState);
+        return ((IntSize) ((SnapshotMutableStateImpl) mutableState).getF23441a()).f23790a;
+    }
+
+    @Override // androidx.compose.p326ui.platform.WindowInfo
+    /* renamed from: b */
+    public final boolean mo8364b() {
+        return ((Boolean) ((SnapshotMutableStateImpl) this.f22483c).getF23441a()).booleanValue();
+    }
+}

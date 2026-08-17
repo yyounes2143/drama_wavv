@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.lottie.LottieAnimationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lottie_loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_6sdp"
+    android:layout_marginLeft="@dimen/detail_loading_margin_hor"
+    android:layout_marginRight="@dimen/detail_loading_margin_hor"
+    android:scaleType="fitXY"
+    android:layout_marginHorizontal="@dimen/detail_loading_margin_hor"
+    app:lottie_autoPlay="true"
+    app:lottie_fileName="video_loading.json"
+    app:lottie_imageAssetsFolder="images/"
+    app:lottie_loop="true"/>

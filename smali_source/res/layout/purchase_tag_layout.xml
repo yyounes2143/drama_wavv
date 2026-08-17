@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_coins_label" android:background="@drawable/payment_bg_coin_label" android:paddingLeft="@dimen/_6sdp" android:paddingTop="@dimen/_2sdp" android:paddingRight="@dimen/_6sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_6sdp" android:paddingVertical="@dimen/_2sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/theme_text1" android:ellipsize="end" android:id="@id/tv_coins_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/_140sdp" android:maxLines="1" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@color/theme_text1" android:gravity="center" android:id="@id/tv_expire_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_2sdp" />
+    <ImageView android:id="@id/iv_upper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_ic_coin_up" android:contentDescription="@string/mine_empty" />
+</LinearLayout>

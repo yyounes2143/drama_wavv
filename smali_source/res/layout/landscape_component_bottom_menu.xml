@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/_120sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:background="@drawable/bottom_gradient_mask" android:layout_width="fill_parent" android:layout_height="@dimen/_120sdp" />
+    <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/ll_bottom_bar" android:paddingLeft="@dimen/_16sdp" android:paddingRight="@dimen/_16sdp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/_30sdp" android:layout_marginBottom="@dimen/_20sdp" android:layout_marginEnd="@dimen/_56sdp" android:paddingHorizontal="@dimen/_16sdp">
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_audion" android:background="@drawable/common_shape_conner_8_line_2_c_white" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_audio_track" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:id="@id/space_audion" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_subtitle" android:background="@drawable/common_shape_conner_8_line_2_c_white" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_subtitles_track" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:id="@id/space_subtitle" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_rate" android:background="@drawable/common_shape_conner_8_line_2_c_white" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="1.0X" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <FrameLayout android:id="@id/ll_resolution" android:background="@drawable/common_shape_conner_8_line_2_c_white" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_resolution" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_str" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+                <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/theme_text13" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_1080P" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1080p" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="end" android:id="@id/iv_vip_label_tips" android:visibility="gone" android:layout_width="@dimen/_19sdp" android:layout_height="@dimen/_10sdp" android:src="@drawable/ic_vip_tag" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

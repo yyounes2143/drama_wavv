@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/compose_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dramawave.shared.general.view.DramaTaskFloatView android:layout_gravity="end|bottom|center" android:id="@id/float_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_100sdp" />
+    <com.dramawave.shared.ui.view.InteractiveAdFloatView android:layout_gravity="end|bottom|center" android:id="@id/interactive_ad_float_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_100sdp" />
+</FrameLayout>

@@ -1,0 +1,27 @@
+.class public final Landroidx/compose/material/icons/automirrored/sharp/ContactSupportKt;
+.super Ljava/lang/Object;
+.source "ContactSupport.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0002\n\u0000\u00a8\u0006\u0000"
+    }
+    d2 = {
+        "material-icons-extended_release"
+    }
+    k = 0x2
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nContactSupport.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ContactSupport.kt\nandroidx/compose/material/icons/automirrored/sharp/ContactSupportKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,62:1\n223#2:63\n216#2,3:64\n219#2,4:68\n233#2,18:72\n253#2:109\n174#3:67\n705#4,2:90\n717#4,2:92\n719#4,11:98\n72#5,4:94\n*S KotlinDebug\n*F\n+ 1 ContactSupport.kt\nandroidx/compose/material/icons/automirrored/sharp/ContactSupportKt\n*L\n29#1:63\n29#1:64,3\n29#1:68,4\n31#1:72,18\n31#1:109\n29#1:67\n31#1:90,2\n31#1:92,2\n31#1:98,11\n31#1:94,4\n*E\n"
+    }
+.end annotation

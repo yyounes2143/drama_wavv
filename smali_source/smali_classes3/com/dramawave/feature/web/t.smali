@@ -1,0 +1,84 @@
+.class public final Lcom/dramawave/feature/web/t;
+.super Lcom/dramawave/shared/web/r;
+.source "JsHandlerManagerImpl.kt"
+
+
+# instance fields
+.field final synthetic a:Lcom/dramawave/feature/web/JsHandlerManagerImpl;
+
+
+# direct methods
+.method public constructor <init>(Lcom/dramawave/feature/web/JsHandlerManagerImpl;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/dramawave/feature/web/t;->a:Lcom/dramawave/feature/web/JsHandlerManagerImpl;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Lcom/dramawave/shared/web/r;-><init>()V
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lorg/json/JSONObject;Lcom/dramawave/shared/web/JsBridge$a;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    const-string v0, "params"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    const-string v0, "promise"
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {p1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-object v0, p0, Lcom/dramawave/feature/web/t;->a:Lcom/dramawave/feature/web/JsHandlerManagerImpl;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Lcom/dramawave/feature/web/JsHandlerManagerImpl;->h()Lcom/dramawave/shared/web/q;
+
+    .line 19
+    move-result-object v0
+
+    .line 20
+    .line 21
+    if-eqz v0, :cond_0
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-interface {v0, p1, p2}, Lcom/dramawave/shared/web/a;->w0(Lorg/json/JSONObject;Lcom/dramawave/shared/web/JsBridge$a;)V
+
+    .line 25
+    :cond_0
+    return-void
+.end method

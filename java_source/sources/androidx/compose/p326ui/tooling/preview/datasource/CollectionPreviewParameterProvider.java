@@ -1,0 +1,13 @@
+package androidx.compose.p326ui.tooling.preview.datasource;
+
+import androidx.compose.p326ui.tooling.preview.PreviewParameterProvider;
+import androidx.compose.runtime.internal.StabilityInferred;
+import com.google.android.gms.ads.RequestConfiguration;
+import kotlin.Metadata;
+
+/* compiled from: CollectionPreviewParameterProvider.android.kt */
+@StabilityInferred
+@Metadata(m51404d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0017\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u00028\u00000\u0002¨\u0006\u0003"}, m51405d2 = {"Landroidx/compose/ui/tooling/preview/datasource/CollectionPreviewParameterProvider;", RequestConfiguration.MAX_AD_CONTENT_RATING_T, "Landroidx/compose/ui/tooling/preview/PreviewParameterProvider;", "ui-tooling-preview_release"}, m51406k = 1, m51407mv = {1, 8, 0}, m51409xi = 48)
+/* loaded from: classes2.dex */
+public class CollectionPreviewParameterProvider<T> implements PreviewParameterProvider<T> {
+}

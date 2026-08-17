@@ -1,0 +1,122 @@
+package com.bytedance.sdk.openadsdk.component.reward.view;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import com.bytedance.sdk.component.utils.C6797Sk;
+import com.bytedance.sdk.openadsdk.common.C7130SI;
+import com.bytedance.sdk.openadsdk.core.model.QWA;
+import com.bytedance.sdk.openadsdk.core.p423kU.C7470VN;
+import com.bytedance.sdk.openadsdk.core.p423kU.C7472kU;
+import com.bytedance.sdk.openadsdk.core.widget.AXE;
+import com.bytedance.sdk.openadsdk.core.widget.PAGLogoView;
+import com.bytedance.sdk.openadsdk.utils.hMq;
+import com.bytedance.sdk.openadsdk.utils.lnG;
+import com.dramawave.shared.p448ui.view.GradientCoverImageView;
+
+/* renamed from: com.bytedance.sdk.openadsdk.component.reward.view.mc */
+/* loaded from: classes6.dex */
+public class C7280mc {
+    public static void Kjv(FrameLayout frameLayout, QWA qwa) {
+        Context context = frameLayout.getContext();
+        com.bytedance.sdk.openadsdk.core.p423kU.fWG fwg = new com.bytedance.sdk.openadsdk.core.p423kU.fWG(context);
+        fwg.setId(hMq.f41224Sk);
+        fwg.setBackgroundColor(Color.parseColor("#F8F8F8"));
+        frameLayout.addView(fwg, new FrameLayout.LayoutParams(-1, -1));
+        View c7130si = new C7130SI(context);
+        c7130si.setId(hMq.TVS);
+        fwg.addView(c7130si, new RelativeLayout.LayoutParams(-1, -1));
+        C7472kU c7472kU = new C7472kU(context);
+        c7472kU.setId(hMq.rCy);
+        c7472kU.setOrientation(1);
+        c7472kU.setVisibility(8);
+        c7472kU.setGravity(1);
+        c7472kU.setId(hMq.lnG);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -2);
+        layoutParams.addRule(13);
+        fwg.addView(c7472kU, layoutParams);
+        AXE axe = new AXE(context);
+        axe.setId(hMq.Mba);
+        c7472kU.addView(axe, new LinearLayout.LayoutParams(lnG.Yhp(context, 80.0f), lnG.Yhp(context, 80.0f)));
+        C7470VN c7470vn = new C7470VN(context);
+        c7470vn.setId(hMq.Jdh);
+        c7470vn.setTextColor(Color.parseColor("#161823"));
+        c7470vn.setTextSize(2, 24.0f);
+        LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -2);
+        layoutParams2.topMargin = lnG.Yhp(context, 12.0f);
+        c7472kU.addView(c7470vn, layoutParams2);
+        C7470VN c7470vn2 = new C7470VN(context);
+        c7470vn2.setId(hMq.f41210GY);
+        c7470vn2.setGravity(17);
+        c7470vn2.setTextColor(Color.parseColor("#80161823"));
+        c7470vn2.setTextSize(2, 16.0f);
+        c7470vn2.setTextAlignment(4);
+        LinearLayout.LayoutParams layoutParams3 = new LinearLayout.LayoutParams(-2, -2);
+        int Yhp = lnG.Yhp(context, 60.0f);
+        layoutParams3.leftMargin = Yhp;
+        layoutParams3.rightMargin = Yhp;
+        layoutParams3.setMarginStart(Yhp);
+        layoutParams3.setMarginEnd(layoutParams3.rightMargin);
+        layoutParams3.topMargin = lnG.Yhp(context, 8.0f);
+        c7472kU.addView(c7470vn2, layoutParams3);
+        C7470VN c7470vn3 = new C7470VN(context);
+        c7470vn3.setId(hMq.Yci);
+        c7470vn3.setGravity(17);
+        c7470vn3.setTextColor(-1);
+        c7470vn3.setText(C6797Sk.Kjv(context, "tt_video_mobile_go_detail"));
+        c7470vn3.setBackground(com.bytedance.sdk.openadsdk.utils.RDh.Kjv(context, "tt_reward_video_download_btn_bg"));
+        LinearLayout.LayoutParams layoutParams4 = new LinearLayout.LayoutParams(lnG.Yhp(context, 255.0f), lnG.Yhp(context, 44.0f));
+        layoutParams4.topMargin = lnG.Yhp(context, 32.0f);
+        c7472kU.addView(c7470vn3, layoutParams4);
+        C7470VN c7470vn4 = new C7470VN(context);
+        c7470vn4.setId(hMq.Zat);
+        c7470vn4.setGravity(17);
+        c7470vn4.setTextColor(GradientCoverImageView.DEFAULT_COLOR);
+        c7470vn4.setText("Sorry,this AD fails to load...");
+        c7470vn4.setVisibility(8);
+        c7470vn4.setGravity(1);
+        RelativeLayout.LayoutParams layoutParams5 = new RelativeLayout.LayoutParams(-1, -2);
+        layoutParams5.addRule(13);
+        fwg.addView(c7470vn4, layoutParams5);
+        View createPAGLogoViewByMaterial = PAGLogoView.createPAGLogoViewByMaterial(context, qwa);
+        createPAGLogoViewByMaterial.setId(hMq.LyD);
+        RelativeLayout.LayoutParams layoutParams6 = new RelativeLayout.LayoutParams(-2, lnG.Yhp(context, 14.0f));
+        layoutParams6.addRule(12);
+        int Yhp2 = lnG.Yhp(context, 16.0f);
+        layoutParams6.leftMargin = Yhp2;
+        layoutParams6.setMarginStart(Yhp2);
+        layoutParams6.bottomMargin = lnG.Yhp(context, 20.0f);
+        fwg.addView(createPAGLogoViewByMaterial, layoutParams6);
+    }
+
+    public static void Kjv(FrameLayout frameLayout) {
+        Context context = frameLayout.getContext();
+        View gNk = new GNk(context);
+        gNk.setId(hMq.f41223SI);
+        gNk.setVisibility(8);
+        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -2);
+        layoutParams.gravity = 80;
+        frameLayout.addView(gNk, layoutParams);
+        View c7472kU = new C7472kU(context);
+        c7472kU.setId(hMq.f41209Ff);
+        c7472kU.setVisibility(8);
+        frameLayout.addView(c7472kU, new FrameLayout.LayoutParams(-1, -1));
+        View enb = new com.bytedance.sdk.component.Pdn.enB(context, true);
+        enb.setLayerType(2, null);
+        enb.setVisibility(4);
+        enb.setId(hMq.f41231Yy);
+        frameLayout.addView(enb, new FrameLayout.LayoutParams(-1, -1));
+        View frameLayout2 = new FrameLayout(context);
+        frameLayout2.setId(hMq.hMq);
+        frameLayout2.setVisibility(4);
+        frameLayout.addView(frameLayout2, new FrameLayout.LayoutParams(-1, -1));
+        View enb2 = new com.bytedance.sdk.component.Pdn.enB(context, true);
+        enb2.setVisibility(8);
+        enb2.setId(hMq.AXE);
+        frameLayout.addView(enb2, new FrameLayout.LayoutParams(-1, -1));
+        frameLayout.addView(new RFEndCardBackUpLayout(context), new FrameLayout.LayoutParams(-1, -1));
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sign_toast_container" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dramawave.shared.ui.view.TriangleView android:layout_gravity="center|top" android:id="@id/triangleUp" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_8sdp" app:paintingStyle="fill" app:triangleColor="@color/theme_brand6" app:triangleDirection="up" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/notice_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/notice_background" android:background="@drawable/rounded_bg" android:paddingTop="@dimen/_4sdp" android:paddingBottom="@dimen/_4sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp" android:layout_marginBottom="@dimen/_6sdp" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_28sdp">
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/theme_text1" android:id="@id/notice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sr_login_reward" />
+        </LinearLayout>
+        <com.dramawave.shared.ui.view.TriangleView android:layout_gravity="start|bottom|center" android:id="@id/triangleDown" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_6sdp" android:layout_marginStart="@dimen/_16sdp" app:paintingStyle="fill" app:triangleColor="@color/theme_brand6" app:triangleDirection="down" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/overlay_row" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@android:color/transparent" android:id="@id/placeholder_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sr_login_reward" />
+        <View android:id="@id/spacer" android:layout_width="@dimen/_10sdp" android:layout_height="0.0dip" />
+        <ImageView android:id="@id/icon_task_login" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/ic_login_reward_coins_automirror" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_48sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="?reader_text_primary" android:ellipsize="end" android:id="@id/tv_chapter_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#fffdfbfc" android:ellipsize="start" android:gravity="center" android:id="@id/tv_free_time" android:background="@drawable/chapter_free_label" android:paddingLeft="@dimen/_4sdp" android:paddingTop="@dimen/_2sdp" android:paddingRight="@dimen/_4sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="@dimen/_87sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:maxLines="1" android:paddingHorizontal="@dimen/_4sdp" android:paddingVertical="@dimen/_2sdp" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="?reader_brand_primary" android:layout_gravity="end" android:id="@id/tv_read_rate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8.25%" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/iv_chapter_lock" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_novel_list_lock" app:tint="?reader_text_secondary" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/ll_remind_me" android:background="@drawable/reader_shape_conner_brand" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_6sdp" android:paddingVertical="@dimen/_2sdp">
+            <ImageView android:visibility="visible" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_17sdp" android:src="@drawable/ic_novel_bell_fill" />
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="?reader_text_primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remind_me" android:layout_marginStart="@dimen/_2sdp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/ll_reminded" android:background="@drawable/common_shape_conner_4_reader_fill_1" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_2sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_6sdp" android:paddingVertical="@dimen/_2sdp">
+            <androidx.appcompat.widget.AppCompatImageView android:visibility="visible" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_17sdp" android:src="@drawable/ic_novel_list_check" app:tint="?reader_text_secondary" />
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="?reader_text_secondary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reminded" android:layout_marginStart="@dimen/_2sdp" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/iv_vip" android:visibility="gone" android:layout_width="@dimen/_27sdp" android:layout_height="@dimen/_14sdp" android:src="@drawable/ic_chapter_list_vip" />
+    </LinearLayout>
+</LinearLayout>

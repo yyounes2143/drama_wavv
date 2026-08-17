@@ -1,0 +1,201 @@
+package com.google.android.gms.internal.ads;
+
+import android.view.Surface;
+import androidx.annotation.Nullable;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.2.0 */
+@Deprecated
+/* loaded from: classes8.dex */
+public final class zzmc extends zzg implements zzit {
+    private final zzka zzb;
+    private final zzdj zzc;
+
+    @Override // com.google.android.gms.internal.ads.zzit
+    public final void zzA() {
+        this.zzc.zzb();
+        this.zzb.zzA();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzit
+    public final void zzB(zzmj zzmjVar) {
+        this.zzc.zzb();
+        this.zzb.zzB(zzmjVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzit
+    public final void zzC(zzva zzvaVar) {
+        this.zzc.zzb();
+        this.zzb.zzC(zzvaVar);
+    }
+
+    @Nullable
+    public final zzii zzD() {
+        this.zzc.zzb();
+        return this.zzb.zzE();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzg
+    public final void zzb(int i10, long j10, int i11, boolean z10) {
+        this.zzc.zzb();
+        this.zzb.zzb(i10, j10, 5, false);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final int zzc() {
+        this.zzc.zzb();
+        return this.zzb.zzc();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final int zzd() {
+        this.zzc.zzb();
+        return this.zzb.zzd();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final int zze() {
+        this.zzc.zzb();
+        return this.zzb.zze();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final int zzf() {
+        this.zzc.zzb();
+        return this.zzb.zzf();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final int zzg() {
+        this.zzc.zzb();
+        return this.zzb.zzg();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final int zzh() {
+        this.zzc.zzb();
+        return this.zzb.zzh();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final int zzi() {
+        this.zzc.zzb();
+        this.zzb.zzi();
+        return 0;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final long zzj() {
+        this.zzc.zzb();
+        return this.zzb.zzj();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final long zzk() {
+        this.zzc.zzb();
+        return this.zzb.zzk();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final long zzl() {
+        this.zzc.zzb();
+        return this.zzb.zzl();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final long zzm() {
+        this.zzc.zzb();
+        return this.zzb.zzm();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final long zzn() {
+        this.zzc.zzb();
+        return this.zzb.zzn();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final zzbl zzo() {
+        this.zzc.zzb();
+        return this.zzb.zzo();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final zzbt zzp() {
+        this.zzc.zzb();
+        return this.zzb.zzp();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final void zzq() {
+        this.zzc.zzb();
+        this.zzb.zzq();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final void zzr(boolean z10) {
+        this.zzc.zzb();
+        this.zzb.zzr(z10);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final void zzs(@Nullable Surface surface) {
+        this.zzc.zzb();
+        this.zzb.zzs(surface);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final void zzt(float f10) {
+        this.zzc.zzb();
+        this.zzb.zzt(f10);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final void zzu() {
+        this.zzc.zzb();
+        this.zzb.zzu();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final boolean zzv() {
+        this.zzc.zzb();
+        return this.zzb.zzv();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final boolean zzw() {
+        this.zzc.zzb();
+        this.zzb.zzw();
+        return false;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbh
+    public final boolean zzx() {
+        this.zzc.zzb();
+        return this.zzb.zzx();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzit
+    public final int zzy() {
+        this.zzc.zzb();
+        this.zzb.zzy();
+        return 2;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzit
+    public final void zzz(zzmj zzmjVar) {
+        this.zzc.zzb();
+        this.zzb.zzz(zzmjVar);
+    }
+
+    public zzmc(zzir zzirVar) {
+        zzdj zzdjVar = new zzdj(zzdg.zza);
+        this.zzc = zzdjVar;
+        try {
+            this.zzb = new zzka(zzirVar, this);
+            zzdjVar.zze();
+        } catch (Throwable th) {
+            this.zzc.zze();
+            throw th;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="@dimen/_100sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_guest" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_12sdp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_action" android:background="@drawable/bg_action_btn" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="@dimen/_38sdp" android:paddingHorizontal="@dimen/_12sdp">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_action_white" />
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ugc_try_this_template" android:maxLines="1" android:layout_marginStart="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_host" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_12sdp">
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_release_square" android:background="@drawable/bg_action_btn" android:layout_width="fill_parent" android:layout_height="@dimen/_38sdp" android:text="@string/ugc_action_publish" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

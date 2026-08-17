@@ -1,0 +1,81 @@
+package androidx.compose.foundation.gestures;
+
+import androidx.compose.p326ui.Modifier;
+import androidx.compose.p326ui.node.ModifierNodeElement;
+import com.google.android.gms.ads.RequestConfiguration;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: AnchoredDraggable.kt */
+@Metadata(m51404d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u0000*\u0004\b\u0000\u0010\u00012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u00030\u0002¨\u0006\u0004"}, m51405d2 = {"Landroidx/compose/foundation/gestures/AnchoredDraggableElement;", RequestConfiguration.MAX_AD_CONTENT_RATING_T, "Landroidx/compose/ui/node/ModifierNodeElement;", "Landroidx/compose/foundation/gestures/AnchoredDraggableNode;", "foundation_release"}, m51406k = 1, m51407mv = {1, 9, 0}, m51409xi = 48)
+/* loaded from: classes4.dex */
+final class AnchoredDraggableElement<T> extends ModifierNodeElement<AnchoredDraggableNode<T>> {
+    @Override // androidx.compose.p326ui.node.ModifierNodeElement
+    /* renamed from: b */
+    public final void mo4461b(Modifier.Node node) {
+        boolean z10;
+        boolean z11;
+        AnchoredDraggableNode anchoredDraggableNode = (AnchoredDraggableNode) node;
+        anchoredDraggableNode.getClass();
+        if (!Intrinsics.areEqual((Object) null, (Object) null)) {
+            anchoredDraggableNode.m4875a2();
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (!Intrinsics.areEqual((Object) null, (Object) null)) {
+            z11 = true;
+        } else {
+            z11 = z10;
+        }
+        anchoredDraggableNode.m4913X1(anchoredDraggableNode.f10338r, false, null, null, z11);
+    }
+
+    public final boolean equals(@Nullable Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof AnchoredDraggableElement)) {
+            return false;
+        }
+        AnchoredDraggableElement anchoredDraggableElement = (AnchoredDraggableElement) obj;
+        anchoredDraggableElement.getClass();
+        if (!Intrinsics.areEqual((Object) null, (Object) null)) {
+            return false;
+        }
+        anchoredDraggableElement.getClass();
+        anchoredDraggableElement.getClass();
+        anchoredDraggableElement.getClass();
+        if (!Intrinsics.areEqual((Object) null, (Object) null)) {
+            return false;
+        }
+        anchoredDraggableElement.getClass();
+        if (!Intrinsics.areEqual((Object) null, (Object) null)) {
+            return false;
+        }
+        anchoredDraggableElement.getClass();
+        if (!Intrinsics.areEqual((Object) null, (Object) null)) {
+            return false;
+        }
+        anchoredDraggableElement.getClass();
+        if (!Intrinsics.areEqual((Object) null, (Object) null)) {
+            return false;
+        }
+        anchoredDraggableElement.getClass();
+        if (Intrinsics.areEqual((Object) null, (Object) null)) {
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        throw null;
+    }
+
+    @Override // androidx.compose.p326ui.node.ModifierNodeElement
+    /* renamed from: a */
+    public final Modifier.Node getF22764a() {
+        return new DragGestureNode(AnchoredDraggableKt.f9991a, false, null, null);
+    }
+}

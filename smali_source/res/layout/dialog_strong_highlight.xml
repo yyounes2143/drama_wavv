@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/_40sdp" android:paddingRight="@dimen/_40sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_40sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/_108sdp" android:src="@drawable/dialog_strong_bg_up" android:adjustViewBounds="true" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dialog_strong_bg_gradient" android:paddingTop="@dimen/_32sdp" android:paddingBottom="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp">
+                    <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/theme_text12" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.dramawave.shared.iap.stronghighlight.SubscriptionStrongHighlightContent android:id="@id/subscription_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.dramawave.shared.iap.stronghighlight.RechargeStrongHighlightContent android:id="@id/recharge_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.dramawave.shared.iap.stronghighlight.StrongHighlightPaymentChannelView android:id="@id/payment_channel_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp">
+                        <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/theme_text10" android:gravity="center" android:id="@id/btn_primary" android:background="@drawable/strong_highlight_button_bg" android:layout_width="fill_parent" android:layout_height="@dimen/_48sdp" android:layout_marginTop="@dimen/_8sdp" />
+                        <LinearLayout android:gravity="center" android:layout_gravity="end|center|top" android:orientation="horizontal" android:id="@id/layout_badge" android:background="@drawable/strong_highlight_badge_bg" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_2sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_5sdp">
+                            <TextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/white" android:id="@id/tv_badge_bonus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+                            <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tv_badge_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_4sdp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/theme_text13" android:gravity="center" android:id="@id/tv_footer_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" />
+                </LinearLayout>
+                <ImageView android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/dialog_strong_bg_border" android:scaleType="fitStart" android:adjustViewBounds="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|top" android:id="@id/iv_hero" android:layout_width="@dimen/_150sdp" android:layout_height="@dimen/_122sdp" android:layout_marginTop="@dimen/_18sdp" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_close" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_marginTop="@dimen/_16sdp" android:src="@drawable/ic_close_circle" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_shape_conner_12_top_surface_2" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/theme_text1" android:layout_gravity="start" android:id="@id/tv_title" android:paddingLeft="@dimen/_16sdp" android:paddingRight="@dimen/_16sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:layout_marginBottom="@dimen/_16sdp" android:text="@string/common_play_back_title" android:paddingHorizontal="@dimen/_16sdp" style="@style/theme_TextMedium16" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginRight="@dimen/_16sdp" android:layout_marginHorizontal="@dimen/_16sdp" />
+    <Space android:layout_width="wrap_content" android:layout_height="@dimen/_4sdp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcv_speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginRight="@dimen/_16sdp" android:layout_marginBottom="@dimen/_8sdp" android:layout_marginHorizontal="@dimen/_16sdp" />
+</LinearLayout>

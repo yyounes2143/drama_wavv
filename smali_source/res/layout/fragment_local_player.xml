@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dramawave.shared.ui.view.content.ContentContainer android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dramawave.shared.player.view.ShortVideoPageView android:id="@id/shortVideoSceneView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/fl_video_reward_pendant_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.dramawave.shared.ui.view.content.ContentContainer>
+    <FrameLayout android:id="@id/view_block" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="true">
+        <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="true" />
+        <View android:layout_gravity="end" android:id="@id/right_pan" android:layout_width="80.0dip" android:layout_height="fill_parent" />
+        <View android:layout_gravity="bottom" android:id="@id/bottom_pan" android:layout_width="fill_parent" android:layout_height="@dimen/_40sdp" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_back" android:paddingLeft="@dimen/_16sdp" android:paddingRight="@dimen/_16sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginTop="@dimen/_44sdp" android:src="@drawable/ic_back_left" android:nestedScrollingEnabled="true" android:paddingHorizontal="@dimen/_16sdp" />
+    <com.dramawave.feature.home.detail.widget.CompliantView android:id="@id/compliant_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

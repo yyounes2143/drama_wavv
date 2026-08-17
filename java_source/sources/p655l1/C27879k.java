@@ -1,0 +1,31 @@
+package p655l1;
+
+import kotlin.Pair;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: R8$$SyntheticClass */
+/* renamed from: l1.k */
+/* loaded from: classes9.dex */
+public final /* synthetic */ class C27879k implements Function1 {
+
+    /* renamed from: a */
+    public final /* synthetic */ Function0 f122034a;
+
+    /* renamed from: b */
+    public final /* synthetic */ InterfaceC27883o f122035b;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // kotlin.jvm.functions.Function1
+    public final Object invoke(Object obj) {
+        Pair MMKVProperty = (Pair) obj;
+        Intrinsics.checkNotNullParameter(MMKVProperty, "$this$MMKVProperty");
+        return Boolean.valueOf(this.f122035b.getKv().encode(MMKVProperty.f119587a + "_" + this.f122034a.invoke(), (String) MMKVProperty.f119588b));
+    }
+
+    public /* synthetic */ C27879k(Function0 function0, InterfaceC27883o interfaceC27883o) {
+        this.f122034a = function0;
+        this.f122035b = interfaceC27883o;
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/ll_long_home_press_notice" android:background="@drawable/shape_conner_200_back_25" android:paddingLeft="@dimen/_12sdp" android:paddingTop="@dimen/_4sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_4sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_108sdp" android:paddingHorizontal="@dimen/_12sdp" android:paddingVertical="@dimen/_4sdp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_16sdp" app:lottie_autoPlay="true" app:lottie_fileName="speed.json" app:lottie_imageAssetsFolder="images/" app:lottie_loop="true" />
+        <TextView android:textColor="@color/theme_text5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/long_click_notice" android:layout_marginStart="@dimen/_8sdp" style="@style/theme_TextMedium14" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_long_press_notice" android:background="@color/theme_surface1" android:paddingLeft="@dimen/_12sdp" android:paddingTop="@dimen/_4sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_4sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_108sdp" android:paddingHorizontal="@dimen/_12sdp" android:paddingVertical="@dimen/_4sdp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_16sdp" app:lottie_autoPlay="true" app:lottie_fileName="speed.json" app:lottie_imageAssetsFolder="images/" app:lottie_loop="true" />
+        <TextView android:textColor="@color/theme_text5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/long_click_notice" android:layout_marginStart="@dimen/_8sdp" style="@style/theme_TextMedium14" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/iv_play_pause" android:visibility="gone" android:layout_width="@dimen/_72sdp" android:layout_height="@dimen/_72sdp" android:src="@drawable/ic_player_pause_button" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_player_play_button" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_play_click_button" android:layout_width="@dimen/_72sdp" android:layout_height="@dimen/_72sdp" />
+</FrameLayout>

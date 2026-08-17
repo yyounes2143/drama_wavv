@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dramawave.shared.ui.view.content.LoadingView android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/click_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <Button android:id="@id/show_offerwall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="offerwall" />
+        <Button android:id="@id/show_tabjoy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="show_tabjoy" />
+        <Button android:id="@id/dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dismiss" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

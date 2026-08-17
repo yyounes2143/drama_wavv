@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/iv_actor_avatar"
+    android:layout_width="@dimen/_28sdp"
+    android:layout_height="@dimen/_28sdp"
+    android:foreground="@drawable/ugc_topic_avatar_stroke"
+    android:scaleType="centerCrop"
+    android:contentDescription="@null"
+    android:layout_marginEnd="@dimen/_4sdp"
+    app:shapeAppearanceOverlay="@style/UgcHistoryPopupActorAvatar"/>

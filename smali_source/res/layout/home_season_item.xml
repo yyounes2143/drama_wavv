@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_season_item" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_season_cover" android:layout_width="@dimen/_38sdp" android:layout_height="@dimen/_51sdp" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/_8sdp">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/theme_text1" android:ellipsize="middle" android:id="@id/tv_season_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/theme_text3" android:ellipsize="end" android:id="@id/tv_play_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:maxLines="1" />
+    </LinearLayout>
+    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_season_play_icon" android:scaleType="fitXY" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_8sdp" />
+</LinearLayout>

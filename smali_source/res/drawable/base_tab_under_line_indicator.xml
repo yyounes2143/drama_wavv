@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:width="@dimen/_28sdp">
+        <bitmap android:gravity="center" android:src="@drawable/theater_ic_tab_indicator" />
+    </item>
+</layer-list>

@@ -1,0 +1,280 @@
+.class final Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;
+.super Lcom/google/common/cache/LocalCache$StrongEntry;
+.source "LocalCache.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/common/cache/LocalCache;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "StrongAccessWriteEntry"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/google/common/cache/LocalCache$StrongEntry<",
+        "TK;TV;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public volatile e:J
+
+.field public f:Lcom/google/common/cache/ReferenceEntry;
+    .annotation build Lcom/google/j2objc/annotations/Weak;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
+.field public g:Lcom/google/common/cache/ReferenceEntry;
+    .annotation build Lcom/google/j2objc/annotations/Weak;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
+.field public volatile h:J
+
+.field public i:Lcom/google/common/cache/ReferenceEntry;
+    .annotation build Lcom/google/j2objc/annotations/Weak;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
+.field public j:Lcom/google/common/cache/ReferenceEntry;
+    .annotation build Lcom/google/j2objc/annotations/Weak;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public getAccessTime()J
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-wide v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->e:J
+
+    .line 3
+    return-wide v0
+.end method
+
+.method public getNextInAccessQueue()Lcom/google/common/cache/ReferenceEntry;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->f:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public getNextInWriteQueue()Lcom/google/common/cache/ReferenceEntry;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->i:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public getPreviousInAccessQueue()Lcom/google/common/cache/ReferenceEntry;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->g:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public getPreviousInWriteQueue()Lcom/google/common/cache/ReferenceEntry;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->j:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public getWriteTime()J
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-wide v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->h:J
+
+    .line 3
+    return-wide v0
+.end method
+
+.method public setAccessTime(J)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-wide p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->e:J
+
+    .line 3
+    return-void
+.end method
+
+.method public setNextInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->f:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-void
+.end method
+
+.method public setNextInWriteQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->i:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-void
+.end method
+
+.method public setPreviousInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->g:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-void
+.end method
+
+.method public setPreviousInWriteQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/cache/ReferenceEntry<",
+            "TK;TV;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->j:Lcom/google/common/cache/ReferenceEntry;
+
+    .line 3
+    return-void
+.end method
+
+.method public setWriteTime(J)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-wide p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->h:J
+
+    .line 3
+    return-void
+.end method

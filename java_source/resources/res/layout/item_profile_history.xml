@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginHorizontal="4dp">
+    <com.dramawave.shared.general.view.SeriesCoverView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        app:isShowOperatorTag="false"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/theme_text3"
+        android:ellipsize="end"
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:maxLines="1"
+        style="@style/theme_TextRegular12"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/theme_else_mask" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_8sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_66sdp" android:layout_marginRight="@dimen/_66sdp" android:text="@string/sr_vip_expired" android:layout_marginHorizontal="@dimen/_66sdp" style="@style/theme_TextMedium16" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/_16sdp" />
+    <TextView android:gravity="center" android:id="@id/tv_subscribe_vip" android:background="@drawable/shape_conner_8_brand6" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" android:layout_marginLeft="@dimen/_66sdp" android:layout_marginRight="@dimen/_66sdp" android:text="@string/vip_off_subscribe_now" android:layout_marginHorizontal="@dimen/_66sdp" style="@style/theme_TextMedium16" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/_16sdp" />
+    <TextView android:gravity="center" android:id="@id/tv_return_episode_1" android:background="@drawable/common_shape_conner_8_line_5" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" android:layout_marginLeft="@dimen/_66sdp" android:layout_marginRight="@dimen/_66sdp" android:text="@string/sr_return_episode_first" android:layout_marginHorizontal="@dimen/_66sdp" style="@style/theme_TextMedium16" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_content" android:background="@color/theme_surface1" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include android:id="@id/ic_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/guide_content_layout" />
+            <TextView android:layout_gravity="top" android:background="@drawable/common_gradient_top_black" android:layout_width="fill_parent" android:layout_height="@dimen/_100sdp" />
+            <TextView android:layout_gravity="bottom" android:background="@drawable/common_gradient_black" android:layout_width="fill_parent" android:layout_height="@dimen/_20sdp" />
+        </FrameLayout>
+        <include android:id="@id/ic_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/guide_bottom_layout" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp" android:src="@drawable/ic_guide_close" android:layout_marginStart="@dimen/_12sdp" />
+</FrameLayout>

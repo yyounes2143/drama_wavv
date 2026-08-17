@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/_56sdp" android:layout_height="@dimen/_56sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_avatar" android:layout_width="@dimen/_44sdp" android:layout_height="@dimen/_44sdp" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_vip_badge" android:layout_width="@dimen/_46sdp" android:layout_height="@dimen/_12sdp" android:layout_marginBottom="@dimen/_2sdp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

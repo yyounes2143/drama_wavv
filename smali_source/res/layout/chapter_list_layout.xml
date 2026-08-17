@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_novel_dialog" android:paddingLeft="@dimen/_16sdp" android:paddingTop="@dimen/_20sdp" android:paddingRight="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/_16sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ic_novel_info" layout="@layout/chapter_list_head_layout" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_chapter_list" android:background="@color/transparent" android:paddingTop="@dimen/_7sdp" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

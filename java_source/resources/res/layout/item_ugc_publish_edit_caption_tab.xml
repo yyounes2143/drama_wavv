@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_10sdp">
+    <TextView
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/ugc_template_publish_tab_text_color"
+        android:layout_gravity="center"
+        android:id="@+id/tab_title"
+        android:paddingBottom="@dimen/_4sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:includeFontPadding="false"
+        android:fontFamily="sans-serif"/>
+    <View
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/tab_indicator"
+        android:background="@drawable/ugc_template_publish_tab_indicator"
+        android:visibility="gone"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_2sdp"/>
+</FrameLayout>

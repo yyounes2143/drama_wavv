@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/series_pull_card_border"
+                android:endColor="@color/synopsis_ugc_entry_border_end"
+                android:angle="0"
+                android:type="linear"/>
+            <corners android:radius="@dimen/_8sdp"/>
+        </shape>
+    </item>
+    <item
+        android:left="@dimen/res_0x7f070000__0_5sdp"
+        android:top="@dimen/res_0x7f070000__0_5sdp"
+        android:right="@dimen/res_0x7f070000__0_5sdp"
+        android:bottom="@dimen/res_0x7f070000__0_5sdp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_8sdp"/>
+            <solid android:color="@color/series_pull_card_background"/>
+        </shape>
+    </item>
+</layer-list>

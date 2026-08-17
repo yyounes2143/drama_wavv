@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.ads;
+
+import android.media.MediaFormat;
+import java.nio.ByteBuffer;
+import java.util.List;
+import p000.C27866l;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.2.0 */
+/* loaded from: classes5.dex */
+public final class zzea {
+    public static void zza(MediaFormat mediaFormat, String str, int i10) {
+        if (i10 != -1) {
+            mediaFormat.setInteger(str, i10);
+        }
+    }
+
+    public static void zzb(MediaFormat mediaFormat, List list) {
+        for (int i10 = 0; i10 < list.size(); i10++) {
+            mediaFormat.setByteBuffer(C27866l.m52683a(i10, "csd-"), ByteBuffer.wrap((byte[]) list.get(i10)));
+        }
+    }
+}

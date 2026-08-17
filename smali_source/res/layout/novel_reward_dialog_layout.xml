@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_60" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/_373sdp" android:layout_height="@dimen/_356sdp" android:src="@drawable/img_reward_dialog_bg" />
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dramawave.core.common.view.GradientTextView android:textSize="@dimen/_32sdp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/gtv_title" android:paddingLeft="@dimen/_32sdp" android:paddingRight="@dimen/_32sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/earn_coins_dialog_title" android:shadowColor="#90000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:paddingHorizontal="@dimen/_32sdp" app:gradientDirection="left_to_right" app:gradientEndColor="#ffd9a959" app:gradientStartColor="#fffeb79d" />
+            <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/theme_text5" android:layout_gravity="center" android:id="@id/tv_coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_185sdp" android:shadowColor="#80000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+            <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/theme_text1" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_go_to_reward" android:background="@drawable/img_reward_btn_bg" android:layout_width="@dimen/_248sdp" android:layout_height="@dimen/_66sdp" android:layout_marginTop="@dimen/_20sdp" android:text="@string/earn_coins_dialog_btn" android:maxLines="1" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_close" android:background="@android:color/transparent" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_marginTop="@dimen/_16sdp" android:src="@drawable/ic_unlock_close" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

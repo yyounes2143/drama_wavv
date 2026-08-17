@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_conner_12_surface_3" android:paddingLeft="@dimen/_16sdp" android:paddingTop="@dimen/_20sdp" android:paddingRight="@dimen/_16sdp" android:paddingBottom="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_40sdp" android:layout_marginRight="@dimen/_40sdp" android:layout_marginHorizontal="@dimen/_40sdp" android:paddingHorizontal="@dimen/_16sdp" android:paddingVertical="@dimen/_20sdp">
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/theme_TextBold18" />
+        <TextView android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:textAlignment="viewStart" style="@style/theme_TextRegular14" />
+        <TextView android:textColor="@color/theme_text5" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/shape_conner_8_brand6" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp" android:layout_marginTop="@dimen/_20sdp" style="@style/theme_TextMedium16" />
+        <TextView android:textColor="@color/theme_text2" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" style="@style/theme_TextMedium16" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_16sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:paddingVertical="@dimen/_16sdp">
+    <include
+        android:id="@+id/benefit_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        layout="@layout/novel_benift_title_layout"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/rv_benefits"
+        android:background="@drawable/novel_benefit_bg"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_8sdp"/>
+</LinearLayout>

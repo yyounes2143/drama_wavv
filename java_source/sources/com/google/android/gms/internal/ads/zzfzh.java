@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.ads;
+
+import java.io.IOException;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.2.0 */
+/* loaded from: classes5.dex */
+public final class zzfzh extends IOException {
+    public zzfzh(String str) {
+        super(str);
+    }
+}

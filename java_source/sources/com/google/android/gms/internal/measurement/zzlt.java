@@ -1,0 +1,10 @@
+package com.google.android.gms.internal.measurement;
+
+/* compiled from: com.google.android.gms:play-services-measurement-base@@23.0.0 */
+/* loaded from: classes6.dex */
+final class zzlt extends zzls {
+    @Override // com.google.android.gms.internal.measurement.zzls
+    public final void zza(Object obj) {
+        ((zzmc) obj).zzb.zzb();
+    }
+}

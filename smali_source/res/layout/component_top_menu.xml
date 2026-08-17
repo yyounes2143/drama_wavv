@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/top_gradient_mask" android:layout_width="fill_parent" android:layout_height="@dimen/_100sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/ll_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/_44sdp">
+        <ImageView android:id="@id/iv_back" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_marginTop="@dimen/_10sdp" android:src="@drawable/ic_back_left" android:layout_marginStart="@dimen/_12sdp" android:layout_marginEnd="@dimen/_4sdp" />
+        <View android:id="@id/v_back" android:layout_width="@dimen/_48sdp" android:layout_height="@dimen/_48sdp" android:layout_alignParentStart="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/ll_top_actions" android:layout_toEndOf="@id/iv_back">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/theme_TextRegular16" />
+                <Space android:layout_width="@dimen/_6sdp" android:layout_height="wrap_content" />
+                <TextView android:id="@id/tv_episode_index" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/theme_TextRegular16" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_top_actions" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="@dimen/_12sdp" android:layout_alignParentEnd="true">
+            <FrameLayout android:id="@id/fl_vip" android:background="@drawable/bg_bottom_menu_vip_hybrid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/_28sdp" android:contentDescription="@string/vip_str" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_8sdp" android:layout_marginEnd="@dimen/_12sdp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_bottom_menu_vip_icon" />
+                    <ImageView android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_9sdp" android:src="@drawable/ic_bottom_menu_vip_wordmark" android:layout_marginStart="@dimen/_3sdp" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_speed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_speed" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/ic_top_menu_speed" android:contentDescription="@string/common_speed" />
+                <TextView android:textColor="@color/theme_text5" android:id="@id/tv_top_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/_4sdp" style="@style/theme_TextRegular13" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_more" android:layout_width="@dimen/_24sdp" android:layout_height="fill_parent" android:src="@drawable/ic_ellipsis_vertical" android:contentDescription="@string/more" android:layout_marginStart="@dimen/_12sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dramawave.shared.ui.view.content.ContentContainer android:id="@id/content" android:background="@color/theme_surface1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:content_view_id="@id/refresh_layout" app:empty_message="@string/ugc_usage_empty"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlEnableLoadMore="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:paddingTop="@dimen/_22sdp" android:paddingBottom="@dimen/_16sdp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_16sdp" android:paddingEnd="@dimen/_16sdp" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</com.dramawave.shared.ui.view.content.ContentContainer>

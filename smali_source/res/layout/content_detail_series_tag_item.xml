@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/theme_text6" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_episode_tag" android:background="@drawable/common_shape_conner_4_white10" android:layout_width="wrap_content" android:layout_height="@dimen/_18sdp" android:layout_marginBottom="8.0dip" android:maxLines="1" android:lineSpacingExtra="0.0dip" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_4sdp" android:layout_marginEnd="8.0dip" app:drawableEndCompat="@drawable/ic_check_right_automirror" style="@style/theme_TextRegular12" />
+</LinearLayout>

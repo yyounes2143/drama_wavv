@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_56sdp" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_4sdp" android:layout_marginRight="@dimen/_16sdp" android:layout_marginBottom="@dimen/_4sdp" android:layout_marginHorizontal="@dimen/_16sdp" android:layout_marginVertical="@dimen/_4sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_item_check" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_marginStart="@dimen/_8sdp" app:srcCompat="@drawable/ic_check" app:tint="@color/theme_brand6" />
+    <Space android:layout_width="@dimen/_8sdp" android:layout_height="wrap_content" />
+    <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/theme_TextRegular16" />
+    <ImageView android:id="@id/iv_vip_flag" android:visibility="gone" android:layout_width="@dimen/_27sdp" android:layout_height="@dimen/_14sdp" android:src="@drawable/ic_tag_vip" android:scaleType="fitXY" android:layout_marginStart="@dimen/_8sdp" />
+    <Space android:layout_width="@dimen/_16sdp" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlb_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Test H5 URL List"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_h5_url_count"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"/>
+    <TextView
+        android:textSize="11sp"
+        android:textColor="#99ffffff"
+        android:id="@+id/tv_h5_url_tip"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap one item to open by routerTo(url)"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_h5_url_list"
+        android:paddingBottom="@dimen/_12sdp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

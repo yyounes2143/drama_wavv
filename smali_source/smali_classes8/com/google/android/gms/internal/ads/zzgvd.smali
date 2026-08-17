@@ -1,0 +1,59 @@
+.class public final Lcom/google/android/gms/internal/ads/zzgvd;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@24.2.0"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzgvi;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic zza(Ljava/lang/String;Ljava/security/Provider;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    if-nez p2, :cond_0
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
+
+    .line 6
+    move-result-object p1
+
+    .line 7
+    goto :goto_0
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    invoke-static {p1, p2}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/KeyFactory;
+
+    .line 11
+    move-result-object p1
+
+    .line 12
+    :goto_0
+    return-object p1
+.end method

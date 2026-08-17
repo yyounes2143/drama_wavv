@@ -1,0 +1,89 @@
+package com.dramawave.feature.home.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.dramawave.feature.home.R$id;
+import com.dramawave.feature.home.R$layout;
+import com.dramawave.shared.p448ui.view.textview.StrokeTextView;
+
+/* loaded from: classes5.dex */
+public final class SubtitleComponentLayoutV1Binding implements ViewBinding {
+
+    @NonNull
+    public final Guideline guideline;
+
+    @NonNull
+    public final View landscapeVideoGuideline;
+
+    @NonNull
+    private final ConstraintLayout rootView;
+
+    @NonNull
+    public final StrokeTextView tvLandscapeSubtitle;
+
+    @NonNull
+    public final AppCompatTextView tvPipSubtitle;
+
+    @NonNull
+    public final StrokeTextView tvSubtitle;
+
+    @NonNull
+    public static SubtitleComponentLayoutV1Binding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @NonNull
+    public static SubtitleComponentLayoutV1Binding bind(@NonNull View view) {
+        View m12628a;
+        int i10 = R$id.f47996b1;
+        Guideline guideline = (Guideline) ViewBindings.m12628a(i10, view);
+        if (guideline != null && (m12628a = ViewBindings.m12628a((i10 = R$id.f47756D2), view)) != null) {
+            i10 = R$id.f48216v7;
+            StrokeTextView strokeTextView = (StrokeTextView) ViewBindings.m12628a(i10, view);
+            if (strokeTextView != null) {
+                i10 = R$id.f47841L7;
+                AppCompatTextView appCompatTextView = (AppCompatTextView) ViewBindings.m12628a(i10, view);
+                if (appCompatTextView != null) {
+                    i10 = R$id.f48080i8;
+                    StrokeTextView strokeTextView2 = (StrokeTextView) ViewBindings.m12628a(i10, view);
+                    if (strokeTextView2 != null) {
+                        return new SubtitleComponentLayoutV1Binding((ConstraintLayout) view, guideline, m12628a, strokeTextView, appCompatTextView, strokeTextView2);
+                    }
+                }
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+
+    @NonNull
+    public static SubtitleComponentLayoutV1Binding inflate(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(R$layout.f48316S1, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    public ConstraintLayout getRoot() {
+        return this.rootView;
+    }
+
+    private SubtitleComponentLayoutV1Binding(@NonNull ConstraintLayout constraintLayout, @NonNull Guideline guideline, @NonNull View view, @NonNull StrokeTextView strokeTextView, @NonNull AppCompatTextView appCompatTextView, @NonNull StrokeTextView strokeTextView2) {
+        this.rootView = constraintLayout;
+        this.guideline = guideline;
+        this.landscapeVideoGuideline = view;
+        this.tvLandscapeSubtitle = strokeTextView;
+        this.tvPipSubtitle = appCompatTextView;
+        this.tvSubtitle = strokeTextView2;
+    }
+}

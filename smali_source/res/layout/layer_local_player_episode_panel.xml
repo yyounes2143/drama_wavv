@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|bottom|center" android:orientation="vertical" android:id="@id/ll_root" android:paddingBottom="@dimen/_50sdp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_episode" android:layout_marginBottom="@dimen/_84sdp" style="@style/PlayMenuLayout">
+        <ImageView android:id="@id/iv_episode" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/ic_play_menu_drama" />
+        <TextView android:id="@id/tv_episode" android:text="@string/episodes" android:shadowColor="@color/black_50" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="3.0" style="@style/PlayMenuText" />
+    </LinearLayout>
+</LinearLayout>

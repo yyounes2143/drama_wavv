@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_fullscreen_background">#ff2e2f30</color>
+    <color name="notifications_content_color">#ffcccacb</color>
+    <color name="notifications_fill_color">#ff434546</color>
+    <color name="notifications_header_color">#ffcccacb</color>
+    <color name="notifications_title_color">#fffdfbfc</color>
+    <color name="permissionx_default_dialog_bg">#ff3c4043</color>
+    <color name="permissionx_split_line">#ff55565a</color>
+    <color name="permissionx_text_color">#ffffffff</color>
+    <color name="permissionx_tint_color">#ff8ab6f5</color>
+</resources>

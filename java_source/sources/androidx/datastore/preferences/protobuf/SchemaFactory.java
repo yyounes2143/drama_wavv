@@ -1,0 +1,6 @@
+package androidx.datastore.preferences.protobuf;
+
+@CheckReturnValue
+/* loaded from: classes5.dex */
+interface SchemaFactory {
+}

@@ -1,0 +1,219 @@
+.class public final synthetic Lcom/dramawave/feature/home/detail/viewmodel/P;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:I
+
+
+# direct methods
+.method public synthetic constructor <init>(I)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput p1, p0, Lcom/dramawave/feature/home/detail/viewmodel/P;->a:I
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 26
+
+    .line 1
+    .line 2
+    move-object/from16 v0, p0
+
+    .line 3
+    .line 4
+    iget v1, v0, Lcom/dramawave/feature/home/detail/viewmodel/P;->a:I
+
+    .line 5
+    .line 6
+    .line 7
+    packed-switch v1, :pswitch_data_0
+
+    .line 8
+    .line 9
+    move-object/from16 v1, p1
+
+    .line 10
+    .line 11
+    check-cast v1, Lcom/dramawave/core/mvi/architecture/p;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Lcom/dramawave/core/mvi/architecture/p;->a()Ljava/lang/Object;
+
+    .line 15
+    move-result-object v1
+
+    .line 16
+    move-object v2, v1
+
+    .line 17
+    .line 18
+    check-cast v2, LS2/b;
+
+    .line 19
+    const/4 v5, 0x1
+
+    .line 20
+    const/4 v6, 0x0
+
+    .line 21
+    .line 22
+    const-string v3, ""
+
+    .line 23
+    const/4 v4, 0x0
+
+    .line 24
+    .line 25
+    const/16 v7, 0x2e
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static/range {v2 .. v7}, LS2/b;->a(LS2/b;Ljava/lang/String;Ljava/util/List;ZZI)LS2/b;
+
+    .line 29
+    move-result-object v1
+
+    .line 30
+    return-object v1
+
+    .line 31
+    .line 32
+    :pswitch_0
+    move-object/from16 v1, p1
+
+    .line 33
+    .line 34
+    check-cast v1, Lcom/dramawave/core/mvi/architecture/p;
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Lcom/dramawave/core/mvi/architecture/p;->a()Ljava/lang/Object;
+
+    .line 38
+    move-result-object v1
+
+    .line 39
+    move-object v2, v1
+
+    .line 40
+    .line 41
+    check-cast v2, Lcom/dramawave/feature/home/detail/viewmodel/F;
+
+    .line 42
+    .line 43
+    const/16 v23, 0x0
+
+    .line 44
+    .line 45
+    const/16 v24, 0x0
+
+    .line 46
+    const/4 v3, 0x0
+
+    .line 47
+    const/4 v4, 0x0
+
+    .line 48
+    const/4 v5, 0x0
+
+    .line 49
+    const/4 v6, 0x0
+
+    .line 50
+    const/4 v7, 0x0
+
+    .line 51
+    const/4 v8, 0x0
+
+    .line 52
+    const/4 v9, 0x0
+
+    .line 53
+    const/4 v10, 0x0
+
+    .line 54
+    const/4 v11, 0x0
+
+    .line 55
+    const/4 v12, 0x0
+
+    .line 56
+    const/4 v13, 0x0
+
+    .line 57
+    const/4 v14, 0x0
+
+    .line 58
+    const/4 v15, 0x0
+
+    .line 59
+    .line 60
+    const/16 v16, 0x0
+
+    .line 61
+    .line 62
+    const/16 v17, 0x0
+
+    .line 63
+    .line 64
+    const/16 v18, 0x0
+
+    .line 65
+    .line 66
+    const/16 v19, 0x0
+
+    .line 67
+    .line 68
+    const/16 v20, 0x0
+
+    .line 69
+    .line 70
+    const/16 v21, 0x0
+
+    .line 71
+    .line 72
+    const/16 v22, 0x0
+
+    .line 73
+    .line 74
+    .line 75
+    const v25, 0xfffff7f
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-static/range {v2 .. v25}, Lcom/dramawave/feature/home/detail/viewmodel/F;->a(Lcom/dramawave/feature/home/detail/viewmodel/F;Lcom/dramawave/shared/models/Series;Lcom/dramawave/shared/models/F;Lcom/dramawave/shared/models/Series;ZILjava/lang/String;IZLjava/lang/String;ZILcom/dramawave/shared/models/Episode;Lcom/dramawave/shared/af/component/q;ZLjava/util/List;ZLjava/util/List;Lcom/dramawave/feature/home/detail/viewmodel/F$a;IILjava/util/HashMap;II)Lcom/dramawave/feature/home/detail/viewmodel/F;
+
+    .line 79
+    move-result-object v1
+
+    .line 80
+    return-object v1
+
+    .line 81
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

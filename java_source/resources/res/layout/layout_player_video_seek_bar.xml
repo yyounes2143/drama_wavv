@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dramawave.shared.player.view.VideoSeekBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_seek_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/video_seek_bar_view_height"
+    android:layout_marginLeft="@dimen/video_seek_bar_margin_hor"
+    android:layout_marginRight="@dimen/video_seek_bar_margin_hor"
+    android:layout_marginHorizontal="@dimen/video_seek_bar_margin_hor"
+    app:vsb_drag_bar="@drawable/video_seek_bar_thumb"
+    app:vsb_drag_bar_reached_color="@color/theme_fill4"
+    app:vsb_progress_background_color="@color/white_20"
+    app:vsb_progress_bar_color="@color/white_20"
+    app:vsb_progress_color="@color/theme_fill4"
+    app:vsb_progress_drag_height="@dimen/video_seek_bar_progress_height_drag"
+    app:vsb_progress_height="@dimen/video_seek_bar_progress_height"/>

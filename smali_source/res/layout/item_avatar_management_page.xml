@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/card_container" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_avatar" android:background="@drawable/ugc_avatar_bg_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/ugc_avatar_fg_card" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/placeholder_overlay" android:visibility="gone" android:layout_width="@dimen/_120sdp" android:layout_height="@dimen/_120sdp" android:src="@drawable/ic_common_logo" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/ugc_text_1" android:layout_gravity="start|center|top" android:id="@id/tv_default_badge" android:background="@drawable/ugc_avatar_bg_default_badge" android:paddingLeft="@dimen/_12sdp" android:paddingTop="@dimen/_8sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_8sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ugc_avatar_default_badge" android:paddingHorizontal="@dimen/_12sdp" android:paddingVertical="@dimen/_8sdp" />
+        <FrameLayout android:id="@id/upload_container" android:background="@drawable/ugc_avatar_bg_upload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ugc_avatar_ic_add_large" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/ugc_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="@string/ugc_avatar_upload_clone_image" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/status_overlay" android:background="@color/ugc_black_70" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:indeterminate="true" android:indeterminateDrawable="@drawable/ugc_avatar_loading_indeterminate" style="?android:progressBarStyleLarge" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/ugc_text_1" android:id="@id/tv_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="@string/ugc_avatar_uploading" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/action_container" android:background="@drawable/ugc_avatar_bg_operation" android:paddingLeft="@dimen/_8sdp" android:paddingTop="@dimen/_6sdp" android:paddingRight="@dimen/_8sdp" android:paddingBottom="@dimen/_6sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" android:paddingHorizontal="@dimen/_8sdp" android:paddingVertical="@dimen/_6sdp">
+            <ImageView android:id="@id/iv_delete" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/ugc_avatar_ic_delete" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

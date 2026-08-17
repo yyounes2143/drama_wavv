@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fr_container" android:background="@color/theme_surface1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coo_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/appbar_layout_theme" android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="@android:color/transparent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:statusBarScrim="@android:color/transparent">
+                <FrameLayout android:id="@id/fr_category_top_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.dramawave.shared.general.view.NestRecyclerView android:orientation="vertical" android:id="@id/rv_category" android:background="@color/theme_surface1" android:paddingBottom="@dimen/_4sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </FrameLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:layout_marginHorizontal="@dimen/_8sdp" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/fr_category_pop_container" android:background="@color/theme_surface1" android:paddingBottom="@dimen/_4sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_selected_container" android:paddingLeft="@dimen/_16sdp" android:paddingRight="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="@dimen/_32sdp" android:paddingHorizontal="@dimen/_16sdp">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/theme_text1" android:ellipsize="end" android:gravity="center" android:id="@id/tv_category_selected" android:layout_width="0.0dip" android:layout_height="fill_parent" android:lines="1" android:layout_marginEnd="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/triangle_more" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" />
+            <com.dramawave.shared.ui.view.TriangleView android:id="@id/triangle_more" android:layout_width="@dimen/_11sdp" android:layout_height="@dimen/_6sdp" android:layout_marginTop="@dimen/_4sdp" app:layout_constraintBottom_toBottomOf="@id/tv_category_selected" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_category_selected" app:layout_constraintTop_toTopOf="@id/tv_category_selected" app:paintingStyle="fill" app:triangleColor="@color/theme_text3" app:triangleDirection="down" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</FrameLayout>

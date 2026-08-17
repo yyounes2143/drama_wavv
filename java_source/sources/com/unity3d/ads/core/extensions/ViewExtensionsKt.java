@@ -1,0 +1,28 @@
+package com.unity3d.ads.core.extensions;
+
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import kotlin.Metadata;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: ViewExtensions.kt */
+@Metadata(m51404d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u001a\f\u0010\u0000\u001a\u00020\u0001*\u0004\u0018\u00010\u0002¨\u0006\u0003"}, m51405d2 = {"removeViewFromParent", "", "Landroid/view/View;", "unity-ads_release"}, m51406k = 2, m51407mv = {1, 8, 0}, m51409xi = 48)
+/* loaded from: classes7.dex */
+public final class ViewExtensionsKt {
+    public static final void removeViewFromParent(@Nullable View view) {
+        ViewParent viewParent;
+        ViewGroup viewGroup = null;
+        if (view != null) {
+            viewParent = view.getParent();
+        } else {
+            viewParent = null;
+        }
+        if (viewParent instanceof ViewGroup) {
+            viewGroup = (ViewGroup) viewParent;
+        }
+        if (viewGroup != null) {
+            viewGroup.removeView(view);
+        }
+    }
+}

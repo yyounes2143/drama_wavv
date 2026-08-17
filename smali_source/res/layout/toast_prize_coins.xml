@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_custom_toast_default_12" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/_114sdp" android:minHeight="@dimen/_117sdp" android:paddingHorizontal="@dimen/_12sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/_52sdp" android:layout_height="@dimen/_53sdp" android:src="@drawable/ic_prize_coin_big" android:scaleType="fitCenter" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@android:id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:singleLine="true" />
+</LinearLayout>

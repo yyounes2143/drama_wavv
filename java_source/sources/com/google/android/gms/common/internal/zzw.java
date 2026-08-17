@@ -1,0 +1,40 @@
+package com.google.android.gms.common.internal;
+
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+import com.google.android.gms.dynamic.IObjectWrapper;
+
+/* compiled from: com.google.android.gms:play-services-basement@@18.9.0 */
+/* loaded from: classes8.dex */
+public abstract class zzw extends com.google.android.gms.internal.common.zzb implements zzx {
+    @Override // com.google.android.gms.internal.common.zzb
+    public final boolean zza(int i10, Parcel parcel, Parcel parcel2, int i11) throws RemoteException {
+        if (i10 != 1) {
+            if (i10 != 2) {
+                return false;
+            }
+            int zze = zze();
+            parcel2.writeNoException();
+            parcel2.writeInt(zze);
+        } else {
+            IObjectWrapper zzd = zzd();
+            parcel2.writeNoException();
+            com.google.android.gms.internal.common.zzc.zze(parcel2, zzd);
+        }
+        return true;
+    }
+
+    public zzw() {
+        super("com.google.android.gms.common.internal.ICertData");
+    }
+
+    public static zzx zzg(IBinder iBinder) {
+        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.internal.ICertData");
+        if (queryLocalInterface instanceof zzx) {
+            return (zzx) queryLocalInterface;
+        }
+        return new zzv(iBinder);
+    }
+}

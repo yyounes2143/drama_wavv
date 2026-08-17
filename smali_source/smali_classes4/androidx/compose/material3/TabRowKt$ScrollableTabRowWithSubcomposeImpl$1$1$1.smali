@@ -1,0 +1,98 @@
+.class final Landroidx/compose/material3/TabRowKt$ScrollableTabRowWithSubcomposeImpl$1$1$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "TabRow.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Landroidx/compose/ui/layout/SubcomposeMeasureScope;",
+        "Landroidx/compose/ui/unit/Constraints;",
+        "Landroidx/compose/ui/layout/MeasureResult;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0014\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
+    }
+    d2 = {
+        "<anonymous>",
+        "Landroidx/compose/ui/layout/MeasureResult;",
+        "Landroidx/compose/ui/layout/SubcomposeMeasureScope;",
+        "constraints",
+        "Landroidx/compose/ui/unit/Constraints;",
+        "invoke-0kLqBqw",
+        "(Landroidx/compose/ui/layout/SubcomposeMeasureScope;J)Landroidx/compose/ui/layout/MeasureResult;"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material3/TabRowKt$ScrollableTabRowWithSubcomposeImpl$1$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/Dp\n*L\n1#1,1361:1\n256#2,3:1362\n33#2,4:1365\n259#2,2:1369\n38#2:1371\n261#2:1372\n33#2,4:1373\n38#2:1379\n256#2,3:1380\n33#2,4:1383\n259#2,2:1387\n38#2:1389\n261#2:1390\n86#3:1377\n56#3:1378\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material3/TabRowKt$ScrollableTabRowWithSubcomposeImpl$1$1$1\n*L\n1041#1:1362,3\n1041#1:1365,4\n1041#1:1369,2\n1041#1:1371\n1041#1:1372\n1054#1:1373,4\n1054#1:1379\n1064#1:1380,3\n1064#1:1383,4\n1064#1:1387,2\n1064#1:1389\n1064#1:1390\n1058#1:1377\n1058#1:1378\n*E\n"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    .line 2
+    check-cast p1, Landroidx/compose/ui/layout/SubcomposeMeasureScope;
+
+    .line 3
+    .line 4
+    check-cast p2, Landroidx/compose/ui/unit/Constraints;
+
+    .line 5
+    .line 6
+    iget-wide v0, p2, Landroidx/compose/ui/unit/Constraints;->a:J
+
+    .line 7
+    .line 8
+    sget p2, Landroidx/compose/material3/TabRowKt;->a:F
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-interface {p1, p2}, Landroidx/compose/ui/unit/Density;->s0(F)I
+
+    .line 12
+    const/4 p2, 0x0
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-interface {p1, p2}, Landroidx/compose/ui/unit/Density;->s0(F)I
+
+    .line 16
+    const/4 p1, 0x0
+
+    .line 17
+    throw p1
+.end method

@@ -1,0 +1,20 @@
+{
+  "initial_image_cache": {
+    "dynamic_alloc": true,
+    "3g_or_less": 0.10,
+    "3g_4g": 0.15,
+    "4g_6g": 0.18,
+    "default_ratio": 0.20
+  },
+  "image_cache_trim_retain_radio": {
+    "dynamic_trim": true,
+    "running_moderate": 0.85,
+    "running_low": 0.6,
+    "running_critical": 0.35,
+    "ui_hidden": 0.6,
+    "background": 0.45,
+    "moderate": 0.5,
+    "complete": 0.15,
+    "default_radio": 0.6
+  }
+}

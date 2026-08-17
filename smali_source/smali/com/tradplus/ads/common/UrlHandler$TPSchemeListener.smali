@@ -1,0 +1,25 @@
+.class public interface abstract Lcom/tradplus/ads/common/UrlHandler$TPSchemeListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tradplus/ads/common/UrlHandler;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "TPSchemeListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onClose()V
+.end method
+
+.method public abstract onFailLoad()V
+.end method
+
+.method public abstract onFinishLoad()V
+.end method

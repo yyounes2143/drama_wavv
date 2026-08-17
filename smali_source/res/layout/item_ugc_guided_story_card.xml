@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_cover" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_cover" android:background="@drawable/ugc_guided_card_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_cover_failed" android:visibility="gone" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/ic_load_failed" android:scaleType="centerInside" android:contentDescription="@null" />
+        <View android:id="@id/v_selected" android:background="@drawable/ugc_guided_story_selected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/ugc_text_2" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/fl_cover" />
+</androidx.constraintlayout.widget.ConstraintLayout>

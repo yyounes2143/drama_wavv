@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ugc_topic_bg_card" android:layout_width="@dimen/_282sdp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/_12sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dramawave.feature.ugc.topic.widget.UgcTemplateTagView android:layout_gravity="start" android:id="@id/template_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:paddingStart="@dimen/_12sdp" android:paddingEnd="@dimen/_12sdp">
+        <com.dramawave.shared.player.widget.UgcVideoPreviewView android:id="@id/template_cover" android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_161sdp" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#fffdfbfc" android:gravity="center" android:id="@id/tv_template_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp" />
+        <com.dramawave.feature.ugc.topic.widget.UgcFaceSwapRowView android:id="@id/face_swap_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_swap_action" android:background="@drawable/ugc_topic_bg_swap_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/_38sdp" android:layout_marginTop="@dimen/_12sdp" />
+    </LinearLayout>
+</LinearLayout>

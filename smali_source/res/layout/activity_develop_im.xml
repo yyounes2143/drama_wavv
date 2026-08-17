@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dramawave.core.common.toolkit.qmui.widget.QUMUITranslucentTopBar android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:gravity="center" android:id="@id/tv_connect_status" android:background="#ffffdd00" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="连接中……" />
+    <Button android:id="@id/test_init" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="init" />
+    <Button android:id="@id/test_release" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="release" />
+    <Button android:id="@id/test_connect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="connect" />
+    <Button android:id="@id/test_disconnect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="disconnect" />
+    <EditText android:textColor="@color/white" android:id="@id/et_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <Button android:id="@id/test_transmit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="transmit" />
+    <Button android:id="@id/empty_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="empty btn" />
+</LinearLayout>

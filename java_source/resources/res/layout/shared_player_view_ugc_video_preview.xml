@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dramawave.shared.player.next.VideoViewNext
+        android:id="@+id/ugc_preview_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/ugc_preview_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/ugc_preview_play_icon"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:src="@drawable/ic_ugc_video_preview_view_play"
+        android:contentDescription="@null"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/ugc_preview_loading"
+        android:visibility="gone"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:src="@drawable/ic_ugc_template_loading"
+        android:contentDescription="@null"/>
+</merge>

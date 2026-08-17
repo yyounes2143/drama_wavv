@@ -1,0 +1,91 @@
+.class public final Lcom/dramawave/core/router/path/AccountDeletion;
+.super Ly1/b;
+.source "Setting.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/dramawave/core/router/path/AccountDeletion$Companion;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0018\u0000 \u00042\u00020\u0001:\u0001\u0005B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0006"
+    }
+    d2 = {
+        "Lcom/dramawave/core/router/path/AccountDeletion;",
+        "Ly1/b;",
+        "<init>",
+        "()V",
+        "a",
+        "Companion",
+        "core_router_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final a:Lcom/dramawave/core/router/path/AccountDeletion$Companion;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final b:Ljava/lang/String; = "account_deletion"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final c:Ljava/lang/String; = "dramawave://dramawave.app/account_deletion"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/dramawave/core/router/path/AccountDeletion$Companion;
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {v0, v1}, Lcom/dramawave/core/router/path/AccountDeletion$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 7
+    .line 8
+    sput-object v0, Lcom/dramawave/core/router/path/AccountDeletion;->a:Lcom/dramawave/core/router/path/AccountDeletion$Companion;
+
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    .line 2
+    const-string v0, "account_deletion"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Ly1/b;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    return-void
+.end method

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_12" android:textColor="@color/ugc_text_3" android:id="@id/tv_content_tag" android:background="@drawable/ugc_history_popup_tag_background" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_8sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

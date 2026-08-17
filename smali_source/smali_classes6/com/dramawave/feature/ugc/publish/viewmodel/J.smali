@@ -1,0 +1,9 @@
+.class public final Lcom/dramawave/feature/ugc/publish/viewmodel/J;
+.super Ljava/lang/Object;
+.source "UgcPublishEditCaptionViewModel_HiltModules_BindsModule_Binds_LazyMapKey.java"
+
+
+# static fields
+.field static a:Lcom/dramawave/feature/ugc/publish/viewmodel/UgcPublishEditCaptionViewModel; = null
+
+.field public static b:Ljava/lang/String; = "com.dramawave.feature.ugc.publish.viewmodel.UgcPublishEditCaptionViewModel"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/default_content_tags_size"
+    android:textColor="@color/theme_brand6"
+    android:ellipsize="end"
+    android:id="@+id/tv_content_tag"
+    android:background="@drawable/common_shape_conner_4_fill2"
+    android:paddingLeft="8dp"
+    android:paddingTop="2dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="2dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:backgroundTint="@color/tag_red"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="2dp"/>

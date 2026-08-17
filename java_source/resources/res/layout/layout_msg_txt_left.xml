@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_16sdp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="15sp"
+        android:textColor="@color/theme_text5"
+        android:textColorLink="@color/tag_red"
+        android:gravity="center_vertical"
+        android:id="@+id/content"
+        android:background="@drawable/shape_chat_text_left_bg"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/_52sdp"
+        android:minHeight="@dimen/_40sdp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginEnd="@dimen/_80sdp"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:paddingVertical="@dimen/_10sdp"/>
+    <Space
+        android:id="@+id/chat_space_text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_24sdp"/>
+</LinearLayout>

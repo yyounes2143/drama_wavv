@@ -1,0 +1,199 @@
+package com.dramawave.feature.contenttag.mvi;
+
+import com.dramawave.core.mvi.architecture.C8358a;
+import com.dramawave.core.mvi.architecture.C8365h;
+import com.dramawave.feature.ability.p432ui.dialog.C8586i0;
+import com.dramawave.service.api.base.C14481d;
+import com.dramawave.service.api.repository.C14649a1;
+import com.dramawave.service.api.repository.C14760q1;
+import com.fyber.inneractive.sdk.bidder.TokenParametersOuterClass$TokenParameters;
+import com.google.gson.reflect.TypeToken;
+import kotlin.C27136b;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.InterfaceC27211e;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlinx.coroutines.flow.C27677m0;
+import kotlinx.coroutines.flow.InterfaceC27664g;
+import p047D9.EnumC0226a;
+import p059E9.AbstractC0267d;
+import p059E9.AbstractC0273j;
+import p059E9.InterfaceC0269f;
+import p687o1.C28132b;
+
+/* compiled from: ContentTagDetailsViewModel.kt */
+@InterfaceC0269f(m255c = "com.dramawave.feature.contenttag.mvi.ContentTagDetailsViewModel$loadContentTagList$1", m256f = "ContentTagDetailsViewModel.kt", m257l = {39, 43}, m258m = "invokeSuspend")
+/* renamed from: com.dramawave.feature.contenttag.mvi.d */
+/* loaded from: classes3.dex */
+public final class C8934d extends AbstractC0273j implements Function2<C8358a<C8932b, AbstractC8931a>, InterfaceC27211e<? super Unit>, Object> {
+
+    /* renamed from: a */
+    int f46744a;
+
+    /* renamed from: b */
+    private /* synthetic */ Object f46745b;
+
+    /* renamed from: c */
+    final /* synthetic */ boolean f46746c;
+
+    /* renamed from: d */
+    final /* synthetic */ C8935e f46747d;
+
+    /* renamed from: e */
+    final /* synthetic */ int f46748e;
+
+    /* renamed from: f */
+    final /* synthetic */ String f46749f;
+
+    /* renamed from: g */
+    final /* synthetic */ String f46750g;
+
+    /* compiled from: ContentTagDetailsViewModel.kt */
+    @SourceDebugExtension({"SMAP\nContentTagDetailsViewModel.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ContentTagDetailsViewModel.kt\ncom/dramawave/feature/contenttag/mvi/ContentTagDetailsViewModel$loadContentTagList$1$2\n+ 2 DataState.kt\ncom/dramawave/core/network/model/DataStateKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 GsonExt.kt\ncom/dramawave/core/json/GsonExtKt\n*L\n1#1,65:1\n44#2,4:66\n52#2,2:70\n55#2:75\n1#3:72\n218#4,2:73\n*S KotlinDebug\n*F\n+ 1 ContentTagDetailsViewModel.kt\ncom/dramawave/feature/contenttag/mvi/ContentTagDetailsViewModel$loadContentTagList$1$2\n*L\n44#1:66,4\n60#1:70,2\n60#1:75\n60#1:72\n60#1:73,2\n*E\n"})
+    /* renamed from: com.dramawave.feature.contenttag.mvi.d$a */
+    /* loaded from: classes3.dex */
+    public static final class a<T> implements InterfaceC27664g {
+
+        /* renamed from: a */
+        final /* synthetic */ C8358a<C8932b, AbstractC8931a> f46751a;
+
+        /* compiled from: GsonExt.kt */
+        @Metadata(m51404d1 = {"\u0000\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001¨\u0006\u0003¸\u0006\u0002"}, m51405d2 = {"com/dramawave/core/json/GsonExtKt$toBean$1", "Lcom/google/gson/reflect/TypeToken;", "r1/b", "core_json_release"}, m51406k = 1, m51407mv = {2, 1, 0}, m51409xi = 48)
+        /* renamed from: com.dramawave.feature.contenttag.mvi.d$a$a, reason: collision with other inner class name */
+        /* loaded from: classes3.dex */
+        public static final class C29114a extends TypeToken<C28132b<Object>> {
+        }
+
+        /* compiled from: ContentTagDetailsViewModel.kt */
+        @InterfaceC0269f(m255c = "com.dramawave.feature.contenttag.mvi.ContentTagDetailsViewModel$loadContentTagList$1$2", m256f = "ContentTagDetailsViewModel.kt", m257l = {46, 55, TokenParametersOuterClass$TokenParameters.PRIORCLICKTYPES_FIELD_NUMBER}, m258m = "emit")
+        /* renamed from: com.dramawave.feature.contenttag.mvi.d$a$b */
+        /* loaded from: classes3.dex */
+        public static final class b extends AbstractC0267d {
+
+            /* renamed from: a */
+            Object f46752a;
+
+            /* renamed from: b */
+            Object f46753b;
+
+            /* renamed from: c */
+            Object f46754c;
+
+            /* renamed from: d */
+            Object f46755d;
+
+            /* renamed from: e */
+            /* synthetic */ Object f46756e;
+
+            /* renamed from: f */
+            final /* synthetic */ a<T> f46757f;
+
+            /* renamed from: g */
+            int f46758g;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            public b(a<? super T> aVar, InterfaceC27211e<? super b> interfaceC27211e) {
+                super(interfaceC27211e);
+                this.f46757f = aVar;
+            }
+
+            @Override // p059E9.AbstractC0264a
+            public final Object invokeSuspend(Object obj) {
+                this.f46756e = obj;
+                this.f46758g |= Integer.MIN_VALUE;
+                return this.f46757f.emit(null, this);
+            }
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:21:0x00cf  */
+        /* JADX WARN: Removed duplicated region for block: B:34:0x00ab  */
+        /* JADX WARN: Removed duplicated region for block: B:38:0x00c6  */
+        /* JADX WARN: Removed duplicated region for block: B:39:0x005a  */
+        /* JADX WARN: Removed duplicated region for block: B:8:0x0026  */
+        @Override // kotlinx.coroutines.flow.InterfaceC27664g
+        /* renamed from: c, reason: merged with bridge method [inline-methods] */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object emit(p719r1.AbstractC28400a<com.dramawave.service.api.model.DataContainer<com.dramawave.shared.models.Series>> r14, kotlin.coroutines.InterfaceC27211e<? super kotlin.Unit> r15) {
+            /*
+                Method dump skipped, instructions count: 283
+                To view this dump add '--comments-level debug' option
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.dramawave.feature.contenttag.mvi.C8934d.a.emit(r1.a, kotlin.coroutines.e):java.lang.Object");
+        }
+
+        public a(C8358a<C8932b, AbstractC8931a> c8358a) {
+            this.f46751a = c8358a;
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C8934d(boolean z10, C8935e c8935e, int i10, String str, String str2, InterfaceC27211e<? super C8934d> interfaceC27211e) {
+        super(2, interfaceC27211e);
+        this.f46746c = z10;
+        this.f46747d = c8935e;
+        this.f46748e = i10;
+        this.f46749f = str;
+        this.f46750g = str2;
+    }
+
+    @Override // p059E9.AbstractC0264a
+    public final InterfaceC27211e<Unit> create(Object obj, InterfaceC27211e<?> interfaceC27211e) {
+        C8934d c8934d = new C8934d(this.f46746c, this.f46747d, this.f46748e, this.f46749f, this.f46750g, interfaceC27211e);
+        c8934d.f46745b = obj;
+        return c8934d;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(C8358a<C8932b, AbstractC8931a> c8358a, InterfaceC27211e<? super Unit> interfaceC27211e) {
+        return ((C8934d) create(c8358a, interfaceC27211e)).invokeSuspend(Unit.f119604a);
+    }
+
+    @Override // p059E9.AbstractC0264a
+    public final Object invokeSuspend(Object obj) {
+        C8358a c8358a;
+        C14760q1 c14760q1;
+        EnumC0226a enumC0226a = EnumC0226a.f605a;
+        int i10 = this.f46744a;
+        if (i10 != 0) {
+            if (i10 != 1) {
+                if (i10 == 2) {
+                    C27136b.m51416b(obj);
+                    return Unit.f119604a;
+                }
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            c8358a = (C8358a) this.f46745b;
+            C27136b.m51416b(obj);
+        } else {
+            C27136b.m51416b(obj);
+            c8358a = (C8358a) this.f46745b;
+            if (this.f46746c) {
+                C8586i0 c8586i0 = new C8586i0(1);
+                this.f46745b = c8358a;
+                this.f46744a = 1;
+                if (C8365h.m22218o(c8358a, c8586i0, this) == enumC0226a) {
+                    return enumC0226a;
+                }
+            }
+        }
+        c14760q1 = this.f46747d.homeRepo;
+        int i11 = this.f46748e;
+        String str = this.f46749f;
+        String str2 = this.f46750g;
+        String m22800a = ((C8932b) c8358a.m22197b()).m22800a();
+        c14760q1.getClass();
+        C27677m0 m29734b = C14481d.m29734b(false, new C14649a1(c14760q1, i11, str, str2, m22800a, null), 3);
+        a aVar = new a(c8358a);
+        this.f46745b = null;
+        this.f46744a = 2;
+        if (m29734b.collect(aVar, this) == enumC0226a) {
+            return enumC0226a;
+        }
+        return Unit.f119604a;
+    }
+}

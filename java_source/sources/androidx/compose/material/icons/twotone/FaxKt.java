@@ -1,0 +1,11 @@
+package androidx.compose.material.icons.twotone;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* compiled from: Fax.kt */
+@Metadata(m51404d1 = {"\u0000\u0002\n\u0000¨\u0006\u0000"}, m51405d2 = {"material-icons-extended_release"}, m51406k = 2, m51407mv = {1, 8, 0}, m51409xi = 48)
+@SourceDebugExtension({"SMAP\nFax.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Fax.kt\nandroidx/compose/material/icons/twotone/FaxKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,160:1\n212#2,12:161\n233#2,18:174\n253#2:211\n233#2,18:212\n253#2:249\n233#2,18:250\n253#2:287\n233#2,18:288\n253#2:325\n233#2,18:326\n253#2:363\n233#2,18:364\n253#2:401\n233#2,18:402\n253#2:439\n233#2,18:440\n253#2:477\n233#2,18:478\n253#2:515\n174#3:173\n705#4,2:192\n717#4,2:194\n719#4,11:200\n705#4,2:230\n717#4,2:232\n719#4,11:238\n705#4,2:268\n717#4,2:270\n719#4,11:276\n705#4,2:306\n717#4,2:308\n719#4,11:314\n705#4,2:344\n717#4,2:346\n719#4,11:352\n705#4,2:382\n717#4,2:384\n719#4,11:390\n705#4,2:420\n717#4,2:422\n719#4,11:428\n705#4,2:458\n717#4,2:460\n719#4,11:466\n705#4,2:496\n717#4,2:498\n719#4,11:504\n72#5,4:196\n72#5,4:234\n72#5,4:272\n72#5,4:310\n72#5,4:348\n72#5,4:386\n72#5,4:424\n72#5,4:462\n72#5,4:500\n*S KotlinDebug\n*F\n+ 1 Fax.kt\nandroidx/compose/material/icons/twotone/FaxKt\n*L\n29#1:161,12\n30#1:174,18\n30#1:211\n40#1:212,18\n40#1:249\n47#1:250,18\n47#1:287\n86#1:288,18\n86#1:325\n124#1:326,18\n124#1:363\n130#1:364,18\n130#1:401\n136#1:402,18\n136#1:439\n142#1:440,18\n142#1:477\n148#1:478,18\n148#1:515\n29#1:173\n30#1:192,2\n30#1:194,2\n30#1:200,11\n40#1:230,2\n40#1:232,2\n40#1:238,11\n47#1:268,2\n47#1:270,2\n47#1:276,11\n86#1:306,2\n86#1:308,2\n86#1:314,11\n124#1:344,2\n124#1:346,2\n124#1:352,11\n130#1:382,2\n130#1:384,2\n130#1:390,11\n136#1:420,2\n136#1:422,2\n136#1:428,11\n142#1:458,2\n142#1:460,2\n142#1:466,11\n148#1:496,2\n148#1:498,2\n148#1:504,11\n30#1:196,4\n40#1:234,4\n47#1:272,4\n86#1:310,4\n124#1:348,4\n130#1:386,4\n136#1:424,4\n142#1:462,4\n148#1:500,4\n*E\n"})
+/* loaded from: classes3.dex */
+public final class FaxKt {
+}

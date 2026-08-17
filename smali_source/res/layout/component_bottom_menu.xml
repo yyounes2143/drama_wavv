@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="@dimen/_100sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:background="@drawable/bottom_gradient_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom" android:id="@id/v_background" android:background="@color/theme_surface1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/_54sdp" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_episode_pan_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/_38sdp" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_6sdp" android:layout_marginHorizontal="@dimen/_12sdp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_episode_pan" android:background="@drawable/common_shape_conner_8_fill2" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingHorizontal="@dimen/_12sdp">
+            <ImageView android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:src="@drawable/ic_dialog_fill" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/tv_episode_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" style="@style/theme_TextMedium14" />
+            <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_8sdp">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#ffa1a0a3" android:ellipsize="end" android:gravity="end|center" android:layout_gravity="end" android:id="@id/tv_ugc_challenge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/_4sdp" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/ic_chevron_up" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_bottom_bar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/_34sdp" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_12sdp">
+        <FrameLayout android:id="@id/fl_vip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_bottom_menu_vip_hybrid" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/vip_str" android:paddingStart="@dimen/_12sdp" android:paddingEnd="@dimen/_12sdp">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_bottom_menu_vip_icon" />
+                <ImageView android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_9sdp" android:src="@drawable/ic_bottom_menu_vip_wordmark" android:layout_marginStart="@dimen/_3sdp" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_audion" android:background="@drawable/common_shape_conner_8_line_2" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_audio_track" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:id="@id/space_audion" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_subtitle" android:background="@drawable/common_shape_conner_8_line_2" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_subtitles_track" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:id="@id/space_subtitle" android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_rate" android:background="@drawable/common_shape_conner_8_line_2" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="1.0X" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+        <Space android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_1sdp" />
+        <FrameLayout android:id="@id/ll_resolution" android:background="@drawable/common_shape_conner_8_line_2" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/theme_text5" android:gravity="center_vertical" android:id="@id/tv_resolution" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_str" android:paddingHorizontal="@dimen/_12sdp" style="@style/theme_TextMedium14" />
+                <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/theme_text13" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_1080P" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1080p" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="end" android:id="@id/iv_vip_label_tips" android:visibility="gone" android:layout_width="@dimen/_19sdp" android:layout_height="@dimen/_10sdp" android:src="@drawable/ic_vip_tag" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+package com.google.android.gms.internal.consent_sdk;
+
+import java.lang.ref.WeakReference;
+import java.util.concurrent.Executor;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
+import p000.C27866l;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: com.google.android.ump:user-messaging-platform@@3.1.0 */
+/* loaded from: classes5.dex */
+public final class zzcn implements Executor {
+    private final ThreadPoolExecutor zzb;
+    private final AtomicInteger zza = new AtomicInteger(1);
+    private WeakReference zzc = new WeakReference(null);
+
+    public final /* synthetic */ Thread zza(String str, Runnable runnable) {
+        Thread thread = new Thread(runnable, C27866l.m52683a(this.zza.getAndIncrement(), "Google consent worker #"));
+        this.zzc = new WeakReference(thread);
+        return thread;
+    }
+
+    public zzcn(String str) {
+        final String str2 = "Google consent worker";
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new ThreadFactory(str2) { // from class: com.google.android.gms.internal.consent_sdk.zzcm
+            public final /* synthetic */ String zzb = "Google consent worker";
+
+            @Override // java.util.concurrent.ThreadFactory
+            public final Thread newThread(Runnable runnable) {
+                return zzcn.this.zza(this.zzb, runnable);
+            }
+        });
+        this.zzb = threadPoolExecutor;
+        threadPoolExecutor.allowCoreThreadTimeOut(true);
+    }
+
+    @Override // java.util.concurrent.Executor
+    public final void execute(Runnable runnable) {
+        if (Thread.currentThread() == this.zzc.get()) {
+            runnable.run();
+        } else {
+            this.zzb.execute(runnable);
+        }
+    }
+}

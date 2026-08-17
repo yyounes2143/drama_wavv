@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/_52sdp" android:textStyle="bold" android:textColor="@color/text_v_5" android:gravity="center" android:id="@id/tv_main_benefit" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/strong_highlight_recharge_info_bg" android:paddingLeft="@dimen/_16sdp" android:paddingTop="@dimen/_12sdp" android:paddingRight="@dimen/_16sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" android:paddingHorizontal="@dimen/_16sdp" android:paddingVertical="@dimen/_12sdp">
+        <LinearLayout android:gravity="end|center" android:orientation="vertical" android:id="@id/group_recharge_now" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:src="@drawable/ic_common_coin_single" />
+                <TextView android:textSize="@dimen/_20sdp" android:textStyle="bold" android:textColor="@color/theme_text12" android:id="@id/tv_now_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_4sdp" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/theme_text13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:text="@string/strong_highlight_recharge_now" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/theme_text12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginRight="@dimen/_16sdp" android:text="+" android:layout_marginHorizontal="@dimen/_16sdp" />
+        <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/group_recharge_bonus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/ic_dialog_strong_bouns" />
+                <TextView android:textSize="@dimen/_20sdp" android:textStyle="bold" android:textColor="@color/theme_text12" android:id="@id/tv_bonus_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_4sdp" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/theme_text13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:text="@string/strong_highlight_recharge_bonus" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
