@@ -2242,10 +2242,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Episode;->p:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -2264,10 +2263,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Episode;->w:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -2353,10 +2351,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Episode;->x:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
