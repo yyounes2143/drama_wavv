@@ -60,53 +60,13 @@
 .end method
 
 .method public static j()Z
-    .locals 3
+    .locals 1
 
     .line 1
+    const/4 v0, 0x1
+
     .line 2
-    sget-object v0, Lcom/dramawave/shared/user/m;->a:Lcom/dramawave/shared/user/m;
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-static {}, Lcom/dramawave/shared/user/m;->k()Lcom/dramawave/shared/models/bean/WalletBean;
-
-    .line 9
-    move-result-object v0
-
-    .line 10
-    const/4 v1, 0x0
-
-    .line 11
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    .line 15
-    invoke-virtual {v0}, Lcom/dramawave/shared/models/bean/WalletBean;->C()Z
-
-    .line 16
-    move-result v0
-
-    .line 17
-    const/4 v2, 0x1
-
-    .line 18
-    .line 19
-    if-ne v0, v2, :cond_0
-
-    .line 20
-    move v1, v2
-
-    .line 21
-    :cond_0
-    return v1
+    return v0
 .end method
 
 
@@ -170,10 +130,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, LT1/j;->c:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
