@@ -343,10 +343,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lg2/b;->d:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -354,10 +353,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lg2/b;->e:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
