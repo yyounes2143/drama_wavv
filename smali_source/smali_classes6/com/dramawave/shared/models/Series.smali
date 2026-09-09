@@ -5168,41 +5168,17 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Series;->v:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
 .method public final J1()Z
     .locals 1
 
-    .line 1
-    .line 2
-    iget-object v0, p0, Lcom/dramawave/shared/models/Series;->p0:Lcom/dramawave/shared/models/ContentRatingTags;
-
-    .line 3
-    .line 4
-    if-eqz v0, :cond_0
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {v0}, Lcom/dramawave/shared/models/ContentRatingTags;->c()Z
-
-    .line 8
-    move-result v0
-
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_0
     const/4 v0, 0x0
 
-    .line 11
-    :goto_0
     return v0
 .end method
 
@@ -5910,10 +5886,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget v0, p0, Lcom/dramawave/shared/models/Series;->n0:I
+    const/4 v0, 0x0
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -10638,10 +10613,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget v0, p0, Lcom/dramawave/shared/models/Series;->l0:I
+    const/4 v0, 0x0
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -14150,9 +14124,8 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget v0, p0, Lcom/dramawave/shared/models/Series;->Y:I
+    const/4 v0, 0x0
 
-    .line 3
+    .line 2
     return v0
 .end method

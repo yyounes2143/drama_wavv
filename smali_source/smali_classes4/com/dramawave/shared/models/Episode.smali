@@ -2177,10 +2177,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Episode;->y:Z
+    const/4 v0, 0x1
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -2231,10 +2230,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Episode;->Z:Z
+    const/4 v0, 0x0
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -2384,10 +2382,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Episode;->a0:Z
+    const/4 v0, 0x0
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -2430,10 +2427,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget-boolean v0, p0, Lcom/dramawave/shared/models/Episode;->b0:Z
+    const/4 v0, 0x0
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -2718,10 +2714,9 @@
     .locals 1
 
     .line 1
-    .line 2
-    iget v0, p0, Lcom/dramawave/shared/models/Episode;->f0:I
+    const/4 v0, 0x0
 
-    .line 3
+    .line 2
     return v0
 .end method
 
@@ -7861,10 +7856,15 @@
     .end annotation
 
     .line 1
+    const/4 v0, 0x1
+
     .line 2
-    iget-object v0, p0, Lcom/dramawave/shared/models/Episode;->M:Ljava/lang/Boolean;
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 3
+    move-result-object v0
+
+    .line 4
     return-object v0
 .end method
 
