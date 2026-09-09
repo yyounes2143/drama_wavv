@@ -217,36 +217,14 @@
 
 # virtual methods
 .method public final getSignatureStatus()Lcom/dramawave/security/SignatureValidationStatus;
-    .locals 3
+    .locals 0
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
     .line 1
+    sget-object v0, Lcom/dramawave/security/SignatureValidationStatus;->VALID:Lcom/dramawave/security/SignatureValidationStatus;
+
     .line 2
-    sget-object v0, Lcom/dramawave/security/SignatureValidator;->Companion:Lcom/dramawave/security/SignatureValidator$Companion;
-
-    .line 3
-    .line 4
-    iget-boolean v1, p0, Lcom/dramawave/security/SignatureValidator;->nativeLoaded:Z
-
-    .line 5
-    .line 6
-    new-instance v2, Lcom/dramawave/security/SignatureValidator$a;
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-direct {v2, p0}, Lcom/dramawave/security/SignatureValidator$a;-><init>(Lcom/dramawave/security/SignatureValidator;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {v0, v1, v2}, Lcom/dramawave/security/SignatureValidator$Companion;->resolveStatus$dw_security_release(ZLkotlin/jvm/functions/Function0;)Lcom/dramawave/security/SignatureValidationStatus;
-
-    .line 13
-    move-result-object v0
-
-    .line 14
     return-object v0
 .end method
 
@@ -254,22 +232,9 @@
     .locals 1
 
     .line 1
+    const/4 v0, 0x1
+
     .line 2
-    .line 3
-    invoke-virtual {p0}, Lcom/dramawave/security/SignatureValidator;->getSignatureStatus()Lcom/dramawave/security/SignatureValidationStatus;
-
-    .line 4
-    move-result-object v0
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {v0}, Lcom/dramawave/security/SignatureValidationStatus;->isAllowed()Z
-
-    .line 8
-    move-result v0
-
-    .line 9
     return v0
 .end method
 
